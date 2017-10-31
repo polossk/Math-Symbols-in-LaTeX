@@ -1,0 +1,74 @@
+\documentclass{article}
+\input{article-setting}
+% \usepackage{multicol}
+\usepackage[normalem]{ulem}
+%------------------------------------------------------------------------------%
+\title{Math-Symbols-in-\LaTeX{}}
+\author{polossk}
+\date{\today}
+\newcommand\artversion{1.2.0}
+%------------------------------------------------------------------------------%
+\begin{document}
+%------------------------------------------------------------------------------%
+% \begin{multicols}{2}
+\maketitle
+% \tableofcontents
+\thispagestyle{fancy}
+\renewcommand{\baselinestretch}{1.25}
+\sWuhao\fSong
+%------------------------------------------------------------------------------%
+\colorlet{lightgray}{gray!40}
+\colorlet{darkred}{red!60!black}
+
+% \newcommand\hl{\bgroup\markoverwith%
+%   {\textcolor{lightgray}{\rule[-.5ex]{2pt}{2.5ex}}}\ULon}
+\newcommand\mtex[1]{\colorbox{lightgray}{\color{darkred} {\tt \textbackslash#1}}}
+\newcommand\code[1]{\colorbox{lightgray}{\color{darkred} {\tt #1}}}
+\section{Constants and Useful Symbols}
+\begin{itemize}
+\item \mtex{mi}: alias of \mtex{mathrm i}, $\mi$
+\item \mtex{me}: alias of \mtex{mathrm e}, $\me$
+\item \mtex{mreal}: alias of \mtex{mathbb R}, $\mreal$
+\item \mtex{mhilb}: alias of \mtex{mathbb H}, $\mhilb$
+\item \mtex{mcond}: alias of \mtex{mathrm \{Cond.\}}, $\mcond$
+\item \mtex{mconst}: alias of \mtex{mathrm \{const\}}, $\mconst$
+\end{itemize}
+
+\section{Vector and Matrix Defination}
+\begin{itemize}
+\item \mtex{mv*}: Vector Notations, alias of \mtex{bm *}, \code{*} could be any English characters or Greek characters. For examples, \mtex{mva} gets $\mva$, and \mtex{mvalpha} gets $\mvalpha$. The alphabet looks like this: $\mva$, $\mvb$, $\mvc$, $\mvd$, $\mve$, $\mvf$, $\mvg$, $\mvh$, $\mvi$, $\mvj$, $\mvk$, $\mvl$, $\mvm$, $\mvn$, $\mvo$, $\mvp$, $\mvq$, $\mvr$, $\mvs$, $\mvt$, $\mvu$, $\mvv$, $\mvw$, $\mvx$, $\mvy$, $\mvz$, $\mvalpha$, $\mvbeta$, $\mvgamma$, $\mvdelta$, $\mvepsilon$, $\mvzeta$, $\mveta$, $\mvtheta$, $\mviota$, $\mvkappa$, $\mvlambda$, $\mvmu$, $\mvnu$, $\mvxi$, $\mvpi$, $\mvrho$, $\mvsigma$, $\mvtau$, $\mvupsilon$, $\mvphi$, $\mvchi$, $\mvpsi$, $\mvomega$
+\item \mtex{mm*}: Matrix Notations, alias of \mtex{mathbf *}, \code{*} could be any English characters or Greek characters. For examples, \mtex{mma} gets $\mma$, and \mtex{mmsigma} gets $\mmsigma$. The alphabet looks like this: $\mma$, $\mmb$, $\mmc$, $\mmd$, $\mme$, $\mmf$, $\mmg$, $\mmh$, $\mmi$, $\mmj$, $\mmk$, $\mml$, $\mmm$, $\mmn$, $\mmo$, $\mmp$, $\mmq$, $\mmr$, $\mms$, $\mmt$, $\mmu$, $\mmv$, $\mmw$, $\mmx$, $\mmy$, $\mmz$, $\mmgamma$, $\mmdelta$, $\mmtheta$, $\mmlambda$, $\mmxi$, $\mmpi$, $\mmsigma$, $\mmupsilon$, $\mmphi$, $\mmpsi$, $\mmomega$
+\item \mtex{mm*t}: Transposed Matrix Notations, alias of \mtex{\{\textbackslash{}mathbf *\}\^{}T}, \code{*} could be any English characters or Greek characters. For examples, \mtex{mma} gets $\mma$, and \mtex{mmsigma} gets $\mmsigma$. The alphabet looks like this: $\mmat$, $\mmbt$, $\mmct$, $\mmdt$, $\mmet$, $\mmft$, $\mmgt$, $\mmht$, $\mmit$, $\mmjt$, $\mmkt$, $\mmlt$, $\mmmt$, $\mmnt$, $\mmot$, $\mmpt$, $\mmqt$, $\mmrt$, $\mmst$, $\mmtt$, $\mmut$, $\mmvt$, $\mmwt$, $\mmxt$, $\mmyt$, $\mmzt$, $\mmgammat$, $\mmdeltat$, $\mmthetat$, $\mmlambdat$, $\mmxit$, $\mmpit$, $\mmsigmat$, $\mmupsilont$, $\mmphit$, $\mmpsit$, $\mmomegat$
+\item \mtex{mvzero}, \mtex{mvone}, \mtex{mmzero}, \mtex{mmone}: Special vector and matrix notation, $\mvzero$, $\mvone$, $\mmzero$, $\mmone$
+\end{itemize}
+
+\section{Useful Functions and Operators}
+\begin{itemize}
+\item \mtex{diff}: diff operator, $\int_0^t f(\tau) \diff \tau$
+\item \mtex{Diff}: Diff operator, $\Diff{}^2 X = \dfrac{-x_{i + 1, j} + 2x_{i, j} - x_{i - 1, j}}{\Delta x^2}$
+\item \mtex{Expect}: Expect operator, $X = B(n, p)$, $\Expect X = np$
+\item \mtex{diag}, \mtex{eig}, \mtex{tr}: $\mmd = \diag \mma$, $[\mmlambda, \mmv] = \eig \mma$, $\tr \mmlambda = \tr \mma$
+\item \mtex{lcm}: lcm operator, $\lcm(f, g) \cdot \gcd(f, g) = f \cdot g$
+\item \mtex{rand}: random number, $\rand$
+\item \mtex{mean}, \mtex{var}: statistics operator, $\mu = \mean X$, $\sigma^2 = \var X$
+\item \mtex{corr}: correlation operator, $\corr(X, Y) = (R)_{ij} = \dfrac{\sum_{X_i, Y_j}(X - \bar X)(Y - \bar Y)}{\sqrt{\sum_i(X - \bar X)^2\sum_j(Y - \bar Y)^2}}$
+\item \mtex{conv}: convolution operator, $\conv(f, g) = \int_{-\infty}^\infty f(\tau)g(t - \tau) \diff \tau$
+\item \mtex{card}: cardinals operator, $\card \{1, 2, 3\} = 3$, $\card \mreal = 2^{\aleph_0}$
+\item \mtex{argmin}, \mtex{argmax}, \mtex{argopt}: arg min, arg max, arg opt operator, $\hat \theta = \argmin\limits_\theta J_\theta(x)$
+\item \mtex{dist}: distance operator, $\min \sum\limits_{\forall s, t \in G} \dist\limits_{s \ne t} (s, t)$
+\end{itemize}
+
+\section{Useful Alias}
+\begin{itemize}
+\item \mtex{fracpartials\{\#1\}}: frac \& partial operator, also provide \mtex{dfracpartials\{\#1\}} mode. For example, \mtex{fracpartials\{x\}} gets $\fracpartials x$, \mtex{dfracpartials\{y\}} gets $\dfracpartials y$
+
+\item \mtex{fracpartiald\{\#1\}\{\#2\}}: frac \& partial operator, also provide \mtex{dfracpartiald\{\#1\}\{\#2\}} mode. For example, \mtex{fracpartiald\{u\}\{x\}} gets $\fracpartiald{u}{x}$, \mtex{dfracpartiald\{\^{}2u\}\{x\^{}2\}} gets $\dfracpartiald{^2u}{x^2}$
+
+\item \mtex{fracdiffs\{\#1\}}: frac \& diff operator, also provide \mtex{dfracdiffs\{\#1\}} mode. For example, \mtex{fracdiffs\{x\}} gets $\fracdiffs x$, \mtex{fracdiffs\{y\}} gets $\fracdiffs y$, \mtex{dfracdiffs\{z\}} gets $\dfracdiffs z$
+
+\item \mtex{fracdiffd\{\#1\}\{\#2\}}: frac \& diff operator, also provide \mtex{dfracdiffd\{\#1\}\{\#2\}} mode. For example, \mtex{fracdiffd\{u\}\{x\}} gets $\fracdiffd{u}{x}$, \mtex{dfracdiffd\{\^{}2u\}\{x\^{}2\}} gets $\dfracdiffd{^2u}{x^2}$
+\end{itemize}
+
+%------------------------------------------------------------------------------%
+% \end{multicols}
+\end{document}

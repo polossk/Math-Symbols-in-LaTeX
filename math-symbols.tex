@@ -1,0 +1,210 @@
+% math-symbols.tex
+% by polossk, version 1.2.0
+% last update 2017-10-31
+% github.com/polossk/Math-Symbols-in-LaTeX
+%------------------------------------------------------------------------------%
+%-Packages---------------------------------------------------------------------%
+%------------------------------------------------------------------------------%
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{mathrsfs}
+\usepackage{bm}
+%------------------------------------------------------------------------------%
+%-Math-Fonts-------------------------------------------------------------------%
+%------------------------------------------------------------------------------%
+\def\mathbi#1{\textbf{\em #1}}
+% \mathcal{A}:  Caligraphic letters
+% \mathbb{A}:   Mathbb letters
+% \mathfrak{A}: Mathfrak letters
+% \mathsf{A}:   Math Sans serif letters
+% \mathbf{A}:   Math bold letters
+% \mathbi{A}:   Math bold italic letters
+%------------------------------------------------------------------------------%
+%-Constants-and-Useful-Symbols-------------------------------------------------%
+%------------------------------------------------------------------------------%
+\newcommand\mi{{\mathrm i}}                                % constant i
+\newcommand\me{{\mathrm e}}                                % constant e
+\newcommand\mreal{{\mathbb R}}                             % real set R
+\newcommand\mhilb{{\mathbb H}}                             % hilbert set H
+\newcommand\mcond{{\mathrm{Cond.}}}                        % condition symbol
+\newcommand\mconst{{\mathrm{const}}}                       % constant symbol
+%------------------------------------------------------------------------------%
+%-[M]ath-[V]ector-Defination---------------------------------------------------%
+%------------------------------------------------------------------------------%
+\newcommand\mva{{\bm a}}                                   % vector a
+\newcommand\mvb{{\bm b}}                                   % vector b
+\newcommand\mvc{{\bm c}}                                   % vector c
+\newcommand\mvd{{\bm d}}                                   % vector d
+\newcommand\mve{{\bm e}}                                   % vector e
+\newcommand\mvf{{\bm f}}                                   % vector f
+\newcommand\mvg{{\bm g}}                                   % vector g
+\newcommand\mvh{{\bm h}}                                   % vector h
+\newcommand\mvi{{\bm i}}                                   % vector i
+\newcommand\mvj{{\bm j}}                                   % vector j
+\newcommand\mvk{{\bm k}}                                   % vector k
+\newcommand\mvl{{\bm l}}                                   % vector l
+\newcommand\mvm{{\bm m}}                                   % vector m
+\newcommand\mvn{{\bm n}}                                   % vector n
+\newcommand\mvo{{\bm o}}                                   % vector o
+\newcommand\mvp{{\bm p}}                                   % vector p
+\newcommand\mvq{{\bm q}}                                   % vector q
+\newcommand\mvr{{\bm r}}                                   % vector r
+\newcommand\mvs{{\bm s}}                                   % vector s
+\newcommand\mvt{{\bm t}}                                   % vector t
+\newcommand\mvu{{\bm u}}                                   % vector u
+\newcommand\mvv{{\bm v}}                                   % vector v
+\newcommand\mvw{{\bm w}}                                   % vector w
+\newcommand\mvx{{\bm x}}                                   % vector x
+\newcommand\mvy{{\bm y}}                                   % vector y
+\newcommand\mvz{{\bm z}}                                   % vector z
+\newcommand\mvalpha{{\bm \alpha}}                          % vector alpha
+\newcommand\mvbeta{{\bm \beta}}                            % vector beta
+\newcommand\mvgamma{{\bm \gamma}}                          % vector gamma
+\newcommand\mvdelta{{\bm \delta}}                          % vector delta
+\newcommand\mvepsilon{{\bm \epsilon}}                      % vector epsilon
+\newcommand\mvzeta{{\bm \zeta}}                            % vector zeta
+\newcommand\mveta{{\bm \eta}}                              % vector eta
+\newcommand\mvtheta{{\bm \theta}}                          % vector theta
+\newcommand\mviota{{\bm \iota}}                            % vector iota
+\newcommand\mvkappa{{\bm \kappa}}                          % vector kappa
+\newcommand\mvlambda{{\bm \lambda}}                        % vector lambda
+\newcommand\mvmu{{\bm \mu}}                                % vector mu
+\newcommand\mvnu{{\bm \nu}}                                % vector nu
+\newcommand\mvxi{{\bm \xi}}                                % vector xi
+\newcommand\mvpi{{\bm \pi}}                                % vector pi
+\newcommand\mvrho{{\bm \rho}}                              % vector rho
+\newcommand\mvsigma{{\bm \sigma}}                          % vector sigma
+\newcommand\mvtau{{\bm \tau}}                              % vector tau
+\newcommand\mvupsilon{{\bm \upsilon}}                      % vector upsilon
+\newcommand\mvphi{{\bm \phi}}                              % vector phi
+\newcommand\mvchi{{\bm \chi}}                              % vector chi
+\newcommand\mvpsi{{\bm \psi}}                              % vector psi
+\newcommand\mvomega{{\bm \omega}}                          % vector omega
+%------------------------------------------------------------------------------%
+%-[M]ath-[M]atrix-Defination---------------------------------------------------%
+%------------------------------------------------------------------------------%
+\newcommand\mma{{\mathbf A}}                               % matrix A
+\newcommand\mmb{{\mathbf B}}                               % matrix B
+\newcommand\mmc{{\mathbf C}}                               % matrix C
+\newcommand\mmd{{\mathbf D}}                               % matrix D
+\newcommand\mme{{\mathbf E}}                               % matrix E
+\newcommand\mmf{{\mathbf F}}                               % matrix F
+\newcommand\mmg{{\mathbf G}}                               % matrix G
+\newcommand\mmh{{\mathbf H}}                               % matrix H
+\newcommand\mmi{{\mathbf I}}                               % matrix I
+\newcommand\mmj{{\mathbf J}}                               % matrix J
+\newcommand\mmk{{\mathbf K}}                               % matrix K
+\newcommand\mml{{\mathbf L}}                               % matrix L
+\newcommand\mmm{{\mathbf M}}                               % matrix M
+\newcommand\mmn{{\mathbf N}}                               % matrix N
+\newcommand\mmo{{\mathbf O}}                               % matrix O
+\newcommand\mmp{{\mathbf P}}                               % matrix P
+\newcommand\mmq{{\mathbf Q}}                               % matrix Q
+\newcommand\mmr{{\mathbf R}}                               % matrix R
+\newcommand\mms{{\mathbf S}}                               % matrix S
+\newcommand\mmt{{\mathbf T}}                               % matrix T
+\newcommand\mmu{{\mathbf U}}                               % matrix U
+\newcommand\mmv{{\mathbf V}}                               % matrix V
+\newcommand\mmw{{\mathbf W}}                               % matrix W
+\newcommand\mmx{{\mathbf X}}                               % matrix X
+\newcommand\mmy{{\mathbf Y}}                               % matrix Y
+\newcommand\mmz{{\mathbf Z}}                               % matrix Z
+\newcommand\mmgamma{{\bm \Gamma}}                          % matrix Gamma
+\newcommand\mmdelta{{\bm \Delta}}                          % matrix Delta
+\newcommand\mmtheta{{\bm \Theta}}                          % matrix Theta
+\newcommand\mmlambda{{\bm \Lambda}}                        % matrix Lambda
+\newcommand\mmxi{{\bm \Xi}}                                % matrix Xi
+\newcommand\mmpi{{\bm \Pi}}                                % matrix Pi
+\newcommand\mmsigma{{\bm \Sigma}}                          % matrix Sigma
+\newcommand\mmupsilon{{\bm \Upsilon}}                      % matrix Upsilon
+\newcommand\mmphi{{\bm \Phi}}                              % matrix Phi
+\newcommand\mmpsi{{\bm \Psi}}                              % matrix Psi
+\newcommand\mmomega{{\bm \Omega}}                          % matrix Omega
+%------------------------------------------------------------------------------%
+%-[M]ath-[V]ector-Defination-[T]ransposed--------------------------------------%
+%------------------------------------------------------------------------------%
+\newcommand\mmat{{{\mathbf A}^T}}                          % matrix A^T
+\newcommand\mmbt{{{\mathbf B}^T}}                          % matrix B^T
+\newcommand\mmct{{{\mathbf C}^T}}                          % matrix C^T
+\newcommand\mmdt{{{\mathbf D}^T}}                          % matrix D^T
+\newcommand\mmet{{{\mathbf E}^T}}                          % matrix E^T
+\newcommand\mmft{{{\mathbf F}^T}}                          % matrix F^T
+\newcommand\mmgt{{{\mathbf G}^T}}                          % matrix G^T
+\newcommand\mmht{{{\mathbf H}^T}}                          % matrix H^T
+\newcommand\mmit{{{\mathbf I}^T}}                          % matrix I^T
+\newcommand\mmjt{{{\mathbf J}^T}}                          % matrix J^T
+\newcommand\mmkt{{{\mathbf K}^T}}                          % matrix K^T
+\newcommand\mmlt{{{\mathbf L}^T}}                          % matrix L^T
+\newcommand\mmmt{{{\mathbf M}^T}}                          % matrix M^T
+\newcommand\mmnt{{{\mathbf N}^T}}                          % matrix N^T
+\newcommand\mmot{{{\mathbf O}^T}}                          % matrix O^T
+\newcommand\mmpt{{{\mathbf P}^T}}                          % matrix P^T
+\newcommand\mmqt{{{\mathbf Q}^T}}                          % matrix Q^T
+\newcommand\mmrt{{{\mathbf R}^T}}                          % matrix R^T
+\newcommand\mmst{{{\mathbf S}^T}}                          % matrix S^T
+\newcommand\mmtt{{{\mathbf T}^T}}                          % matrix T^T
+\newcommand\mmut{{{\mathbf U}^T}}                          % matrix U^T
+\newcommand\mmvt{{{\mathbf V}^T}}                          % matrix V^T
+\newcommand\mmwt{{{\mathbf W}^T}}                          % matrix W^T
+\newcommand\mmxt{{{\mathbf X}^T}}                          % matrix X^T
+\newcommand\mmyt{{{\mathbf Y}^T}}                          % matrix Y^T
+\newcommand\mmzt{{{\mathbf Z}^T}}                          % matrix Z^T
+\newcommand\mmgammat{{{\bm \Gamma}^T}}                     % matrix Gamma^T
+\newcommand\mmdeltat{{{\bm \Delta}^T}}                     % matrix Delta^T
+\newcommand\mmthetat{{{\bm \Theta}^T}}                     % matrix Theta^T
+\newcommand\mmlambdat{{{\bm \Lambda}^T}}                   % matrix Lambda^T
+\newcommand\mmxit{{{\bm \Xi}^T}}                           % matrix Xi^T
+\newcommand\mmpit{{{\bm \Pi}^T}}                           % matrix Pi^T
+\newcommand\mmsigmat{{{\bm \Sigma}^T}}                     % matrix Sigma^T
+\newcommand\mmupsilont{{{\bm \Upsilon}^T}}                 % matrix Upsilon^T
+\newcommand\mmphit{{{\bm \Phi}^T}}                         % matrix Phi^T
+\newcommand\mmpsit{{{\bm \Psi}^T}}                         % matrix Psi^T
+\newcommand\mmomegat{{{\bm \Omega}^T}}                     % matrix Omega^T
+%------------------------------------------------------------------------------%
+\newcommand\mvzero{{\bm 0}}                                % vector 0
+\newcommand\mvone{{\bm 1}}                                 % vector 1
+\newcommand\mmzero{{\mathbf 0}}                            % matrix 0
+\newcommand\mmone{{\mathbf 1}}                             % matrix 1
+%------------------------------------------------------------------------------%
+%-Useful-Functions-and-Operators-----------------------------------------------%
+%------------------------------------------------------------------------------%
+\DeclareMathOperator\diff{d\!}                             % operator diff
+\DeclareMathOperator\Diff{D}                               % operator Diff
+\DeclareMathOperator\Expect{E}                             % operator Expect
+\DeclareMathOperator\diag{diag}                            % operator diag
+\DeclareMathOperator\eig{eig}                              % operator eig
+\DeclareMathOperator\tr{tr}                                % operator tr
+\DeclareMathOperator\lcm{lcm}                              % operator lcm
+\DeclareMathOperator\rand{rand}                            % operator rand
+\DeclareMathOperator\mean{mean}                            % operator mean
+\DeclareMathOperator\var{var}                              % operator var
+\DeclareMathOperator\corr{corr}                            % operator corr
+\DeclareMathOperator\conv{conv}                            % operator conv
+\DeclareMathOperator\card{card}                            % operator card
+\DeclareMathOperator*{\argmin}{argmin}                     % operator argmin
+\DeclareMathOperator*{\argmax}{argmax}                     % operator argmax
+\DeclareMathOperator*{\argopt}{argopt}                     % operator argopt
+\DeclareMathOperator*{\dist}{dist}                         % operator dist
+%------------------------------------------------------------------------------%
+%-Auto-Line-Break-Config-------------------------------------------------------%
+%------------------------------------------------------------------------------%
+\allowdisplaybreaks[4]
+%------------------------------------------------------------------------------%
+%-Useful-Alias-----------------------------------------------------------------%
+%------------------------------------------------------------------------------%
+\newcommand\fracdiffs[1]{{\frac{\diff}{\diff {#1}}}}
+\newcommand\fracdiffd[2]{{\frac{\diff {#1}}{\diff {#2}}}}
+\newcommand\dfracdiffs[1]{{\dfrac{\diff}{\diff {#1}}}}
+\newcommand\dfracdiffd[2]{{\dfrac{\diff {#1}}{\diff {#2}}}}
+\newcommand\fracpartials[1]{{\frac{\partial}{\partial {#1}}}}
+\newcommand\fracpartiald[2]{{\frac{\partial {#1}}{\partial {#2}}}}
+\newcommand\dfracpartials[1]{{\dfrac{\partial}{\partial {#1}}}}
+\newcommand\dfracpartiald[2]{{\dfrac{\partial {#1}}{\partial {#2}}}}
+%------------------------------------------------------------------------------%
+%------------------------------------------------------------------------------%
+%------------------------------------------------------------------------------%
+\endinput
+% 这是所有常用的数学符号的导言区设置，不能单独编译。
+% by ruby script
