@@ -30,6 +30,10 @@
 \newcommand\mhilb{{\mathbb H}}                             % hilbert set H
 \newcommand\mcond{{\mathrm{Cond.}}}                        % condition symbol
 \newcommand\mconst{{\mathrm{const}}}                       % constant symbol
+\newcommand\mscon[1]{C{#1}}                                % continuous fspace
+\newcommand\mscab{{\mscon{[a, b]}}}                        % continuous fspace
+\newcommand\mslbg[2][I]{{L^{#2}({#1})}}                    % lebesgue fspace
+\newcommand\mssbl[2][I]{{H^{#2}({#1})}}                    % sobolev fspace
 %------------------------------------------------------------------------------%
 %-[M]ath-[V]ector-Defination---------------------------------------------------%
 %------------------------------------------------------------------------------%
@@ -187,6 +191,9 @@
 \DeclareMathOperator*{\argmax}{argmax}                     % operator argmax
 \DeclareMathOperator*{\argopt}{argopt}                     % operator argopt
 \DeclareMathOperator*{\dist}{dist}                         % operator dist
+\newcommand\abs[1]{{\lvert {#1} \rvert}}                   % operator abs
+\newcommand\norm[1]{{\| {#1} \|}}                          % operator norm
+\newcommand\normlp[2]{{\norm{#1}}_{#2}}                    % operator Lp-norm
 %------------------------------------------------------------------------------%
 %-Auto-Line-Break-Config-------------------------------------------------------%
 %------------------------------------------------------------------------------%
@@ -202,6 +209,11 @@
 \newcommand\fracpartiald[2]{{\frac{\partial {#1}}{\partial {#2}}}}
 \newcommand\dfracpartials[1]{{\dfrac{\partial}{\partial {#1}}}}
 \newcommand\dfracpartiald[2]{{\dfrac{\partial {#1}}{\partial {#2}}}}
+\newcommand\mclosure[1]{{\left( {#1} \right)}}
+\newcommand\mclosuresquare[1]{{\left[ {#1} \right]}}
+\newcommand\mclosurebrace[1]{{\left\{ {#1} \right\}}}
+\newcommand\mvct[2]{{ ({#1}_1, {#1}_2, \ldots, {#1}_{#2} )^T }}
+\newcommand\mvctz[2]{{ ({#1}_0, {#1}_1, \ldots, {#1}_{#2} )^T }}
 %------------------------------------------------------------------------------%
 %------------------------------------------------------------------------------%
 %------------------------------------------------------------------------------%
