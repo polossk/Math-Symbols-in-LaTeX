@@ -16,7 +16,7 @@ Add `\input{math-symbols}` in your tex document.
     title={Math-Symbols-in-LaTeX},
     author={Shangkun Shen},
     year={2017},
-    month={10
+    month={10}
 }
 ```
 
