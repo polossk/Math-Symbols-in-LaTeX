@@ -9,6 +9,7 @@ Add `\input{math-symbols}` in your tex document.
 
 ## Note
 * 整理了一些简单的数学宏定义方便写作, 更多问题请参见[readme.pdf](readme.pdf)
+* 命名规则基于"所读即所写"(WYRIWYT, abbr of _W_hat _Y_ou _R_ead _I_s _W_hat _Y_ou _T_ype)
 * 一键催更或提交bug [issue](https://github.com/polossk/LeTeX-Template-For-NPU-Thesis/issues/new)
 * 基于[MIT-LICENSE](LICENSE)，如有帮助，请在自己的文章中引用
 ```bibtex
