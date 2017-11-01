@@ -5,13 +5,28 @@
 ![Version](https://img.shields.io/badge/version-v1.2.0-674EA7.svg)
 
 ## Usage
-Add `\input{math-symbols}` in your tex document.
+在 tex 文档中 添加 `\input{math-symbols}` 即可.
 
 ## Note
 * 整理了一些简单的数学宏定义方便写作, 更多问题请参见[readme.pdf](readme.pdf)
-* 命名规则基于"所读即所写"(WYRIWYT, abbr of _W_hat _Y_ou _R_ead _I_s _W_hat _Y_ou _T_ype)
-* 一键催更或提交bug [issue](https://github.com/polossk/LeTeX-Template-For-NPU-Thesis/issues/new)
+* 命名规则基于"所读即所写"(WYRIWYT, abbr of **W**hat **Y**ou **R**ead **I**s **W**hat **Y**ou **T**ype)
+* 一键催更或提交bug [issue](https://github.com/polossk/Math-Symbols-in-LaTeX/issues/new)
 * 基于[MIT-LICENSE](LICENSE)，如有帮助，请在自己的文章中引用
+```bibtex
+@misc{MathSymbolsinLaTeXbypolossk,
+    title={Math-Symbols-in-LaTeX},
+    author={Shangkun Shen},
+    year={2017},
+    month={10}
+}
+```
+
+## English Version(
+* Add `\input{math-symbols}` in your tex document.
+* summed up a sort of symbol in writing math equtions in LaTeX, check [readme.pdf](readme.pdf) for further information
+* based on WYRIWYT rule(abbr of **W**hat **Y**ou **R**ead **I**s **W**hat **Y**ou **T**ype)
+* one key to cuigeng or report bug [issue](https://github.com/polossk/Math-Symbols-in-LaTeX/issues/new)
+* using [MIT-LICENSE](LICENSE), please cite if it helps
 ```bibtex
 @misc{MathSymbolsinLaTeXbypolossk,
     title={Math-Symbols-in-LaTeX},
