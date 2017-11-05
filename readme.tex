@@ -1,30 +1,30 @@
 \documentclass{article}
 \input{article-setting}
-% \usepackage{multicol}
 \usepackage[normalem]{ulem}
 %------------------------------------------------------------------------------%
-\title{Math-Symbols-in-\LaTeX{}}
+\title{Math-Symbols-in-\LaTeX{}-Manual}
 \author{polossk}
-\date{\today}
-\newcommand\artversion{1.2.0}
+\date{Last Update \today}
+\newcommand\artversion{1.2.2}
+%-Code-Environment-------------------------------------------------------------%
+\colorlet{lightgray}{gray!40}
+\colorlet{darkred}{red!60!black}
+\newcommand\hl%
+  {\bgroup\markoverwith{\textcolor{lightgray}{\rule[-.7ex]{2pt}{2.7ex}}}\ULon}
+\newcommand\mtex[1]%
+  {\hl{\thinspace\color{darkred}{\tt \textbackslash#1}\thinspace}}
+\newcommand\code[1]%
+  {\hl{\thinspace\color{darkred}{\tt #1}\thinspace}}
 %------------------------------------------------------------------------------%
 \begin{document}
 %------------------------------------------------------------------------------%
-% \begin{multicols}{2}
+
 \maketitle
-% \tableofcontents
+\tableofcontents
 \thispagestyle{fancy}
 \renewcommand{\baselinestretch}{1.25}
 \sWuhao\fSong
 %------------------------------------------------------------------------------%
-\colorlet{lightgray}{gray!40}
-\colorlet{darkred}{red!60!black}
-
-% \newcommand\hl{\bgroup\markoverwith%
-%   {\textcolor{lightgray}{\rule[-.5ex]{2pt}{2.5ex}}}\ULon}
-\newcommand\mtex[1]{\colorbox{lightgray}{\color{darkred} {\tt \textbackslash#1}}}
-\newcommand\code[1]{\colorbox{lightgray}{\color{darkred} {\tt #1}}}
-
 \section{Constants and Useful Symbols}
 \begin{itemize}
 \item \mtex{mi}: alias of \mtex{mathrm i}, $\mi$
@@ -33,10 +33,10 @@
 \item \mtex{mhilb}: alias of \mtex{mathbb H}, $\mhilb$
 \item \mtex{mcond}: alias of \mtex{mathrm \{Cond.\}}, $\mcond$
 \item \mtex{mconst}: alias of \mtex{mathrm \{const\}}, $\mconst$
-\item \mtex{mscab}: continuous function space, $\mscab$
-\item \mtex{mscon\{\}}: continuous function space, \mtex{mscon\{(I)\}} gets $\mscon{(I)}$
-\item \mtex{mslbg[]\{\}}: lebesgue function space, \mtex{mslbg\{2\}} gets $\mslbg{2}$, \mtex{mslbg[\{[a, b]\}]\{2\}} gets $\mslbg[{[a, b]}]{2}$
-\item \mtex{mssbl[]\{\}}: sobolev function space, \mtex{mssbl\{m\}} gets $\mssbl{m}$, \mtex{mssbl[\{[a, b]\}]\{m\}} gets $\mssbl[{[a, b]}]{m}$
+\item \mtex{mscon\{\}}: continuous function space. eg: \mtex{mscon\{(I)\}} gets $\mscon{(I)}$
+\item \mtex{mscab}: continuous function space, alias of \mtex{mscon\{[a, b]\}}, $\mscab$
+\item \mtex{mslbg[]\{\}}: lebesgue function space. eg: \mtex{mslbg\{2\}} gets $\mslbg{2}$, \mtex{mslbg[\{[a, b]\}]\{2\}} gets $\mslbg[{[a, b]}]{2}$
+\item \mtex{mssbl[]\{\}}: sobolev function space. eg: \mtex{mssbl\{m\}} gets $\mssbl{m}$, \mtex{mssbl[\{[a, b]\}]\{m\}} gets $\mssbl[{[a, b]}]{m}$
 \end{itemize}
 
 \section{Vector and Matrix Defination}
@@ -49,23 +49,23 @@
 
 \section{Useful Functions and Operators}
 \begin{itemize}
-\item \mtex{diff}: diff operator, $\int_0^t f(\tau) \diff \tau$
-\item \mtex{Diff}: Diff operator, $\Diff{}^2 X = \dfrac{-x_{i + 1, j} + 2x_{i, j} - x_{i - 1, j}}{\Delta x^2}$
-\item \mtex{Expect}: Expect operator, $X = B(n, p)$, $\Expect X = np$
-\item \mtex{diag}, \mtex{eig}, \mtex{tr}: $\mmd = \diag \mma$, $[\mmlambda, \mmv] = \eig \mma$, $\tr \mmlambda = \tr \mma$
-\item \mtex{lcm}: lcm operator, $\lcm(f, g) \cdot \gcd(f, g) = f \cdot g$
+\item \mtex{diff}: diff operator, $\diff\ $, $\int_0^t f(\tau) \diff \tau$
+\item \mtex{Diff}: Diff operator, $\Diff\ $, $\Diff{}^2 X = \dfrac{-x_{i + 1, j} + 2x_{i, j} - x_{i - 1, j}}{\Delta x^2}$
+\item \mtex{Expect}: Expect operator, $\Expect$, $X = B(n, p)$, $\Expect X = np$
+\item \mtex{diag}, \mtex{eig}, \mtex{tr}: Matrix operators, $\diag$, $\eig$, $\tr$, $\mmd = \diag \mma$, $[\mmlambda, \mmv] = \eig \mma$, $\tr \mmlambda = \tr \mma$
+\item \mtex{lcm}: lcm operator, $\lcm$, $\lcm(f, g) \cdot \gcd(f, g) = f \cdot g$
 \item \mtex{rand}: random number, $\rand$
-\item \mtex{mean}, \mtex{var}: statistics operator, $\mu = \mean X$, $\sigma^2 = \var X$
-\item \mtex{corr}: correlation operator, $\corr(X, Y) = (R)_{ij} = \dfrac{\sum_{X_i, Y_j}(X - \bar X)(Y - \bar Y)}{\sqrt{\sum_i(X - \bar X)^2\sum_j(Y - \bar Y)^2}}$
-\item \mtex{conv}: convolution operator, $\conv(f, g) = \int_{-\infty}^\infty f(\tau)g(t - \tau) \diff \tau$
-\item \mtex{card}: cardinals operator, $\card \{1, 2, 3\} = 3$, $\card \mreal = 2^{\aleph_0}$
-\item \mtex{argmin}, \mtex{argmax}, \mtex{argopt}: arg min, arg max, arg opt operator, $\hat \theta = \argmin\limits_\theta J_\theta(x)$
-\item \mtex{dist}: distance operator, $\min \sum\limits_{\forall s, t \in G} \dist\limits_{s \ne t} (s, t)$
+\item \mtex{mean}, \mtex{var}: statistics operator, $\mean$, $\var$, $\mu = \mean X$, $\sigma^2 = \var X$
+\item \mtex{corr}: correlation operator, $\corr$, $\corr(X, Y) = (R)_{ij} = \dfrac{\sum_{X_i, Y_j}(X - \bar X)(Y - \bar Y)}{\sqrt{\sum_i(X - \bar X)^2\sum_j(Y - \bar Y)^2}}$
+\item \mtex{conv}: convolution operator, $\conv$, $\conv(f, g) = \int_{-\infty}^\infty f(\tau)g(t - \tau) \diff \tau$
+\item \mtex{card}: cardinals operator, $\card$, $\card \{1, 2, 3\} = 3$, $\card \mreal = 2^{\aleph_0}$
+\item \mtex{argmin}, \mtex{argmax}, \mtex{argopt}: $\argmin$, $\argmax$, $\argopt$ operator, $\hat \theta = \argmin\limits_\theta J_\theta(x)$
+\item \mtex{dist}: distance operator, $\dist$, $\min \sum\limits_{\forall s, t \in G} \dist\limits_{s \ne t} (s, t)$
 \item \mtex{abs\{\}}, \mtex{norm\{\}}: norm operator, $\abs{x+y} \leq \abs{x} + \abs{y}$, $\norm{\mma \mvx + \mvb}$
 \item \mtex{normlp\{\}\{\}}: Lp-norm operator $\normlp{1}{2}$, $\normlp{\mma \mvx + \mvb}{2}$, $\normlp{\mma \mvx + \mvb}{\infty}$
 \end{itemize}
 
-\section{Useful Alias}
+\section{Useful Aliases and Generators}
 \begin{itemize}
 \item \mtex{fracdiffs\{\}}: frac \& diff operator, also provide \mtex{dfracdiffs\{\}} mode. For example, \mtex{fracdiffs\{x\}} gets $\fracdiffs x$, \mtex{fracdiffs\{y\}} gets $\fracdiffs y$, \mtex{dfracdiffs\{z\}} gets $\dfracdiffs z$
 
@@ -77,7 +77,11 @@
 
 \item \mtex{mclosure{}}, \mtex{mclosuresquare{}}, \mtex{mclosurebrace{}}: auto height brackets, eg $\mclosurebrace{ \mclosuresquare{ \mclosure{a^2 + b^2}^2 }^2 }$
 
-\item \mtex{mvct{}{}}, \mtex{mvctz{}{}}: column vector creator, eg \mtex{mvct\{a\}\{n\}} $\mvct{a}{n}$, \mtex{mvctz\{a\}\{n\}} $\mvctz{a}{n}$
+\item \mtex{mvct{}{}}, \mtex{mvctz{}{}}: row vector creator, eg \mtex{mvct\{a\}\{n\}} gets $\mvct{a}{n}$, \mtex{mvctz\{a\}\{n\}} gets $\mvctz{a}{n}$
+
+\item \mtex{mvctt{}{}}, \mtex{mvctzt{}{}}: column vector creator, eg \mtex{mvctt\{a\}\{n\}} gets $\mvctt{a}{n}$, \mtex{mvctzt\{a\}\{n\}} gets $\mvctzt{a}{n}$
+
+\item \mtex{mequlist{}}: provided a list of equations, eg \mtex{mequlist\{x + y \&= 10 \textbackslash\textbackslash 4x + 2y \&= 30\}} gets $\mequlist{x + y &= 10 \\ 4x + 2y &= 30}$
 \end{itemize}
 
 %------------------------------------------------------------------------------%

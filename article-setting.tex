@@ -57,7 +57,9 @@
 
 %---------------------------------设置中文字体---------------------------------%
 \usepackage{fontspec}
-\usepackage[SlantFont,BoldFont,CJKchecksingle,CJKnumber]{xeCJK}
+\usepackage[SlantFont,BoldFont,CJKchecksingle]{xeCJK}
+\usepackage{CJKnumb}
+
 % 使用 Adobe 字体
 \newcommand\adobeSog{Adobe Song Std}
 \newcommand\adobeHei{Adobe Heiti Std}
@@ -165,7 +167,7 @@
     showtabs=false,
     framexrightmargin=5pt,
     framexbottommargin=4pt,
-    showstringspaces=false
+    showstringspaces=false,
     escapeinside=`', %逃逸字符(1左面的键)，用于显示中文
 }
 \renewcommand{\lstlistingname}{CODE}

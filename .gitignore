@@ -48,3 +48,4 @@ Temporary Items
 *.out
 readme.log
 *.aux
+*.toc

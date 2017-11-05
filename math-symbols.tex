@@ -1,6 +1,6 @@
 % math-symbols.tex
-% by polossk, version 1.2.0
-% last update 2017-10-31
+% by polossk, version 1.2.2
+% last update 2017-11-05
 % github.com/polossk/Math-Symbols-in-LaTeX
 %------------------------------------------------------------------------------%
 %-Packages---------------------------------------------------------------------%
@@ -199,7 +199,7 @@
 %------------------------------------------------------------------------------%
 \allowdisplaybreaks[4]
 %------------------------------------------------------------------------------%
-%-Useful-Alias-----------------------------------------------------------------%
+%-Useful-Aliases-and-Generators------------------------------------------------%
 %------------------------------------------------------------------------------%
 \newcommand\fracdiffs[1]{{\frac{\diff}{\diff {#1}}}}
 \newcommand\fracdiffd[2]{{\frac{\diff {#1}}{\diff {#2}}}}
@@ -209,11 +209,17 @@
 \newcommand\fracpartiald[2]{{\frac{\partial {#1}}{\partial {#2}}}}
 \newcommand\dfracpartials[1]{{\dfrac{\partial}{\partial {#1}}}}
 \newcommand\dfracpartiald[2]{{\dfrac{\partial {#1}}{\partial {#2}}}}
+
 \newcommand\mclosure[1]{{\left( {#1} \right)}}
 \newcommand\mclosuresquare[1]{{\left[ {#1} \right]}}
 \newcommand\mclosurebrace[1]{{\left\{ {#1} \right\}}}
-\newcommand\mvct[2]{{ ({#1}_1, {#1}_2, \ldots, {#1}_{#2} )^T }}
-\newcommand\mvctz[2]{{ ({#1}_0, {#1}_1, \ldots, {#1}_{#2} )^T }}
+
+\newcommand\mvct[2]{{ ({#1}_1, {#1}_2, \ldots, {#1}_{#2}) }}
+\newcommand\mvctz[2]{{ ({#1}_0, {#1}_1, \ldots, {#1}_{#2}) }}
+\newcommand\mvctt[2]{{ \mvct{#1}{#2}^T }}
+\newcommand\mvctzt[2]{{ \mvctz{#1}{#2}^T }}
+
+\newcommand\mequlist[1]{{\left\{ \begin{aligned} #1 \end{aligned} \right.}}
 %------------------------------------------------------------------------------%
 %------------------------------------------------------------------------------%
 %------------------------------------------------------------------------------%
