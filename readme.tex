@@ -1,6 +1,7 @@
 \documentclass{article}
 \input{article-setting}
 \usepackage[normalem]{ulem}
+\usepackage{lineno}
 %------------------------------------------------------------------------------%
 \title{Math-Symbols-in-\LaTeX{}-Manual}
 \author{polossk}
@@ -18,7 +19,7 @@
 %------------------------------------------------------------------------------%
 \begin{document}
 %------------------------------------------------------------------------------%
-
+\pagewiselinenumbers
 \maketitle
 \tableofcontents
 \thispagestyle{fancy}
@@ -29,7 +30,11 @@
 \begin{itemize}
 \item \mtex{mi}: alias of \mtex{mathrm i}, $\mi$
 \item \mtex{me}: alias of \mtex{mathrm e}, $\me$
+\item \mtex{mnatr}: alias of \mtex{mathbb N}, $\mnatr$
+\item \mtex{mintg}: alias of \mtex{mathbb Z}, $\mintg$
+\item \mtex{mrato}: alias of \mtex{mathbb Q}, $\mrato$
 \item \mtex{mreal}: alias of \mtex{mathbb R}, $\mreal$
+\item \mtex{mcmpx}: alias of \mtex{mathbb C}, $\mcmpx$
 \item \mtex{mhilb}: alias of \mtex{mathbb H}, $\mhilb$
 \item \mtex{mcond}: alias of \mtex{mathrm \{Cond.\}}, $\mcond$
 \item \mtex{mconst}: alias of \mtex{mathrm \{const\}}, $\mconst$
@@ -49,20 +54,20 @@
 
 \section{Useful Functions and Operators}
 \begin{itemize}
-\item \mtex{diff}: diff operator, $\diff\ $, $\int_0^t f(\tau) \diff \tau$
-\item \mtex{Diff}: Diff operator, $\Diff\ $, $\Diff{}^2 X = \dfrac{-x_{i + 1, j} + 2x_{i, j} - x_{i - 1, j}}{\Delta x^2}$
-\item \mtex{Expect}: Expect operator, $\Expect$, $X = B(n, p)$, $\Expect X = np$
-\item \mtex{diag}, \mtex{eig}, \mtex{tr}: Matrix operators, $\diag$, $\eig$, $\tr$, $\mmd = \diag \mma$, $[\mmlambda, \mmv] = \eig \mma$, $\tr \mmlambda = \tr \mma$
-\item \mtex{lcm}: lcm operator, $\lcm$, $\lcm(f, g) \cdot \gcd(f, g) = f \cdot g$
+\item \mtex{diff}: diff operator, $\diff\ $, eg. $\int_0^t f(\tau) \diff \tau$
+\item \mtex{Diff}: Diff operator, $\Diff\ $, eg. $\Diff{}^2 X = \dfrac{-x_{i + 1, j} + 2x_{i, j} - x_{i - 1, j}}{\Delta x^2}$
+\item \mtex{Expect}: Expect operator, $\Expect$, eg. $X = B(n, p)$, $\Expect X = np$
+\item \mtex{diag}, \mtex{eig}, \mtex{tr}: Matrix operators, $\diag$, $\eig$, $\tr$, eg. $\mmd = \diag \mma$, $[\mmlambda, \mmv] = \eig \mma$, $\tr \mmlambda = \tr \mma$
+\item \mtex{lcm}: lcm operator, $\lcm$, eg. $\lcm(f, g) \cdot \gcd(f, g) = f \cdot g$
 \item \mtex{rand}: random number, $\rand$
-\item \mtex{mean}, \mtex{var}: statistics operator, $\mean$, $\var$, $\mu = \mean X$, $\sigma^2 = \var X$
-\item \mtex{corr}: correlation operator, $\corr$, $\corr(X, Y) = (R)_{ij} = \dfrac{\sum_{X_i, Y_j}(X - \bar X)(Y - \bar Y)}{\sqrt{\sum_i(X - \bar X)^2\sum_j(Y - \bar Y)^2}}$
-\item \mtex{conv}: convolution operator, $\conv$, $\conv(f, g) = \int_{-\infty}^\infty f(\tau)g(t - \tau) \diff \tau$
-\item \mtex{card}: cardinals operator, $\card$, $\card \{1, 2, 3\} = 3$, $\card \mreal = 2^{\aleph_0}$
+\item \mtex{mean}, \mtex{var}: statistics operator, $\mean$, $\var$, eg. $\mu = \mean X$, $\sigma^2 = \var X$
+\item \mtex{corr}: correlation operator, $\corr$, eg. $\corr(X, Y) = (R)_{ij} = \dfrac{\sum_{X_i, Y_j}(X - \bar X)(Y - \bar Y)}{\sqrt{\sum_i(X - \bar X)^2\sum_j(Y - \bar Y)^2}}$
+\item \mtex{conv}: convolution operator, $\conv$, eg. $\conv(f, g) = \int_{-\infty}^\infty f(\tau)g(t - \tau) \diff \tau$
+\item \mtex{card}: cardinals operator, $\card$, eg. $\card \{1, 2, 3\} = 3$, $\card \mreal = 2^{\aleph_0}$
 \item \mtex{argmin}, \mtex{argmax}, \mtex{argopt}: $\argmin$, $\argmax$, $\argopt$ operator, $\hat \theta = \argmin\limits_\theta J_\theta(x)$
-\item \mtex{dist}: distance operator, $\dist$, $\min \sum\limits_{\forall s, t \in G} \dist\limits_{s \ne t} (s, t)$
-\item \mtex{abs\{\}}, \mtex{norm\{\}}: norm operator, $\abs{x+y} \leq \abs{x} + \abs{y}$, $\norm{\mma \mvx + \mvb}$
-\item \mtex{normlp\{\}\{\}}: Lp-norm operator $\normlp{1}{2}$, $\normlp{\mma \mvx + \mvb}{2}$, $\normlp{\mma \mvx + \mvb}{\infty}$
+\item \mtex{dist}: distance operator, $\dist$, eg. $\min \sum\limits_{\forall s, t \in G} \dist\limits_{s \ne t} (s, t)$
+\item \mtex{abs\{\}}, \mtex{norm\{\}}: norm operator, eg. $\abs{x+y} \leq \abs{x} + \abs{y}$, $\norm{\mma \mvx + \mvb}$
+\item \mtex{normlp\{\}\{\}}: Lp-norm operator, eg. $\normlp{1}{2}$, $\normlp{\mma \mvx + \mvb}{2}$, $\normlp{\mma \mvx + \mvb}{\infty}$
 \end{itemize}
 
 \section{Useful Aliases and Generators}

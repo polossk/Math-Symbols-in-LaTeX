@@ -6,6 +6,7 @@ target: close wipe clean tex open
 tex: $(MAIN).tex
 	$(TEX) $<
 	$(TEX) $<
+	$(TEX) $<
 
 open: $(MAIN).pdf
 	cmd /c start $(MAIN).pdf
