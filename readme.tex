@@ -6,7 +6,7 @@
 \title{Math-Symbols-in-\LaTeX{}-Manual}
 \author{polossk}
 \date{Last Update \today}
-\newcommand\artversion{1.2.2}
+\newcommand\artversion{1.2.4}
 %-Code-Environment-------------------------------------------------------------%
 \colorlet{lightgray}{gray!40}
 \colorlet{darkred}{red!60!black}
@@ -72,13 +72,14 @@
 
 \section{Useful Aliases and Generators}
 \begin{itemize}
-\item \mtex{fracdiffs\{\}}: frac \& diff operator, also provide \mtex{dfracdiffs\{\}} mode. For example, \mtex{fracdiffs\{x\}} gets $\fracdiffs x$, \mtex{fracdiffs\{y\}} gets $\fracdiffs y$, \mtex{dfracdiffs\{z\}} gets $\dfracdiffs z$
 
-\item \mtex{fracdiffd\{\}\{\}}: frac \& diff operator, also provide \mtex{dfracdiffd\{\}\{\}} mode. For example, \mtex{fracdiffd\{u\}\{x\}} gets $\fracdiffd{u}{x}$, \mtex{dfracdiffd\{\^{}2u\}\{x\^{}2\}} gets $\dfracdiffd{^2u}{x^2}$
+\item \mtex{fracdiff\{\}\{\}}: frac \& diff operator, also provide \mtex{dfracdiff\{\}\{\}} mode. For example, \mtex{fracdiff\{u\}\{x\}} gets $\fracdiff{u}{x}$, \mtex{dfracdiff\{\^{}2u\}\{x\^{}2\}} gets $\dfracdiff{^2u}{x^2}$
 
-\item \mtex{fracpartials\{\}}: frac \& partial operator, also provide \mtex{dfracpartials\{\}} mode. For example, \mtex{fracpartials\{x\}} gets $\fracpartials x$, \mtex{dfracpartials\{y\}} gets $\dfracpartials y$
+\item \mtex{fracdiffs\{\}}: simple frac \& diff operator. For example, \mtex{fracdiffs\{x\}} gets $\fracdiffs{x}$, \mtex{dfracdiffs\{y\}} gets $\dfracdiffs{y}$
 
-\item \mtex{fracpartiald\{\}\{\}}: frac \& partial operator, also provide \mtex{dfracpartiald\{\}\{\}} mode. For example, \mtex{fracpartiald\{u\}\{x\}} gets $\fracpartiald{u}{x}$, \mtex{dfracpartiald\{\^{}2u\}\{x\^{}2\}} gets $\dfracpartiald{^2u}{x^2}$
+\item \mtex{fracpartial\{\}\{\}}: frac \& partial operator, also provide \mtex{dfracpartial\{\}\{\}} mode. For example, \mtex{fracpartial\{u\}\{x\}} gets $\fracpartial{u}{x}$, \mtex{dfracpartial\{\^{}2u\}\{x\^{}2\}} gets $\dfracpartial{^2u}{x^2}$
+
+\item \mtex{fracpartials\{\}}: simple frac \& partial operator. For example, \mtex{fracpartials\{x\}} gets $\fracpartials{x}$, \mtex{dfracpartials\{y\}} gets $\dfracpartials{y}$
 
 \item \mtex{mclosure{}}, \mtex{mclosuresquare{}}, \mtex{mclosurebrace{}}: auto height brackets, eg $\mclosurebrace{ \mclosuresquare{ \mclosure{a^2 + b^2}^2 }^2 }$
 
