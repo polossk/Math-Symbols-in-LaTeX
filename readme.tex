@@ -5,17 +5,8 @@
 %------------------------------------------------------------------------------%
 \title{Math-Symbols-in-\LaTeX{}-Manual}
 \author{polossk}
-\date{Last Update \today}
-\newcommand\artversion{1.2.4}
-%-Code-Environment-------------------------------------------------------------%
-\colorlet{lightgray}{gray!40}
-\colorlet{darkred}{red!60!black}
-\newcommand\hl%
-  {\bgroup\markoverwith{\textcolor{lightgray}{\rule[-.7ex]{2pt}{2.7ex}}}\ULon}
-\newcommand\mtex[1]%
-  {\hl{\thinspace\color{darkred}{\tt \textbackslash#1}\thinspace}}
-\newcommand\code[1]%
-  {\hl{\thinspace\color{darkred}{\tt #1}\thinspace}}
+\date{Last Update: \today}
+\newcommand\artversion{1.2.5}
 %------------------------------------------------------------------------------%
 \begin{document}
 %------------------------------------------------------------------------------%
@@ -28,66 +19,75 @@
 %------------------------------------------------------------------------------%
 \section{Constants and Useful Symbols}
 \begin{itemize}
-\item \mtex{mi}: alias of \mtex{mathrm i}, $\mi$
-\item \mtex{me}: alias of \mtex{mathrm e}, $\me$
-\item \mtex{mnatr}: alias of \mtex{mathbb N}, $\mnatr$
-\item \mtex{mintg}: alias of \mtex{mathbb Z}, $\mintg$
-\item \mtex{mrato}: alias of \mtex{mathbb Q}, $\mrato$
-\item \mtex{mreal}: alias of \mtex{mathbb R}, $\mreal$
-\item \mtex{mcmpx}: alias of \mtex{mathbb C}, $\mcmpx$
-\item \mtex{mhilb}: alias of \mtex{mathbb H}, $\mhilb$
-\item \mtex{mcond}: alias of \mtex{mathrm \{Cond.\}}, $\mcond$
-\item \mtex{mconst}: alias of \mtex{mathrm \{const\}}, $\mconst$
-\item \mtex{mscon\{\}}: continuous function space. eg: \mtex{mscon\{(I)\}} gets $\mscon{(I)}$
-\item \mtex{mscab}: continuous function space, alias of \mtex{mscon\{[a, b]\}}, $\mscab$
-\item \mtex{mslbg[]\{\}}: lebesgue function space. eg: \mtex{mslbg\{2\}} gets $\mslbg{2}$, \mtex{mslbg[\{[a, b]\}]\{2\}} gets $\mslbg[{[a, b]}]{2}$
-\item \mtex{mssbl[]\{\}}: sobolev function space. eg: \mtex{mssbl\{m\}} gets $\mssbl{m}$, \mtex{mssbl[\{[a, b]\}]\{m\}} gets $\mssbl[{[a, b]}]{m}$
+\item \lstinline`\mi`: alias of \lstinline`\mathrm i`, $\mi$
+\item \lstinline`\me`: alias of \lstinline`\mathrm e`, $\me$
+\item \lstinline`\mnatr`: alias of \lstinline`\mathbb N`, $\mnatr$
+\item \lstinline`\mintg`: alias of \lstinline`\mathbb Z`, $\mintg$
+\item \lstinline`\mrato`: alias of \lstinline`\mathbb Q`, $\mrato$
+\item \lstinline`\mreal`: alias of \lstinline`\mathbb R`, $\mreal$
+\item \lstinline`\mcmpx`: alias of \lstinline`\mathbb C`, $\mcmpx$
+\item \lstinline`\mhilb`: alias of \lstinline`\mathbb H`, $\mhilb$
+\item \lstinline`\mcond`: alias of \lstinline`\mathrm {Cond.}`, $\mcond$
+\item \lstinline`\mconst`: alias of \lstinline`\mathrm {const}`, $\mconst$
+\item \lstinline`\mscon{}`: continuous function space. eg: \lstinline`\mscon{(I)}` gets $\mscon{(I)}$
+\item \lstinline`\mscab`: continuous function space, alias of \lstinline`\mscon{[a, b]}`, $\mscab$
+\item \lstinline`\mslbg[]{}`: lebesgue function space. eg: \lstinline`\mslbg{2}` gets $\mslbg{2}$, \lstinline`mslbg[{[a, b]}]{2}` gets $\mslbg[{[a, b]}]{2}$
+\item \lstinline`\mssbl[]{}`: sobolev function space. eg: \lstinline`\mssbl{m}` gets $\mssbl{m}$, \lstinline`mssbl[{[a, b]}]{m}` gets $\mssbl[{[a, b]}]{m}$
 \end{itemize}
 
 \section{Vector and Matrix Defination}
 \begin{itemize}
-\item \mtex{mv*}: Vector Notations, alias of \mtex{bm *}, \code{*} could be any English characters or Greek characters. For examples, \mtex{mva} gets $\mva$, and \mtex{mvalpha} gets $\mvalpha$. The alphabet looks like this: $\mva$, $\mvb$, $\mvc$, $\mvd$, $\mve$, $\mvf$, $\mvg$, $\mvh$, $\mvi$, $\mvj$, $\mvk$, $\mvl$, $\mvm$, $\mvn$, $\mvo$, $\mvp$, $\mvq$, $\mvr$, $\mvs$, $\mvt$, $\mvu$, $\mvv$, $\mvw$, $\mvx$, $\mvy$, $\mvz$, $\mvalpha$, $\mvbeta$, $\mvgamma$, $\mvdelta$, $\mvepsilon$, $\mvzeta$, $\mveta$, $\mvtheta$, $\mviota$, $\mvkappa$, $\mvlambda$, $\mvmu$, $\mvnu$, $\mvxi$, $\mvpi$, $\mvrho$, $\mvsigma$, $\mvtau$, $\mvupsilon$, $\mvphi$, $\mvchi$, $\mvpsi$, $\mvomega$
-\item \mtex{mm*}: Matrix Notations, alias of \mtex{mathbf *}, \code{*} could be any English characters or Greek characters. For examples, \mtex{mma} gets $\mma$, and \mtex{mmsigma} gets $\mmsigma$. The alphabet looks like this: $\mma$, $\mmb$, $\mmc$, $\mmd$, $\mme$, $\mmf$, $\mmg$, $\mmh$, $\mmi$, $\mmj$, $\mmk$, $\mml$, $\mmm$, $\mmn$, $\mmo$, $\mmp$, $\mmq$, $\mmr$, $\mms$, $\mmt$, $\mmu$, $\mmv$, $\mmw$, $\mmx$, $\mmy$, $\mmz$, $\mmgamma$, $\mmdelta$, $\mmtheta$, $\mmlambda$, $\mmxi$, $\mmpi$, $\mmsigma$, $\mmupsilon$, $\mmphi$, $\mmpsi$, $\mmomega$
-\item \mtex{mm*t}: Transposed Matrix Notations, alias of \mtex{\{\textbackslash{}mathbf *\}\^{}T}, \code{*} could be any English characters or Greek characters. For examples, \mtex{mma} gets $\mma$, and \mtex{mmsigma} gets $\mmsigma$. The alphabet looks like this: $\mmat$, $\mmbt$, $\mmct$, $\mmdt$, $\mmet$, $\mmft$, $\mmgt$, $\mmht$, $\mmit$, $\mmjt$, $\mmkt$, $\mmlt$, $\mmmt$, $\mmnt$, $\mmot$, $\mmpt$, $\mmqt$, $\mmrt$, $\mmst$, $\mmtt$, $\mmut$, $\mmvt$, $\mmwt$, $\mmxt$, $\mmyt$, $\mmzt$, $\mmgammat$, $\mmdeltat$, $\mmthetat$, $\mmlambdat$, $\mmxit$, $\mmpit$, $\mmsigmat$, $\mmupsilont$, $\mmphit$, $\mmpsit$, $\mmomegat$
-\item \mtex{mvzero}, \mtex{mvone}, \mtex{mmzero}, \mtex{mmone}: Special vector and matrix notation, $\mvzero$, $\mvone$, $\mmzero$, $\mmone$
+\item \lstinline`\mv*`: Vector Notations, alias of \lstinline`\bm *`, \lstinline`\*` could be any English characters or Greek characters. For examples, \lstinline`\mva` gets $\mva$, and \lstinline`\mvalpha` gets $\mvalpha$. The alphabet looks like this: $\mva$, $\mvb$, $\mvc$, $\mvd$, $\mve$, $\mvf$, $\mvg$, $\mvh$, $\mvi$, $\mvj$, $\mvk$, $\mvl$, $\mvm$, $\mvn$, $\mvo$, $\mvp$, $\mvq$, $\mvr$, $\mvs$, $\mvt$, $\mvu$, $\mvv$, $\mvw$, $\mvx$, $\mvy$, $\mvz$, $\mvalpha$, $\mvbeta$, $\mvgamma$, $\mvdelta$, $\mvepsilon$, $\mvzeta$, $\mveta$, $\mvtheta$, $\mviota$, $\mvkappa$, $\mvlambda$, $\mvmu$, $\mvnu$, $\mvxi$, $\mvpi$, $\mvrho$, $\mvsigma$, $\mvtau$, $\mvupsilon$, $\mvphi$, $\mvchi$, $\mvpsi$, $\mvomega$
+\item \lstinline`\mm*`: Matrix Notations, alias of \lstinline`\mathbf *`, \lstinline`\*` could be any English characters or Greek characters. For examples, \lstinline`\mma` gets $\mma$, and \lstinline`\mmsigma` gets $\mmsigma$. The alphabet looks like this: $\mma$, $\mmb$, $\mmc$, $\mmd$, $\mme$, $\mmf$, $\mmg$, $\mmh$, $\mmi$, $\mmj$, $\mmk$, $\mml$, $\mmm$, $\mmn$, $\mmo$, $\mmp$, $\mmq$, $\mmr$, $\mms$, $\mmt$, $\mmu$, $\mmv$, $\mmw$, $\mmx$, $\mmy$, $\mmz$, $\mmgamma$, $\mmdelta$, $\mmtheta$, $\mmlambda$, $\mmxi$, $\mmpi$, $\mmsigma$, $\mmupsilon$, $\mmphi$, $\mmpsi$, $\mmomega$
+\item \lstinline`\mm*t`: Transposed Matrix Notations, alias of \lstinline`\{mathbf *}^T`, \lstinline`\*` could be any English characters or Greek characters. For examples, \lstinline`\mma` gets $\mma$, and \lstinline`\mmsigma` gets $\mmsigma$. The alphabet looks like this: $\mmat$, $\mmbt$, $\mmct$, $\mmdt$, $\mmet$, $\mmft$, $\mmgt$, $\mmht$, $\mmit$, $\mmjt$, $\mmkt$, $\mmlt$, $\mmmt$, $\mmnt$, $\mmot$, $\mmpt$, $\mmqt$, $\mmrt$, $\mmst$, $\mmtt$, $\mmut$, $\mmvt$, $\mmwt$, $\mmxt$, $\mmyt$, $\mmzt$, $\mmgammat$, $\mmdeltat$, $\mmthetat$, $\mmlambdat$, $\mmxit$, $\mmpit$, $\mmsigmat$, $\mmupsilont$, $\mmphit$, $\mmpsit$, $\mmomegat$
+\item \lstinline`\mvzero`, \lstinline`\mvone`, \lstinline`\mmzero`, \lstinline`\mmone`: Special vector and matrix notation, $\mvzero$, $\mvone$, $\mmzero$, $\mmone$
 \end{itemize}
 
 \section{Useful Functions and Operators}
 \begin{itemize}
-\item \mtex{diff}: diff operator, $\diff\ $, eg. $\int_0^t f(\tau) \diff \tau$
-\item \mtex{Diff}: Diff operator, $\Diff\ $, eg. $\Diff{}^2 X = \dfrac{-x_{i + 1, j} + 2x_{i, j} - x_{i - 1, j}}{\Delta x^2}$
-\item \mtex{Expect}: Expect operator, $\Expect$, eg. $X = B(n, p)$, $\Expect X = np$
-\item \mtex{diag}, \mtex{eig}, \mtex{tr}: Matrix operators, $\diag$, $\eig$, $\tr$, eg. $\mmd = \diag \mma$, $[\mmlambda, \mmv] = \eig \mma$, $\tr \mmlambda = \tr \mma$
-\item \mtex{lcm}: lcm operator, $\lcm$, eg. $\lcm(f, g) \cdot \gcd(f, g) = f \cdot g$
-\item \mtex{rand}: random number, $\rand$
-\item \mtex{mean}, \mtex{var}: statistics operator, $\mean$, $\var$, eg. $\mu = \mean X$, $\sigma^2 = \var X$
-\item \mtex{corr}: correlation operator, $\corr$, eg. $\corr(X, Y) = (R)_{ij} = \dfrac{\sum_{X_i, Y_j}(X - \bar X)(Y - \bar Y)}{\sqrt{\sum_i(X - \bar X)^2\sum_j(Y - \bar Y)^2}}$
-\item \mtex{conv}: convolution operator, $\conv$, eg. $\conv(f, g) = \int_{-\infty}^\infty f(\tau)g(t - \tau) \diff \tau$
-\item \mtex{card}: cardinals operator, $\card$, eg. $\card \{1, 2, 3\} = 3$, $\card \mreal = 2^{\aleph_0}$
-\item \mtex{argmin}, \mtex{argmax}, \mtex{argopt}: $\argmin$, $\argmax$, $\argopt$ operator, $\hat \theta = \argmin\limits_\theta J_\theta(x)$
-\item \mtex{dist}: distance operator, $\dist$, eg. $\min \sum\limits_{\forall s, t \in G} \dist\limits_{s \ne t} (s, t)$
-\item \mtex{abs\{\}}, \mtex{norm\{\}}: norm operator, eg. $\abs{x+y} \leq \abs{x} + \abs{y}$, $\norm{\mma \mvx + \mvb}$
-\item \mtex{normlp\{\}\{\}}: Lp-norm operator, eg. $\normlp{1}{2}$, $\normlp{\mma \mvx + \mvb}{2}$, $\normlp{\mma \mvx + \mvb}{\infty}$
+\item \lstinline`\diff`: diff operator, $\diff\ $, eg. $\int_0^t f(\tau) \diff \tau$
+\item \lstinline`\Diff`: Diff operator, $\Diff\ $, eg. $\Diff{}^2 X = \dfrac{-x_{i + 1, j} + 2x_{i, j} - x_{i - 1, j}}{\Delta x^2}$
+\item \lstinline`\Expect`: Expect operator, $\Expect$, eg. $X = B(n, p)$, $\Expect X = np$
+\item \lstinline`\diag`, \lstinline`\eig`, \lstinline`\tr`: Matrix operators, $\diag$, $\eig$, $\tr$, eg. $\mmd = \diag \mma$, $[\mmlambda, \mmv] = \eig \mma$, $\tr \mmlambda = \tr \mma$
+\item \lstinline`\lcm`: lcm operator, $\lcm$, eg. $\lcm(f, g) \cdot \gcd(f, g) = f \cdot g$
+\item \lstinline`\rand`: random number, $\rand$
+\item \lstinline`\mean`, \lstinline`\var`: statistics operator, $\mean$, $\var$, eg. $\mu = \mean X$, $\sigma^2 = \var X$
+\item \lstinline`\corr`: correlation operator, $\corr$, eg. $\corr(X, Y) = (R)_{ij} = \dfrac{\sum_{X_i, Y_j}(X - \bar X)(Y - \bar Y)}{\sqrt{\sum_i(X - \bar X)^2\sum_j(Y - \bar Y)^2}}$
+\item \lstinline`\conv`: convolution operator, $\conv$, eg. $\conv(f, g) = \int_{-\infty}^\infty f(\tau)g(t - \tau) \diff \tau$
+\item \lstinline`\card`: cardinals operator, $\card$, eg. $\card {1, 2, 3} = 3$, $\card \mreal = 2^{\aleph_0}$
+\item \lstinline`\argmin`, \lstinline`\argmax`, \lstinline`\argopt`: $\argmin$, $\argmax$, $\argopt$ operator, $\hat \theta = \argmin\limits_\theta J_\theta(x)$
+\item \lstinline`\dist`: distance operator, $\dist$, eg. $\min \sum\limits_{\forall s, t \in G} \dist\limits_{s \ne t} (s, t)$
+\item \lstinline`\abs{}`, \lstinline`\norm{}`: norm operator, eg. $\abs{x+y} \leq \abs{x} + \abs{y}$, $\norm{\mma \mvx + \mvb}$
+\item \lstinline`\normlp{}{}`: Lp-norm operator, eg. $\normlp{1}{2}$, $\normlp{\mma \mvx + \mvb}{2}$, $\normlp{\mma \mvx + \mvb}{\infty}$
 \end{itemize}
 
 \section{Useful Aliases and Generators}
 \begin{itemize}
+\item \lstinline`\fracdiff{}{}`: frac \& diff operator, also provide \lstinline`\dfracdiff{}{}` mode. For example, \lstinline`\fracdiff{u}{x}` gets $\fracdiff{u}{x}$, \lstinline`\dfracdiff{^2u}{x^2}` gets $\dfracdiff{^2u}{x^2}$
 
-\item \mtex{fracdiff\{\}\{\}}: frac \& diff operator, also provide \mtex{dfracdiff\{\}\{\}} mode. For example, \mtex{fracdiff\{u\}\{x\}} gets $\fracdiff{u}{x}$, \mtex{dfracdiff\{\^{}2u\}\{x\^{}2\}} gets $\dfracdiff{^2u}{x^2}$
+\item \lstinline`\fracdiffs{}`: simple frac \& diff operator. For example, \lstinline`\fracdiffs{x}` gets $\fracdiffs{x}$, \lstinline`\dfracdiffs{y}` gets $\dfracdiffs{y}$
 
-\item \mtex{fracdiffs\{\}}: simple frac \& diff operator. For example, \mtex{fracdiffs\{x\}} gets $\fracdiffs{x}$, \mtex{dfracdiffs\{y\}} gets $\dfracdiffs{y}$
+\item \lstinline`\fracpartial{}{}`: frac \& partial operator, also provide \lstinline`\dfracpartial{}{}` mode. For example, \lstinline`\fracpartial{u}{x}` gets $\fracpartial{u}{x}$, \lstinline`\dfracpartial{^2u}{x^2}` gets $\dfracpartial{^2u}{x^2}$
 
-\item \mtex{fracpartial\{\}\{\}}: frac \& partial operator, also provide \mtex{dfracpartial\{\}\{\}} mode. For example, \mtex{fracpartial\{u\}\{x\}} gets $\fracpartial{u}{x}$, \mtex{dfracpartial\{\^{}2u\}\{x\^{}2\}} gets $\dfracpartial{^2u}{x^2}$
+\item \lstinline`\fracpartials{}`: simple frac \& partial operator. For example, \lstinline`\fracpartials{x}` gets $\fracpartials{x}$, \lstinline`\dfracpartials{y}` gets $\dfracpartials{y}$
 
-\item \mtex{fracpartials\{\}}: simple frac \& partial operator. For example, \mtex{fracpartials\{x\}} gets $\fracpartials{x}$, \mtex{dfracpartials\{y\}} gets $\dfracpartials{y}$
+\item \lstinline`\mclosure{}`, \lstinline`\mclosuresquare{}`, \lstinline`\mclosurebrace{}`: auto height brackets, eg $\mclosurebrace{ \mclosuresquare{ \mclosure{a^2 + b^2}^2 }^2 }$
 
-\item \mtex{mclosure{}}, \mtex{mclosuresquare{}}, \mtex{mclosurebrace{}}: auto height brackets, eg $\mclosurebrace{ \mclosuresquare{ \mclosure{a^2 + b^2}^2 }^2 }$
+<<<<<<< HEAD
+\item \lstinline`\mfuncat{}{}`: create a symbol \lstinline`|`, eg \lstinline`\mfuncat{\fracpartial{u}{t}}{x=5}` gets $\mfuncat{\fracpartial{u}{t}}{x=5}$
+=======
+\item \lstinline`\mfuncat{}{}`: create a symbol \lstinline`\|`, eg \lstinline`\mfuncat{\fracpartial{u}{t}}{x=5}` gets $\mfuncat{\fracpartial{u}{t}}{x=5}$
+>>>>>>> origin/master
 
-\item \mtex{mvct{}{}}, \mtex{mvctz{}{}}: row vector creator, eg \mtex{mvct\{a\}\{n\}} gets $\mvct{a}{n}$, \mtex{mvctz\{a\}\{n\}} gets $\mvctz{a}{n}$
+\item \lstinline`\mvct{}{}`, \lstinline`\mvctz{}{}`: row vector creator, eg \lstinline`\mvct{a}{n}` gets $\mvct{a}{n}$, \lstinline`\mvctz{a}{n}` gets $\mvctz{a}{n}$
 
-\item \mtex{mvctt{}{}}, \mtex{mvctzt{}{}}: column vector creator, eg \mtex{mvctt\{a\}\{n\}} gets $\mvctt{a}{n}$, \mtex{mvctzt\{a\}\{n\}} gets $\mvctzt{a}{n}$
+\item \lstinline`\mvctt{}{}`, \lstinline`\mvctzt{}{}`: column vector creator, eg \lstinline`\mvctt{a}{n}` gets $\mvctt{a}{n}$, \lstinline`\mvctzt{a}{n}` gets $\mvctzt{a}{n}$
 
-\item \mtex{mequlist{}}: provided a list of equations, eg \mtex{mequlist\{x + y \&= 10 \textbackslash\textbackslash 4x + 2y \&= 30\}} gets $\mequlist{x + y &= 10 \\ 4x + 2y &= 30}$
+<<<<<<< HEAD
+\item \lstinline`\mequlist{}`: provided a list of equations, eg \lstinline`\mequlist{x + y \&= 10 \\ 4x + 2y \&= 30}` gets $\mequlist{x + y &= 10 \\ 4x + 2y &= 30}$, also provide environment \lstinline`equlist`, which is similar with the \lstinline`case` environment
+=======
+\item \lstinline`\mequlist{}`: provided a list of equations, eg \lstinline`\mequlist{x + y \&= 10 \\ 4x + 2y \&= 30}` gets $\mequlist{x + y &= 10 \\ 4x + 2y &= 30}$, also provide environment \lstinline`\equlist`, which is similar with the \lstinline`\case` environment
+>>>>>>> origin/master
 \end{itemize}
 
 %------------------------------------------------------------------------------%

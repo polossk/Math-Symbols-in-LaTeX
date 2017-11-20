@@ -1,7 +1,7 @@
 % pdf 设置区
 %---------------------------------纸张大小设置---------------------------------%
 \usepackage{geometry}
-\geometry{left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm}
+\geometry{a4paper,left=1.91cm,right=1.91cm,top=2.05cm,bottom=2.05cm}
 %------------------------------------------------------------------------------%
 
 
@@ -27,12 +27,12 @@
     }
     % 在此处添加文章基础信息
     \hypersetup{
-        pdftitle={},
+        pdftitle={Math Symbols in LaTeX Manual},
         pdfauthor={polossk},
-        pdfsubject={},
+        pdfsubject={LaTeX Manual},
         pdfcreator={XeLaTeX},
         pdfproducer={XeLaTeX},
-        pdfkeywords={},
+        pdfkeywords={LaTeX, Math Symbols},
     }
 %------------------------------------------------------------------------------%
 
@@ -150,29 +150,13 @@
 
 
 %---------------------------------添加代码控制---------------------------------%
+\colorlet{lightgray}{gray!40}
+\colorlet{darkred}{red!70!black}
 \usepackage{listings}
 \lstset{
-    basicstyle=\footnotesize\ttfamily,
-    %numbers=left,
-    %numberstyle=\tiny,
-    %numbersep=5pt,
-    tabsize=4,
-    extendedchars=true,
+    basicstyle=\color{darkred}\normalsize\ttfamily,
+    backgroundcolor=\color{lightgray},
     breaklines=true,
-    keywordstyle=\color{blue},
-    numberstyle=\color{purple},
-    commentstyle=\color{olive},
-    stringstyle=\color{orange}\ttfamily,
-    showspaces=false,
-    showtabs=false,
-    framexrightmargin=5pt,
-    framexbottommargin=4pt,
-    showstringspaces=false,
-    escapeinside=`', %逃逸字符(1左面的键)，用于显示中文
-}
-\renewcommand{\lstlistingname}{CODE}
-\lstloadlanguages{% Check Dokumentation for further languages, page 12
-    Pascal, C++, Java, Ruby, Python, Matlab, R
 }
 %------------------------------------------------------------------------------%
 
