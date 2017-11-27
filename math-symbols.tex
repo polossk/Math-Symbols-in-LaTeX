@@ -26,6 +26,7 @@
 %-Constants-and-Useful-Symbols-------------------------------------------------%
 %------------------------------------------------------------------------------%
 \newcommand\mi{{\mathrm i}}                                % constant i
+\newcommand\mj{{\mathrm j}}                                % constant j
 \newcommand\me{{\mathrm e}}                                % constant e
 \newcommand\mnatr{{\mathbb N}}                             % natural num set N
 \newcommand\mintg{{\mathbb Z}}                             % integer set Z
@@ -215,11 +216,12 @@
 \newcommand\dfracpartial[2]{{\dfrac{\partial {#1}}{\partial {#2}}}}
 \newcommand\dfracpartials[1]{{\dfracpartial{}{#1}}}
 
+
+\newcommand\mfuncat[2]{{\left.{#1} \right|}_{#2}}
+
 \newcommand\mclosure[1]{{\left( {#1} \right)}}
 \newcommand\mclosuresquare[1]{{\left[ {#1} \right]}}
 \newcommand\mclosurebrace[1]{{\left\{ {#1} \right\}}}
-
-\newcommand\mfuncat[2]{{\left.{#1} \right|}_{#2}}
 
 \newcommand\mvct[2]{{ ({#1}_1, {#1}_2, \ldots, {#1}_{#2}) }}
 \newcommand\mvctz[2]{{ ({#1}_0, {#1}_1, \ldots, {#1}_{#2}) }}

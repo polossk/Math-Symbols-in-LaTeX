@@ -1,16 +1,15 @@
 \documentclass{article}
 \input{article-setting}
-\usepackage[normalem]{ulem}
-\usepackage{lineno}
+% \usepackage{lineno}
 %------------------------------------------------------------------------------%
 \title{Math-Symbols-in-\LaTeX{}-Manual}
 \author{polossk}
 \date{Last Update: \today}
-\newcommand\artversion{1.2.5}
+\newcommand\artversion{1.2.5.1}
 %------------------------------------------------------------------------------%
 \begin{document}
 %------------------------------------------------------------------------------%
-\pagewiselinenumbers
+% \pagewiselinenumbers
 \maketitle
 \tableofcontents
 \thispagestyle{fancy}
@@ -18,58 +17,72 @@
 \sWuhao\fSong
 %------------------------------------------------------------------------------%
 \section{Constants and Useful Symbols}
-\begin{itemize}
-\item \lstinline`\mi`: alias of \lstinline`\mathrm i`, $\mi$
-\item \lstinline`\me`: alias of \lstinline`\mathrm e`, $\me$
-\item \lstinline`\mnatr`: alias of \lstinline`\mathbb N`, $\mnatr$
-\item \lstinline`\mintg`: alias of \lstinline`\mathbb Z`, $\mintg$
-\item \lstinline`\mrato`: alias of \lstinline`\mathbb Q`, $\mrato$
-\item \lstinline`\mreal`: alias of \lstinline`\mathbb R`, $\mreal$
-\item \lstinline`\mcmpx`: alias of \lstinline`\mathbb C`, $\mcmpx$
-\item \lstinline`\mhilb`: alias of \lstinline`\mathbb H`, $\mhilb$
-\item \lstinline`\mcond`: alias of \lstinline`\mathrm {Cond.}`, $\mcond$
-\item \lstinline`\mconst`: alias of \lstinline`\mathrm {const}`, $\mconst$
-\item \lstinline`\mscon{}`: continuous function space. eg: \lstinline`\mscon{(I)}` gets $\mscon{(I)}$
-\item \lstinline`\mscab`: continuous function space, alias of \lstinline`\mscon{[a, b]}`, $\mscab$
-\item \lstinline`\mslbg[]{}`: lebesgue function space. eg: \lstinline`\mslbg{2}` gets $\mslbg{2}$, \lstinline`mslbg[{[a, b]}]{2}` gets $\mslbg[{[a, b]}]{2}$
-\item \lstinline`\mssbl[]{}`: sobolev function space. eg: \lstinline`\mssbl{m}` gets $\mssbl{m}$, \lstinline`mssbl[{[a, b]}]{m}` gets $\mssbl[{[a, b]}]{m}$
-\end{itemize}
+\begin{longtable}{*{10}{l}}
+$\mi$ & \lstinline`\mi` & $\mnatr$ & \lstinline`\mnatr` & $\mcmpx$ & \lstinline`\mcmpx` & $\mscab$ & \lstinline`\mscab` & $\mslbg[{[a, b]}]{m}$ & \lstinline`\mslbg[{[a, b]}]{m}`\\
+$\mj$ & \lstinline`\mj` & $\mintg$ & \lstinline`\mintg` & $\mhilb$ & \lstinline`\mhilb` & $\mscon{(I)}$ & \lstinline`\mscon{(I)}` & $\mssbl[{[a, b]}]{m}$ & \lstinline`\mssbl[{[a, b]}]{m}`\\
+$\me$ & \lstinline`\me` & $\mrato$ & \lstinline`\mrato` & $\mcond$ & \lstinline`\mcond` & $\mslbg{2}$ & \lstinline`\mslbg{2}` & \\
+ &  & $\mreal$ & \lstinline`\mreal` & $\mconst$ & \lstinline`\mconst` & $\mssbl{2}$ & \lstinline`\mssbl{2}` & \\
+\end{longtable}
 
 \section{Vector and Matrix Defination}
-\begin{itemize}
-\item \lstinline`\mv*`: Vector Notations, alias of \lstinline`\bm *`, \lstinline`\*` could be any English characters or Greek characters. For examples, \lstinline`\mva` gets $\mva$, and \lstinline`\mvalpha` gets $\mvalpha$. The alphabet looks like this: $\mva$, $\mvb$, $\mvc$, $\mvd$, $\mve$, $\mvf$, $\mvg$, $\mvh$, $\mvi$, $\mvj$, $\mvk$, $\mvl$, $\mvm$, $\mvn$, $\mvo$, $\mvp$, $\mvq$, $\mvr$, $\mvs$, $\mvt$, $\mvu$, $\mvv$, $\mvw$, $\mvx$, $\mvy$, $\mvz$, $\mvalpha$, $\mvbeta$, $\mvgamma$, $\mvdelta$, $\mvepsilon$, $\mvzeta$, $\mveta$, $\mvtheta$, $\mviota$, $\mvkappa$, $\mvlambda$, $\mvmu$, $\mvnu$, $\mvxi$, $\mvpi$, $\mvrho$, $\mvsigma$, $\mvtau$, $\mvupsilon$, $\mvphi$, $\mvchi$, $\mvpsi$, $\mvomega$
-\item \lstinline`\mm*`: Matrix Notations, alias of \lstinline`\mathbf *`, \lstinline`\*` could be any English characters or Greek characters. For examples, \lstinline`\mma` gets $\mma$, and \lstinline`\mmsigma` gets $\mmsigma$. The alphabet looks like this: $\mma$, $\mmb$, $\mmc$, $\mmd$, $\mme$, $\mmf$, $\mmg$, $\mmh$, $\mmi$, $\mmj$, $\mmk$, $\mml$, $\mmm$, $\mmn$, $\mmo$, $\mmp$, $\mmq$, $\mmr$, $\mms$, $\mmt$, $\mmu$, $\mmv$, $\mmw$, $\mmx$, $\mmy$, $\mmz$, $\mmgamma$, $\mmdelta$, $\mmtheta$, $\mmlambda$, $\mmxi$, $\mmpi$, $\mmsigma$, $\mmupsilon$, $\mmphi$, $\mmpsi$, $\mmomega$
-\item \lstinline`\mm*t`: Transposed Matrix Notations, alias of \lstinline`\{mathbf *}^T`, \lstinline`\*` could be any English characters or Greek characters. For examples, \lstinline`\mma` gets $\mma$, and \lstinline`\mmsigma` gets $\mmsigma$. The alphabet looks like this: $\mmat$, $\mmbt$, $\mmct$, $\mmdt$, $\mmet$, $\mmft$, $\mmgt$, $\mmht$, $\mmit$, $\mmjt$, $\mmkt$, $\mmlt$, $\mmmt$, $\mmnt$, $\mmot$, $\mmpt$, $\mmqt$, $\mmrt$, $\mmst$, $\mmtt$, $\mmut$, $\mmvt$, $\mmwt$, $\mmxt$, $\mmyt$, $\mmzt$, $\mmgammat$, $\mmdeltat$, $\mmthetat$, $\mmlambdat$, $\mmxit$, $\mmpit$, $\mmsigmat$, $\mmupsilont$, $\mmphit$, $\mmpsit$, $\mmomegat$
-\item \lstinline`\mvzero`, \lstinline`\mvone`, \lstinline`\mmzero`, \lstinline`\mmone`: Special vector and matrix notation, $\mvzero$, $\mvone$, $\mmzero$, $\mmone$
-\end{itemize}
+\subsection{Vector Notations}
+\begin{longtable}{*{14}{l}}
+$\mva$ & \lstinline`\mva` & $\mvj$ & \lstinline`\mvj` & $\mvs$ & \lstinline`\mvs` & $\mvalpha$ & \lstinline`\mvalpha` & $\mvkappa$ & \lstinline`\mvkappa` & $\mvupsilon$ & \lstinline`\mvupsilon`\\
+$\mvb$ & \lstinline`\mvb` & $\mvk$ & \lstinline`\mvk` & $\mvt$ & \lstinline`\mvt` & $\mvbeta$ & \lstinline`\mvbeta` & $\mvlambda$ & \lstinline`\mvlambda` & $\mvphi$ & \lstinline`\mvphi`\\
+$\mvc$ & \lstinline`\mvc` & $\mvl$ & \lstinline`\mvl` & $\mvu$ & \lstinline`\mvu` & $\mvgamma$ & \lstinline`\mvgamma` & $\mvmu$ & \lstinline`\mvmu` & $\mvchi$ & \lstinline`\mvchi`\\
+$\mvd$ & \lstinline`\mvd` & $\mvm$ & \lstinline`\mvm` & $\mvv$ & \lstinline`\mvv` & $\mvdelta$ & \lstinline`\mvdelta` & $\mvnu$ & \lstinline`\mvnu` & $\mvpsi$ & \lstinline`\mvpsi`\\
+$\mve$ & \lstinline`\mve` & $\mvn$ & \lstinline`\mvn` & $\mvw$ & \lstinline`\mvw` & $\mvepsilon$ & \lstinline`\mvepsilon` & $\mvxi$ & \lstinline`\mvxi` & $\mvomega$ & \lstinline`\mvomega`\\
+$\mvf$ & \lstinline`\mvf` & $\mvo$ & \lstinline`\mvo` & $\mvx$ & \lstinline`\mvx` & $\mvzeta$ & \lstinline`\mvzeta` & $\mvpi$ & \lstinline`\mvpi` & \\
+$\mvg$ & \lstinline`\mvg` & $\mvp$ & \lstinline`\mvp` & $\mvy$ & \lstinline`\mvy` & $\mveta$ & \lstinline`\mveta` & $\mvrho$ & \lstinline`\mvrho` & \\
+$\mvh$ & \lstinline`\mvh` & $\mvq$ & \lstinline`\mvq` & $\mvz$ & \lstinline`\mvz` & $\mvtheta$ & \lstinline`\mvtheta` & $\mvsigma$ & \lstinline`\mvsigma` & \\
+$\mvi$ & \lstinline`\mvi` & $\mvr$ & \lstinline`\mvr` &  &  & $\mviota$ & \lstinline`\mviota` & $\mvtau$ & \lstinline`\mvtau` & \\
+\end{longtable}
+
+\subsection{Matrix Notations}
+\begin{longtable}{*{14}{l}}
+$\mma$ & \lstinline`\mma` & $\mmg$ & \lstinline`\mmg` & $\mmm$ & \lstinline`\mmm` & $\mms$ & \lstinline`\mms` & $\mmy$ & \lstinline`\mmy` & $\mmxi$ & \lstinline`\mmxi` & $\mmomega$ & \lstinline`\mmomega`\\
+$\mmb$ & \lstinline`\mmb` & $\mmh$ & \lstinline`\mmh` & $\mmn$ & \lstinline`\mmn` & $\mmt$ & \lstinline`\mmt` & $\mmz$ & \lstinline`\mmz` & $\mmpi$ & \lstinline`\mmpi` & \\
+$\mmc$ & \lstinline`\mmc` & $\mmi$ & \lstinline`\mmi` & $\mmo$ & \lstinline`\mmo` & $\mmu$ & \lstinline`\mmu` & $\mmgamma$ & \lstinline`\mmgamma` & $\mmsigma$ & \lstinline`\mmsigma` & \\
+$\mmd$ & \lstinline`\mmd` & $\mmj$ & \lstinline`\mmj` & $\mmp$ & \lstinline`\mmp` & $\mmv$ & \lstinline`\mmv` & $\mmdelta$ & \lstinline`\mmdelta` & $\mmupsilon$ & \lstinline`\mmupsilon` & \\
+$\mme$ & \lstinline`\mme` & $\mmk$ & \lstinline`\mmk` & $\mmq$ & \lstinline`\mmq` & $\mmw$ & \lstinline`\mmw` & $\mmtheta$ & \lstinline`\mmtheta` & $\mmphi$ & \lstinline`\mmphi` & \\
+$\mmf$ & \lstinline`\mmf` & $\mml$ & \lstinline`\mml` & $\mmr$ & \lstinline`\mmr` & $\mmx$ & \lstinline`\mmx` & $\mmlambda$ & \lstinline`\mmlambda` & $\mmpsi$ & \lstinline`\mmpsi` & \\
+\end{longtable}
+
+\subsection{Transposed Matrix Notations}
+\begin{longtable}{*{12}{l}}
+$\mmat$ & \lstinline`\mmat` & $\mmht$ & \lstinline`\mmht` & $\mmot$ & \lstinline`\mmot` & $\mmvt$ & \lstinline`\mmvt` & $\mmthetat$ & \lstinline`\mmthetat` & $\mmpsit$ & \lstinline`\mmpsit`\\
+$\mmbt$ & \lstinline`\mmbt` & $\mmit$ & \lstinline`\mmit` & $\mmpt$ & \lstinline`\mmpt` & $\mmwt$ & \lstinline`\mmwt` & $\mmlambdat$ & \lstinline`\mmlambdat` & $\mmomegat$ & \lstinline`\mmomegat`\\
+$\mmct$ & \lstinline`\mmct` & $\mmjt$ & \lstinline`\mmjt` & $\mmqt$ & \lstinline`\mmqt` & $\mmxt$ & \lstinline`\mmxt` & $\mmxit$ & \lstinline`\mmxit` & \\
+$\mmdt$ & \lstinline`\mmdt` & $\mmkt$ & \lstinline`\mmkt` & $\mmrt$ & \lstinline`\mmrt` & $\mmyt$ & \lstinline`\mmyt` & $\mmpit$ & \lstinline`\mmpit` & \\
+$\mmet$ & \lstinline`\mmet` & $\mmlt$ & \lstinline`\mmlt` & $\mmst$ & \lstinline`\mmst` & $\mmzt$ & \lstinline`\mmzt` & $\mmsigmat$ & \lstinline`\mmsigmat` & \\
+$\mmft$ & \lstinline`\mmft` & $\mmmt$ & \lstinline`\mmmt` & $\mmtt$ & \lstinline`\mmtt` & $\mmgammat$ & \lstinline`\mmgammat` & $\mmupsilont$ & \lstinline`\mmupsilont` & \\
+$\mmgt$ & \lstinline`\mmgt` & $\mmnt$ & \lstinline`\mmnt` & $\mmut$ & \lstinline`\mmut` & $\mmdeltat$ & \lstinline`\mmdeltat` & $\mmphit$ & \lstinline`\mmphit` & \\
+\end{longtable}
+
+\subsection{Special vector and matrix notation}
+\begin{longtable}{*{8}{l}}
+$\mvzero$ & \lstinline`\mvzero` & $\mvone$ & \lstinline`\mvone` & $\mmzero$ & \lstinline`\mmzero` & $\mmone$ & \lstinline`\mmone` \\
+\end{longtable}
+
 
 \section{Useful Functions and Operators}
-\begin{itemize}
-\item \lstinline`\diff`: diff operator, $\diff\ $, eg. $\int_0^t f(\tau) \diff \tau$
-\item \lstinline`\Diff`: Diff operator, $\Diff\ $, eg. $\Diff{}^2 X = \dfrac{-x_{i + 1, j} + 2x_{i, j} - x_{i - 1, j}}{\Delta x^2}$
-\item \lstinline`\Expect`: Expect operator, $\Expect$, eg. $X = B(n, p)$, $\Expect X = np$
-\item \lstinline`\diag`, \lstinline`\eig`, \lstinline`\tr`: Matrix operators, $\diag$, $\eig$, $\tr$, eg. $\mmd = \diag \mma$, $[\mmlambda, \mmv] = \eig \mma$, $\tr \mmlambda = \tr \mma$
-\item \lstinline`\lcm`: lcm operator, $\lcm$, eg. $\lcm(f, g) \cdot \gcd(f, g) = f \cdot g$
-\item \lstinline`\rand`: random number, $\rand$
-\item \lstinline`\mean`, \lstinline`\var`: statistics operator, $\mean$, $\var$, eg. $\mu = \mean X$, $\sigma^2 = \var X$
-\item \lstinline`\corr`: correlation operator, $\corr$, eg. $\corr(X, Y) = (R)_{ij} = \dfrac{\sum_{X_i, Y_j}(X - \bar X)(Y - \bar Y)}{\sqrt{\sum_i(X - \bar X)^2\sum_j(Y - \bar Y)^2}}$
-\item \lstinline`\conv`: convolution operator, $\conv$, eg. $\conv(f, g) = \int_{-\infty}^\infty f(\tau)g(t - \tau) \diff \tau$
-\item \lstinline`\card`: cardinals operator, $\card$, eg. $\card {1, 2, 3} = 3$, $\card \mreal = 2^{\aleph_0}$
-\item \lstinline`\argmin`, \lstinline`\argmax`, \lstinline`\argopt`: $\argmin$, $\argmax$, $\argopt$ operator, $\hat \theta = \argmin\limits_\theta J_\theta(x)$
-\item \lstinline`\dist`: distance operator, $\dist$, eg. $\min \sum\limits_{\forall s, t \in G} \dist\limits_{s \ne t} (s, t)$
-\item \lstinline`\abs{}`, \lstinline`\norm{}`: norm operator, eg. $\abs{x+y} \leq \abs{x} + \abs{y}$, $\norm{\mma \mvx + \mvb}$
-\item \lstinline`\normlp{}{}`: Lp-norm operator, eg. $\normlp{1}{2}$, $\normlp{\mma \mvx + \mvb}{2}$, $\normlp{\mma \mvx + \mvb}{\infty}$
-\end{itemize}
+\begin{longtable}{*{12}{l}}
+$\diff$ & \lstinline`\diff` & $\diag$ & \lstinline`\diag` & $\lcm$ & \lstinline`\lcm` & $\var$ & \lstinline`\var` & $\card$ & \lstinline`\card` & $\argopt$ & \lstinline`\argopt`\\
+$\Diff$ & \lstinline`\Diff` & $\eig$ & \lstinline`\eig` & $\rand$ & \lstinline`\rand` & $\corr$ & \lstinline`\corr` & $\argmin$ & \lstinline`\argmin` & $\dist$ & \lstinline`\dist`\\
+$\Expect$ & \lstinline`\Expect` & $\tr$ & \lstinline`\tr` & $\mean$ & \lstinline`\mean` & $\conv$ & \lstinline`\conv` & $\argmax$ & \lstinline`\argmax` & \\
+\end{longtable}
+
+
 
 \section{Useful Aliases and Generators}
 \begin{itemize}
 \item \lstinline`\fracdiff{}{}`: frac \& diff operator, also provide \lstinline`\dfracdiff{}{}` mode. For example, \lstinline`\fracdiff{u}{x}` gets $\fracdiff{u}{x}$, \lstinline`\dfracdiff{^2u}{x^2}` gets $\dfracdiff{^2u}{x^2}$
 
-\item \lstinline`\fracdiffs{}`: simple frac \& diff operator. For example, \lstinline`\fracdiffs{x}` gets $\fracdiffs{x}$, \lstinline`\dfracdiffs{y}` gets $\dfracdiffs{y}$
+\item \lstinline`\fracdiffs{}`: special frac \& diff operator. For example, \lstinline`\fracdiffs{x}` gets $\fracdiffs{x}$, \lstinline`\dfracdiffs{y}` gets $\dfracdiffs{y}$
 
 \item \lstinline`\fracpartial{}{}`: frac \& partial operator, also provide \lstinline`\dfracpartial{}{}` mode. For example, \lstinline`\fracpartial{u}{x}` gets $\fracpartial{u}{x}$, \lstinline`\dfracpartial{^2u}{x^2}` gets $\dfracpartial{^2u}{x^2}$
 
-\item \lstinline`\fracpartials{}`: simple frac \& partial operator. For example, \lstinline`\fracpartials{x}` gets $\fracpartials{x}$, \lstinline`\dfracpartials{y}` gets $\dfracpartials{y}$
+\item \lstinline`\fracpartials{}`: special frac \& partial operator. For example, \lstinline`\fracpartials{x}` gets $\fracpartials{x}$, \lstinline`\dfracpartials{y}` gets $\dfracpartials{y}$
 
 \item \lstinline`\mclosure{}`, \lstinline`\mclosuresquare{}`, \lstinline`\mclosurebrace{}`: auto height brackets, eg $\mclosurebrace{ \mclosuresquare{ \mclosure{a^2 + b^2}^2 }^2 }$
 
