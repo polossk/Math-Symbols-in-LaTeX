@@ -2,10 +2,10 @@
 \input{article-setting}
 % \usepackage{lineno}
 %------------------------------------------------------------------------------%
+\newcommand\artversion{1.2.5.2}
 \title{Math-Symbols-in-\LaTeX{}-Manual}
 \author{polossk}
-\date{Last Update: \today}
-\newcommand\artversion{1.2.5.1}
+\date{Version: v\artversion, Last Update: \today}
 %------------------------------------------------------------------------------%
 \begin{document}
 %------------------------------------------------------------------------------%
@@ -17,16 +17,16 @@
 \sWuhao\fSong
 %------------------------------------------------------------------------------%
 \section{Constants and Useful Symbols}
-\begin{longtable}{*{10}{l}}
+\begin{tabular}{*{10}{l}}
 $\mi$ & \lstinline`\mi` & $\mnatr$ & \lstinline`\mnatr` & $\mcmpx$ & \lstinline`\mcmpx` & $\mscab$ & \lstinline`\mscab` & $\mslbg[{[a, b]}]{m}$ & \lstinline`\mslbg[{[a, b]}]{m}`\\
 $\mj$ & \lstinline`\mj` & $\mintg$ & \lstinline`\mintg` & $\mhilb$ & \lstinline`\mhilb` & $\mscon{(I)}$ & \lstinline`\mscon{(I)}` & $\mssbl[{[a, b]}]{m}$ & \lstinline`\mssbl[{[a, b]}]{m}`\\
 $\me$ & \lstinline`\me` & $\mrato$ & \lstinline`\mrato` & $\mcond$ & \lstinline`\mcond` & $\mslbg{2}$ & \lstinline`\mslbg{2}` & \\
  &  & $\mreal$ & \lstinline`\mreal` & $\mconst$ & \lstinline`\mconst` & $\mssbl{2}$ & \lstinline`\mssbl{2}` & \\
-\end{longtable}
+\end{tabular}
 
 \section{Vector and Matrix Defination}
 \subsection{Vector Notations}
-\begin{longtable}{*{14}{l}}
+\begin{tabular}{*{12}{l}}
 $\mva$ & \lstinline`\mva` & $\mvj$ & \lstinline`\mvj` & $\mvs$ & \lstinline`\mvs` & $\mvalpha$ & \lstinline`\mvalpha` & $\mvkappa$ & \lstinline`\mvkappa` & $\mvupsilon$ & \lstinline`\mvupsilon`\\
 $\mvb$ & \lstinline`\mvb` & $\mvk$ & \lstinline`\mvk` & $\mvt$ & \lstinline`\mvt` & $\mvbeta$ & \lstinline`\mvbeta` & $\mvlambda$ & \lstinline`\mvlambda` & $\mvphi$ & \lstinline`\mvphi`\\
 $\mvc$ & \lstinline`\mvc` & $\mvl$ & \lstinline`\mvl` & $\mvu$ & \lstinline`\mvu` & $\mvgamma$ & \lstinline`\mvgamma` & $\mvmu$ & \lstinline`\mvmu` & $\mvchi$ & \lstinline`\mvchi`\\
@@ -36,41 +36,41 @@ $\mvf$ & \lstinline`\mvf` & $\mvo$ & \lstinline`\mvo` & $\mvx$ & \lstinline`\mvx
 $\mvg$ & \lstinline`\mvg` & $\mvp$ & \lstinline`\mvp` & $\mvy$ & \lstinline`\mvy` & $\mveta$ & \lstinline`\mveta` & $\mvrho$ & \lstinline`\mvrho` & \\
 $\mvh$ & \lstinline`\mvh` & $\mvq$ & \lstinline`\mvq` & $\mvz$ & \lstinline`\mvz` & $\mvtheta$ & \lstinline`\mvtheta` & $\mvsigma$ & \lstinline`\mvsigma` & \\
 $\mvi$ & \lstinline`\mvi` & $\mvr$ & \lstinline`\mvr` &  &  & $\mviota$ & \lstinline`\mviota` & $\mvtau$ & \lstinline`\mvtau` & \\
-\end{longtable}
+\end{tabular}
 
 \subsection{Matrix Notations}
-\begin{longtable}{*{14}{l}}
-$\mma$ & \lstinline`\mma` & $\mmg$ & \lstinline`\mmg` & $\mmm$ & \lstinline`\mmm` & $\mms$ & \lstinline`\mms` & $\mmy$ & \lstinline`\mmy` & $\mmxi$ & \lstinline`\mmxi` & $\mmomega$ & \lstinline`\mmomega`\\
-$\mmb$ & \lstinline`\mmb` & $\mmh$ & \lstinline`\mmh` & $\mmn$ & \lstinline`\mmn` & $\mmt$ & \lstinline`\mmt` & $\mmz$ & \lstinline`\mmz` & $\mmpi$ & \lstinline`\mmpi` & \\
-$\mmc$ & \lstinline`\mmc` & $\mmi$ & \lstinline`\mmi` & $\mmo$ & \lstinline`\mmo` & $\mmu$ & \lstinline`\mmu` & $\mmgamma$ & \lstinline`\mmgamma` & $\mmsigma$ & \lstinline`\mmsigma` & \\
-$\mmd$ & \lstinline`\mmd` & $\mmj$ & \lstinline`\mmj` & $\mmp$ & \lstinline`\mmp` & $\mmv$ & \lstinline`\mmv` & $\mmdelta$ & \lstinline`\mmdelta` & $\mmupsilon$ & \lstinline`\mmupsilon` & \\
-$\mme$ & \lstinline`\mme` & $\mmk$ & \lstinline`\mmk` & $\mmq$ & \lstinline`\mmq` & $\mmw$ & \lstinline`\mmw` & $\mmtheta$ & \lstinline`\mmtheta` & $\mmphi$ & \lstinline`\mmphi` & \\
-$\mmf$ & \lstinline`\mmf` & $\mml$ & \lstinline`\mml` & $\mmr$ & \lstinline`\mmr` & $\mmx$ & \lstinline`\mmx` & $\mmlambda$ & \lstinline`\mmlambda` & $\mmpsi$ & \lstinline`\mmpsi` & \\
-\end{longtable}
+\begin{tabular}{*{14}{l}}
+$\mma$ & \lstinline`\mma` & $\mmg$ & \lstinline`\mmg` & $\mmm$ & \lstinline`\mmm` & $\mms$ & \lstinline`\mms` & $\mmy$ & \lstinline`\mmy` & $\mmgamma$ & \lstinline`\mmgamma` & $\mmsigma$ & \lstinline`\mmsigma`\\
+$\mmb$ & \lstinline`\mmb` & $\mmh$ & \lstinline`\mmh` & $\mmn$ & \lstinline`\mmn` & $\mmt$ & \lstinline`\mmt` & $\mmz$ & \lstinline`\mmz` & $\mmdelta$ & \lstinline`\mmdelta` & $\mmupsilon$ & \lstinline`\mmupsilon`\\
+$\mmc$ & \lstinline`\mmc` & $\mmi$ & \lstinline`\mmi` & $\mmo$ & \lstinline`\mmo` & $\mmu$ & \lstinline`\mmu` &  &  & $\mmtheta$ & \lstinline`\mmtheta` & $\mmphi$ & \lstinline`\mmphi`\\
+$\mmd$ & \lstinline`\mmd` & $\mmj$ & \lstinline`\mmj` & $\mmp$ & \lstinline`\mmp` & $\mmv$ & \lstinline`\mmv` &  &  & $\mmlambda$ & \lstinline`\mmlambda` & $\mmpsi$ & \lstinline`\mmpsi`\\
+$\mme$ & \lstinline`\mme` & $\mmk$ & \lstinline`\mmk` & $\mmq$ & \lstinline`\mmq` & $\mmw$ & \lstinline`\mmw` &  &  & $\mmxi$ & \lstinline`\mmxi` & $\mmomega$ & \lstinline`\mmomega`\\
+$\mmf$ & \lstinline`\mmf` & $\mml$ & \lstinline`\mml` & $\mmr$ & \lstinline`\mmr` & $\mmx$ & \lstinline`\mmx` &  &  & $\mmpi$ & \lstinline`\mmpi` & \\
+\end{tabular}
 
 \subsection{Transposed Matrix Notations}
-\begin{longtable}{*{12}{l}}
-$\mmat$ & \lstinline`\mmat` & $\mmht$ & \lstinline`\mmht` & $\mmot$ & \lstinline`\mmot` & $\mmvt$ & \lstinline`\mmvt` & $\mmthetat$ & \lstinline`\mmthetat` & $\mmpsit$ & \lstinline`\mmpsit`\\
-$\mmbt$ & \lstinline`\mmbt` & $\mmit$ & \lstinline`\mmit` & $\mmpt$ & \lstinline`\mmpt` & $\mmwt$ & \lstinline`\mmwt` & $\mmlambdat$ & \lstinline`\mmlambdat` & $\mmomegat$ & \lstinline`\mmomegat`\\
-$\mmct$ & \lstinline`\mmct` & $\mmjt$ & \lstinline`\mmjt` & $\mmqt$ & \lstinline`\mmqt` & $\mmxt$ & \lstinline`\mmxt` & $\mmxit$ & \lstinline`\mmxit` & \\
-$\mmdt$ & \lstinline`\mmdt` & $\mmkt$ & \lstinline`\mmkt` & $\mmrt$ & \lstinline`\mmrt` & $\mmyt$ & \lstinline`\mmyt` & $\mmpit$ & \lstinline`\mmpit` & \\
-$\mmet$ & \lstinline`\mmet` & $\mmlt$ & \lstinline`\mmlt` & $\mmst$ & \lstinline`\mmst` & $\mmzt$ & \lstinline`\mmzt` & $\mmsigmat$ & \lstinline`\mmsigmat` & \\
-$\mmft$ & \lstinline`\mmft` & $\mmmt$ & \lstinline`\mmmt` & $\mmtt$ & \lstinline`\mmtt` & $\mmgammat$ & \lstinline`\mmgammat` & $\mmupsilont$ & \lstinline`\mmupsilont` & \\
-$\mmgt$ & \lstinline`\mmgt` & $\mmnt$ & \lstinline`\mmnt` & $\mmut$ & \lstinline`\mmut` & $\mmdeltat$ & \lstinline`\mmdeltat` & $\mmphit$ & \lstinline`\mmphit` & \\
-\end{longtable}
+\begin{tabular}{*{12}{l}}
+$\mmat$ & \lstinline`\mmat` & $\mmht$ & \lstinline`\mmht` & $\mmot$ & \lstinline`\mmot` & $\mmvt$ & \lstinline`\mmvt` & $\mmgammat$ & \lstinline`\mmgammat` & $\mmupsilont$ & \lstinline`\mmupsilont`\\
+$\mmbt$ & \lstinline`\mmbt` & $\mmit$ & \lstinline`\mmit` & $\mmpt$ & \lstinline`\mmpt` & $\mmwt$ & \lstinline`\mmwt` & $\mmdeltat$ & \lstinline`\mmdeltat` & $\mmphit$ & \lstinline`\mmphit`\\
+$\mmct$ & \lstinline`\mmct` & $\mmjt$ & \lstinline`\mmjt` & $\mmqt$ & \lstinline`\mmqt` & $\mmxt$ & \lstinline`\mmxt` & $\mmthetat$ & \lstinline`\mmthetat` & $\mmpsit$ & \lstinline`\mmpsit`\\
+$\mmdt$ & \lstinline`\mmdt` & $\mmkt$ & \lstinline`\mmkt` & $\mmrt$ & \lstinline`\mmrt` & $\mmyt$ & \lstinline`\mmyt` & $\mmlambdat$ & \lstinline`\mmlambdat` & $\mmomegat$ & \lstinline`\mmomegat`\\
+$\mmet$ & \lstinline`\mmet` & $\mmlt$ & \lstinline`\mmlt` & $\mmst$ & \lstinline`\mmst` & $\mmzt$ & \lstinline`\mmzt` & $\mmxit$ & \lstinline`\mmxit` & \\
+$\mmft$ & \lstinline`\mmft` & $\mmmt$ & \lstinline`\mmmt` & $\mmtt$ & \lstinline`\mmtt` &  &  & $\mmpit$ & \lstinline`\mmpit` & \\
+$\mmgt$ & \lstinline`\mmgt` & $\mmnt$ & \lstinline`\mmnt` & $\mmut$ & \lstinline`\mmut` &  &  & $\mmsigmat$ & \lstinline`\mmsigmat` & \\
+\end{tabular}
 
 \subsection{Special vector and matrix notation}
-\begin{longtable}{*{8}{l}}
+\begin{tabular}{*{8}{l}}
 $\mvzero$ & \lstinline`\mvzero` & $\mvone$ & \lstinline`\mvone` & $\mmzero$ & \lstinline`\mmzero` & $\mmone$ & \lstinline`\mmone` \\
-\end{longtable}
+\end{tabular}
 
 
 \section{Useful Functions and Operators}
-\begin{longtable}{*{12}{l}}
-$\diff$ & \lstinline`\diff` & $\diag$ & \lstinline`\diag` & $\lcm$ & \lstinline`\lcm` & $\var$ & \lstinline`\var` & $\card$ & \lstinline`\card` & $\argopt$ & \lstinline`\argopt`\\
-$\Diff$ & \lstinline`\Diff` & $\eig$ & \lstinline`\eig` & $\rand$ & \lstinline`\rand` & $\corr$ & \lstinline`\corr` & $\argmin$ & \lstinline`\argmin` & $\dist$ & \lstinline`\dist`\\
-$\Expect$ & \lstinline`\Expect` & $\tr$ & \lstinline`\tr` & $\mean$ & \lstinline`\mean` & $\conv$ & \lstinline`\conv` & $\argmax$ & \lstinline`\argmax` & \\
-\end{longtable}
+\begin{tabular}{*{12}{l}}
+$\diff$ & \lstinline`\diff` & $\diag$ & \lstinline`\diag` & $\lcm$ & \lstinline`\lcm` & $\var$ & \lstinline`\var` & $\argmin$ & \lstinline`\argmin` & $\card$ & \lstinline`\card`\\
+$\Diff$ & \lstinline`\Diff` & $\eig$ & \lstinline`\eig` & $\rand$ & \lstinline`\rand` & $\corr$ & \lstinline`\corr` & $\argmax$ & \lstinline`\argmax` & $\dist$ & \lstinline`\dist`\\
+$\Expect$ & \lstinline`\Expect` & $\tr$ & \lstinline`\tr` & $\mean$ & \lstinline`\mean` & $\conv$ & \lstinline`\conv` & $\argopt$ & \lstinline`\argopt` & \\
+\end{tabular}
 
 
 
