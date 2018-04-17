@@ -1,4 +1,4 @@
-sec1 = [
+sec_constant = [
 r'\mi',
 r'\mj',
 r'\me', r'',
@@ -18,7 +18,7 @@ r'\mslbg[{[a, b]}]{m}',
 r'\mssbl[{[a, b]}]{m}', 
 ]
 
-sec2 = [
+sec_vector = [
 r'\mva',
 r'\mvb',
 r'\mvc',
@@ -70,7 +70,7 @@ r'\mvpsi',
 r'\mvomega',
 ]
 
-sec3 = [
+sec3_matrix = [
 r'\mma',
 r'\mmb',
 r'\mmc',
@@ -110,7 +110,7 @@ r'\mmpsi',
 r'\mmomega',
 ]
 
-sec3t = [
+sec_transposed_matrix = [
 r'\mmat',
 r'\mmbt',
 r'\mmct',
@@ -150,14 +150,14 @@ r'\mmpsit',
 r'\mmomegat',
 ]
 
-sec4 = [
+sec_sp_constant = [
 r'\mvzero',
 r'\mvone',
 r'\mmzero',
 r'\mmone',
 ]
 
-sec5 = [
+sec_func = [
 r'\diff',
 r'\Diff',
 r'\Expect',
@@ -175,4 +175,33 @@ r'\argmax',
 r'\argopt',
 r'\card',
 r'\dist',
+]
+
+sec_tensor = [
+r'\mta',
+r'\mtb',
+r'\mtc',
+r'\mtd',
+r'\mte',
+r'\mtf',
+r'\mtg',
+r'\mth',
+r'\mti',
+r'\mtj',
+r'\mtk',
+r'\mtl',
+r'\mtm',
+r'\mtn',
+r'\mto',
+r'\mtp',
+r'\mtq',
+r'\mtr',
+r'\mts',
+r'\mtt',
+r'\mtu',
+r'\mtv',
+r'\mtw',
+r'\mtx',
+r'\mty',
+r'\mtz',
 ]

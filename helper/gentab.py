@@ -15,4 +15,4 @@ def bldtab(ph, k):
 	ph = [ph2tex(s) for s in ph]
 	return [' & '.join(list(line)) + r'\\' for line in azip(ph, k)]
 
-print('\n'.join(bldtab(pharse, 5)))
+print('\n'.join(bldtab(pharse, 6)))
