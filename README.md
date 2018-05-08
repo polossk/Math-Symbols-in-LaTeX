@@ -1,17 +1,22 @@
 # Math-Symbols-in-LaTeX
+
 ![Platfrom](https://img.shields.io/badge/Platfrom-TeXLive2017-3D6117.svg)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 ![Status](https://img.shields.io/badge/status-complete-brightgreen.svg)
 ![Version](https://img.shields.io/badge/version-v1.2.0-674EA7.svg)
 
 ## Usage
+
 在 tex 文档中 添加 `\input{math-symbols}` 即可.
 
 ## Note
+
 * 整理了一些简单的数学宏定义方便写作, 更多问题请参见[readme.pdf](readme.pdf)
+* 正确的标准符号请参阅[LATEX-Mathematical-Symbols.pdf](LATEX-Mathematical-Symbols.pdf) (<https://reu.dimacs.rutgers.edu/Symbols.pdf>)
 * 命名规则基于"所读即所写"(WYRIWYT, abbr of **W**hat **Y**ou **R**ead **I**s **W**hat **Y**ou **T**ype)
 * 一键催更或提交bug [issue](https://github.com/polossk/Math-Symbols-in-LaTeX/issues/new)
 * 基于[MIT-LICENSE](LICENSE)，如有帮助，请在自己的文章中引用
+
 ```bibtex
 @misc{MathSymbolsinLaTeXbypolossk,
     title={Math-Symbols-in-LaTeX},
@@ -21,12 +26,15 @@
 }
 ```
 
-## English Version(
+## English Version
+
 * Add `\input{math-symbols}` in your tex document.
+* More correct math symbols are showing in [LATEX-Mathematical-Symbols.pdf](LATEX-Mathematical-Symbols.pdf) (<https://reu.dimacs.rutgers.edu/Symbols.pdf>)
 * summed up a sort of symbol in writing math equtions in LaTeX, check [readme.pdf](readme.pdf) for further information
 * based on WYRIWYT rule(abbr of **W**hat **Y**ou **R**ead **I**s **W**hat **Y**ou **T**ype)
 * one key to cuigeng or report bug [issue](https://github.com/polossk/Math-Symbols-in-LaTeX/issues/new)
 * using [MIT-LICENSE](LICENSE), please cite if it helps
+
 ```bibtex
 @misc{MathSymbolsinLaTeXbypolossk,
     title={Math-Symbols-in-LaTeX},
@@ -37,11 +45,13 @@
 ```
 
 ## Copyright
+
 Use this code whatever you want, under the circumstances of acknowleged the mit license this page below. Star this repository if you like, and it will be very generous of you!
 
 ## License
+
 The MIT License (MIT)
-Copyright (c) 2016 Shangkun Shen, http://polossk.com <polossk_dev@126.com>
+Copyright (c) 2017 Shangkun Shen, http://polossk.com <polossk_dev@126.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the “Software”), to deal
