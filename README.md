@@ -3,7 +3,7 @@
 ![Platfrom](https://img.shields.io/badge/Platfrom-TeXLive2017-3D6117.svg)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 ![Status](https://img.shields.io/badge/status-complete-brightgreen.svg)
-![Version](https://img.shields.io/badge/version-v2.0.0-674EA7.svg)
+![Version](https://img.shields.io/badge/version-v2.0.1.0515-674EA7.svg)
 
 ## Usage
 
@@ -19,9 +19,11 @@
 * 一键催更或提交bug [issue](https://github.com/polossk/Math-Symbols-in-LaTeX/issues/new)
 * 基于[MIT-LICENSE](LICENSE)，如有帮助，请在自己的文章中引用
 
+## BibTeX
+
 ```bibtex
 @misc{MathSymbolsinLaTeXbypolossk,
-    title={Math-Symbols-in-LaTeX},
+    title={Math-Symbols-in-{{\LaTeX}}},
     author={Shangkun Shen},
     year={2017},
     month={10}
@@ -32,24 +34,15 @@
 
 1. Copy `math-symbols.sty` in your working directory
 2. Add `\usepackage{math-symbols}` in your tex document
-3. Check [`math-symbols-readme.pdf`] for details.(readme.pdf)
+3. Check [`math-symbols-readme.pdf`](readme.pdf) for details.
 
-### Notes
+### Appendix
 
-* More correct math symbols are showing in [LaTeX-Mathematical-Symbols-Manual.pdf](LaTeX-Mathematical-Symbols-Manual.pdf) (<https://reu.dimacs.rutgers.edu/Symbols.pdf>)
 * summed up a sort of symbol in writing math equtions in LaTeX, check [readme.pdf](readme.pdf) for further information
+* More correct math symbols are showing in [LaTeX-Mathematical-Symbols-Manual.pdf](LaTeX-Mathematical-Symbols-Manual.pdf) (<https://reu.dimacs.rutgers.edu/Symbols.pdf>)
 * based on WYRIWYT rule(abbr of **W**hat **Y**ou **R**ead **I**s **W**hat **Y**ou **T**ype)
 * one click to cuigeng or report bug [issue](https://github.com/polossk/Math-Symbols-in-LaTeX/issues/new)
 * using [MIT-LICENSE](LICENSE), please cite if it helps
-
-```bibtex
-@misc{MathSymbolsinLaTeXbypolossk,
-    title={Math-Symbols-in-LaTeX},
-    author={Shangkun Shen},
-    year={2017},
-    month={10}
-}
-```
 
 ## Copyright
 
