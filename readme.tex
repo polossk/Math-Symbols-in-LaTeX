@@ -1,7 +1,7 @@
 \documentclass{article}
 \input{article-setting}
 %------------------------------------------------------------------------------%
-\newcommand\artversion{2.0}
+\newcommand\artversion{2.1.0.0402}
 \title{Math-Symbols-in-\LaTeX{}-Manual}
 \author{polossk}
 \date{Version: v\artversion, Last Update: \today}
@@ -16,7 +16,6 @@ Insert \lstinline`\usepackage{math-symbols}` in your document's preamble.
 \tableofcontents
 \thispagestyle{fancy}
 \renewcommand{\baselinestretch}{1.25}
-\sWuhao\fSong
 %------------------------------------------------------------------------------%
 \section{Constants and Useful Symbols}
 \begin{tabular}{*{10}{l}}
@@ -40,7 +39,10 @@ $\mvh$ & \lstinline`\mvh` & $\mvq$ & \lstinline`\mvq` & $\mvz$ & \lstinline`\mvz
 $\mvi$ & \lstinline`\mvi` & $\mvr$ & \lstinline`\mvr` &  &  & $\mviota$ & \lstinline`\mviota` & $\mvtau$ & \lstinline`\mvtau` & \\
 \end{tabular}
 
-\subsection{Matrix Notations}
+\subsection{Matrix/Tensor Notations}
+
+Use \lstinline`\mm<name>` or \lstinline`\mt<name>` as the abbr of \underline{M}atrix/\underline{T}ensor.
+
 \begin{tabular}{*{14}{l}}
 $\mma$ & \lstinline`\mma` & $\mmg$ & \lstinline`\mmg` & $\mmm$ & \lstinline`\mmm` & $\mms$ & \lstinline`\mms` & $\mmy$ & \lstinline`\mmy` & $\mmgamma$ & \lstinline`\mmgamma` & $\mmsigma$ & \lstinline`\mmsigma`\\
 $\mmb$ & \lstinline`\mmb` & $\mmh$ & \lstinline`\mmh` & $\mmn$ & \lstinline`\mmn` & $\mmt$ & \lstinline`\mmt` & $\mmz$ & \lstinline`\mmz` & $\mmdelta$ & \lstinline`\mmdelta` & $\mmupsilon$ & \lstinline`\mmupsilon`\\
@@ -61,13 +63,6 @@ $\mmft$ & \lstinline`\mmft` & $\mmmt$ & \lstinline`\mmmt` & $\mmtt$ & \lstinline
 $\mmgt$ & \lstinline`\mmgt` & $\mmnt$ & \lstinline`\mmnt` & $\mmut$ & \lstinline`\mmut` &  &  & $\mmsigmat$ & \lstinline`\mmsigmat` & \\
 \end{tabular}
 
-\subsection{Tensor Notations}
-\begin{tabular}{*{14}{l}}
-$\mta$ & \lstinline`\mta` & $\mtb$ & \lstinline`\mtb` & $\mtc$ & \lstinline`\mtc` & $\mtd$ & \lstinline`\mtd` & $\mte$ & \lstinline`\mte` & $\mtf$ & \lstinline`\mtf` & $\mtg$ & \lstinline`\mtg`\\
-$\mth$ & \lstinline`\mth` & $\mti$ & \lstinline`\mti` & $\mtj$ & \lstinline`\mtj` & $\mtk$ & \lstinline`\mtk` & $\mtl$ & \lstinline`\mtl` & $\mtm$ & \lstinline`\mtm` & $\mtn$ & \lstinline`\mtn`\\
-$\mto$ & \lstinline`\mto` & $\mtp$ & \lstinline`\mtp` & $\mtq$ & \lstinline`\mtq` & $\mtr$ & \lstinline`\mtr` & $\mts$ & \lstinline`\mts` & $\mtt$ & \lstinline`\mtt`\\
-$\mtu$ & \lstinline`\mtu` & $\mtv$ & \lstinline`\mtv` & $\mtw$ & \lstinline`\mtw` & $\mtx$ & \lstinline`\mtx` & $\mty$ & \lstinline`\mty` & $\mtz$ & \lstinline`\mtz`\\
-\end{tabular}
 
 \subsection{Special Vector and Matrix Notations}
 \begin{tabular}{*{8}{l}}
@@ -102,7 +97,7 @@ $\Expect$ & \lstinline`\Expect` & $\tr$ & \lstinline`\tr` & $\mean$ & \lstinline
 
 \item \lstinline`\mvctt{}{}`, \lstinline`\mvctzt{}{}`: column vector creator, eg \lstinline`\mvctt{a}{n}` gets $\mvctt{a}{n}$, \lstinline`\mvctzt{a}{n}` gets $\mvctzt{a}{n}$
 
-\item \lstinline`\mequlist{}`: provided a list of equations, eg \lstinline`\mequlist{x + y \&= 10 \\ 4x + 2y \&= 30}` gets $\mequlist{x + y &= 10 \\ 4x + 2y &= 30}$, also provide environment \lstinline`equlist`, which is similar with the \lstinline`cases` environment
+\item \lstinline`\mequlist{}`: provided a list of equations, eg \lstinline`\mequlist{x + y &= 10 \\ 4x + 2y &= 30}` gets $\mequlist{x + y &= 10 \\ 4x + 2y &= 30}$, also provide environment \lstinline`equlist`, which is similar with the \lstinline`cases` environment
 \end{itemize}
 
 %------------------------------------------------------------------------------%

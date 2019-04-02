@@ -9,7 +9,6 @@
 \usepackage{xcolor}
 \usepackage{tikz}
 \usepackage{layouts}
-\usepackage[numbers,sort&compress]{natbib}
 \usepackage{clrscode}
 %------------------------------------------------------------------------------%
 
@@ -38,63 +37,9 @@
 %------------------------------------------------------------------------------%
 
 
-%---------------------------------设置字体大小---------------------------------%
-\usepackage{type1cm}
-% 字号与行距，统一前缀s(a.k.a size)
-\newcommand{\sChuhao}{\fontsize{42pt}{63pt}\selectfont}         % 初号, 1.5倍
-\newcommand{\sYihao}{\fontsize{26pt}{36pt}\selectfont}          % 一号, 1.4倍
-\newcommand{\sErhao}{\fontsize{22pt}{28pt}\selectfont}          % 二号, 1.25倍
-\newcommand{\sXiaoer}{\fontsize{18pt}{18pt}\selectfont}         % 小二, 单倍
-\newcommand{\sSanhao}{\fontsize{16pt}{24pt}\selectfont}         % 三号, 1.5倍
-\newcommand{\sXiaosan}{\fontsize{15pt}{22pt}\selectfont}        % 小三, 1.5倍
-\newcommand{\sSihao}{\fontsize{14pt}{21pt}\selectfont}          % 四号, 1.5倍
-\newcommand{\sHalfXiaosi}{\fontsize{13pt}{19.5pt}\selectfont}   % 半小四, 1.5倍
-\newcommand{\sXiaosi}{\fontsize{12pt}{14.4pt}\selectfont}       % 小四, 1.25倍
-\newcommand{\sLargeWuhao}{\fontsize{11pt}{11pt}\selectfont}     % 大五, 单倍
-\newcommand{\sWuhao}{\fontsize{10.5pt}{10.5pt}\selectfont}      % 五号, 单倍
-\newcommand{\sXiaowu}{\fontsize{9pt}{9pt}\selectfont}           % 小五, 单倍
-%------------------------------------------------------------------------------%
-
-
-%---------------------------------设置中文字体---------------------------------%
-\usepackage{fontspec}
-\usepackage[SlantFont,BoldFont,CJKchecksingle]{xeCJK}
-\usepackage{CJKnumb}
-
-% 使用 Adobe 字体
-\newcommand\adobeSog{Adobe Song Std}
-\newcommand\adobeHei{Adobe Heiti Std}
-\newcommand\adobeKai{Adobe Kaiti Std}
-\newcommand\adobeFag{Adobe Fangsong Std}
-\newcommand\codeFont{Consolas}
-% 设置字体
-\defaultfontfeatures{Mapping=tex-text}
-\setCJKmainfont[ItalicFont=\adobeKai, BoldFont=\adobeHei]{\adobeSog}
-\setCJKsansfont[ItalicFont=\adobeKai, BoldFont=\adobeHei]{\adobeSog}
-\setCJKmonofont{\codeFont}
-\setmonofont{\codeFont}
-% 设置字体族
-\setCJKfamilyfont{song}{\adobeSog}      % 宋体  
-\setCJKfamilyfont{hei}{\adobeHei}       % 黑体  
-\setCJKfamilyfont{kai}{\adobeKai}       % 楷体  
-\setCJKfamilyfont{fang}{\adobeFag}      % 仿宋体
-% 用于页眉学校名，特殊字体，powerby https://github.com/ecomfe/fonteditor
-\setCJKfamilyfont{nwpu}{nwpuname}
-% 新建字体命令，统一前缀f(a.k.a font)
-\newcommand{\fSong}{\CJKfamily{song}}
-\newcommand{\fHei}{\CJKfamily{hei}}
-\newcommand{\fFang}{\CJKfamily{fang}}
-\newcommand{\fKai}{\CJKfamily{kai}}
-\newcommand{\fNWPU}{\CJKfamily{nwpu}}
-%------------------------------------------------------------------------------%
-
-
 %------------------------------添加插图与表格控制------------------------------%
 \usepackage{graphicx}
 \usepackage[font=small,labelsep=quad]{caption}
-\usepackage{wrapfig}
-\usepackage{multirow,makecell}
-\usepackage{longtable}
 \usepackage{booktabs}
 \usepackage{tabularx}
 \usepackage{setspace}
@@ -107,28 +52,14 @@
 %------------------------------------------------------------------------------%
 
 
-%---------------------------------设置引用格式---------------------------------%
-\renewcommand\figureautorefname{图}
-\renewcommand\tableautorefname{表}
-\renewcommand\equationautorefname{式}
-\newcommand\myreference[1]{[\ref{#1}]}
-\newcommand\eqrefe[1]{式(\ref{#1})}
-\renewcommand\theequation{\thechapter.\arabic{equation}}
-% 增加 \ucite 命令使显示的引用为上标形式
-\newcommand{\ucite}[1]{$^{\mbox{\scriptsize \cite{#1}}}$}
-%------------------------------------------------------------------------------%
-
-
-%--------------------------设置中文段落缩进与正文版式--------------------------%
-\XeTeXlinebreaklocale "zh"       %使用中文的换行风格
-\XeTeXlinebreakskip = 0pt plus 1pt    %调整换行逻辑的弹性大小
-%------------------------------------------------------------------------------%
-
 %---------------------------------设置页眉页脚---------------------------------%
 \usepackage{fancyhdr}
 \usepackage{fancyref}
 \pagestyle{fancy}
 % \chead{{\fNWPU 西北工业大学} \fSong {\title}}
+\lhead{}
+\rhead{}
+\chead{}
 \lfoot{Version: v\artversion}
 \cfoot{\thepage}
 \rfoot{by \href{https://github.com/polossk}{polossk}}
@@ -140,13 +71,6 @@
 
 %-------------------------------数学特殊符号控制-------------------------------%
 \usepackage{math-symbols}
-%------------------------------------------------------------------------------%
-
-
-%---------------------------------添加列表控制---------------------------------%
-\usepackage{enumerate}
-\numberwithin{equation}{section}
-\renewcommand\theequation{\thesection.\arabic{equation}}
 %------------------------------------------------------------------------------%
 
 
