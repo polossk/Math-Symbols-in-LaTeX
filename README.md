@@ -3,7 +3,7 @@
 ![Platfrom](https://img.shields.io/badge/Platfrom-TeXLive2017-3D6117.svg)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 ![Status](https://img.shields.io/badge/status-complete-brightgreen.svg)
-![Version](https://img.shields.io/badge/version-v2.0.1.0515-674EA7.svg)
+![Version](https://img.shields.io/badge/version-v2.1.0.0402-674EA7.svg)
 
 ## Usage
 
