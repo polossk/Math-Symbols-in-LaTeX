@@ -1,7 +1,7 @@
 \documentclass{article}
 \input{article-setting}
 %------------------------------------------------------------------------------%
-\newcommand\artversion{2.1.0.0402}
+\newcommand\artversion{2.2.0.1230}
 \title{Math-Symbols-in-\LaTeX{}-Manual}
 \author{polossk}
 \date{Version: v\artversion, Last Update: \today}
@@ -22,21 +22,22 @@ Insert \lstinline`\usepackage{math-symbols}` in your document's preamble.
 $\mi$ & \lstinline`\mi` & $\mnatr$ & \lstinline`\mnatr` & $\mcmpx$ & \lstinline`\mcmpx` & $\mscab$ & \lstinline`\mscab` & $\mslbg[{[a, b]}]{m}$ & \lstinline`\mslbg[{[a, b]}]{m}`\\
 $\mj$ & \lstinline`\mj` & $\mintg$ & \lstinline`\mintg` & $\mhilb$ & \lstinline`\mhilb` & $\mscon{(I)}$ & \lstinline`\mscon{(I)}` & $\mssbl[{[a, b]}]{m}$ & \lstinline`\mssbl[{[a, b]}]{m}`\\
 $\me$ & \lstinline`\me` & $\mrato$ & \lstinline`\mrato` & $\mcond$ & \lstinline`\mcond` & $\mslbg{2}$ & \lstinline`\mslbg{2}` & \\
- &  & $\mreal$ & \lstinline`\mreal` & $\mconst$ & \lstinline`\mconst` & $\mssbl{2}$ & \lstinline`\mssbl{2}` & \\
+$1\mdeg$ & \lstinline`1\mdeg` & $\mreal$ & \lstinline`\mreal` & $\mconst$ & \lstinline`\mconst` & $\mssbl{2}$ & \lstinline`\mssbl{2}` & \\
 \end{tabular}
 
 \section{Vector and Matrix Defination}
 \subsection{Vector Notations}
 \begin{tabular}{*{12}{l}}
-$\mva$ & \lstinline`\mva` & $\mvj$ & \lstinline`\mvj` & $\mvs$ & \lstinline`\mvs` & $\mvalpha$ & \lstinline`\mvalpha` & $\mvkappa$ & \lstinline`\mvkappa` & $\mvupsilon$ & \lstinline`\mvupsilon`\\
-$\mvb$ & \lstinline`\mvb` & $\mvk$ & \lstinline`\mvk` & $\mvt$ & \lstinline`\mvt` & $\mvbeta$ & \lstinline`\mvbeta` & $\mvlambda$ & \lstinline`\mvlambda` & $\mvphi$ & \lstinline`\mvphi`\\
-$\mvc$ & \lstinline`\mvc` & $\mvl$ & \lstinline`\mvl` & $\mvu$ & \lstinline`\mvu` & $\mvgamma$ & \lstinline`\mvgamma` & $\mvmu$ & \lstinline`\mvmu` & $\mvchi$ & \lstinline`\mvchi`\\
-$\mvd$ & \lstinline`\mvd` & $\mvm$ & \lstinline`\mvm` & $\mvv$ & \lstinline`\mvv` & $\mvdelta$ & \lstinline`\mvdelta` & $\mvnu$ & \lstinline`\mvnu` & $\mvpsi$ & \lstinline`\mvpsi`\\
-$\mve$ & \lstinline`\mve` & $\mvn$ & \lstinline`\mvn` & $\mvw$ & \lstinline`\mvw` & $\mvepsilon$ & \lstinline`\mvepsilon` & $\mvxi$ & \lstinline`\mvxi` & $\mvomega$ & \lstinline`\mvomega`\\
-$\mvf$ & \lstinline`\mvf` & $\mvo$ & \lstinline`\mvo` & $\mvx$ & \lstinline`\mvx` & $\mvzeta$ & \lstinline`\mvzeta` & $\mvpi$ & \lstinline`\mvpi` & \\
-$\mvg$ & \lstinline`\mvg` & $\mvp$ & \lstinline`\mvp` & $\mvy$ & \lstinline`\mvy` & $\mveta$ & \lstinline`\mveta` & $\mvrho$ & \lstinline`\mvrho` & \\
-$\mvh$ & \lstinline`\mvh` & $\mvq$ & \lstinline`\mvq` & $\mvz$ & \lstinline`\mvz` & $\mvtheta$ & \lstinline`\mvtheta` & $\mvsigma$ & \lstinline`\mvsigma` & \\
-$\mvi$ & \lstinline`\mvi` & $\mvr$ & \lstinline`\mvr` &  &  & $\mviota$ & \lstinline`\mviota` & $\mvtau$ & \lstinline`\mvtau` & \\
+$\mva$ & \lstinline`\mva` & $\mvk$ & \lstinline`\mvk` & $\mvu$ & \lstinline`\mvu` & $\mvalpha$ & \lstinline`\mvalpha` & $\mvlambda$ & \lstinline`\mvlambda` & $\mvchi$ & \lstinline`\mvchi`\\
+$\mvb$ & \lstinline`\mvb` & $\mvl$ & \lstinline`\mvl` & $\mvv$ & \lstinline`\mvv` & $\mvbeta$ & \lstinline`\mvbeta` & $\mvmu$ & \lstinline`\mvmu` & $\mvpsi$ & \lstinline`\mvpsi`\\
+$\mvc$ & \lstinline`\mvc` & $\mvm$ & \lstinline`\mvm` & $\mvw$ & \lstinline`\mvw` & $\mvgamma$ & \lstinline`\mvgamma` & $\mvnu$ & \lstinline`\mvnu` & $\mvomega$ & \lstinline`\mvomega`\\
+$\mvd$ & \lstinline`\mvd` & $\mvn$ & \lstinline`\mvn` & $\mvx$ & \lstinline`\mvx` & $\mvdelta$ & \lstinline`\mvdelta` & $\mvxi$ & \lstinline`\mvxi` & $\mvvarepsilon$ & \lstinline`\mvvarepsilon`\\
+$\mve$ & \lstinline`\mve` & $\mvo$ & \lstinline`\mvo` & $\mvy$ & \lstinline`\mvy` & $\mvepsilon$ & \lstinline`\mvepsilon` & $\mvpi$ & \lstinline`\mvpi` & $\mvvarkappa$ & \lstinline`\mvvarkappa`\\
+$\mvf$ & \lstinline`\mvf` & $\mvp$ & \lstinline`\mvp` & $\mvz$ & \lstinline`\mvz` & $\mvzeta$ & \lstinline`\mvzeta` & $\mvrho$ & \lstinline`\mvrho` & $\mvvarphi$ & \lstinline`\mvvarphi`\\
+$\mvg$ & \lstinline`\mvg` & $\mvq$ & \lstinline`\mvq` &  &  & $\mveta$ & \lstinline`\mveta` & $\mvsigma$ & \lstinline`\mvsigma` & $\mvvarpi$ & \lstinline`\mvvarpi`\\
+$\mvh$ & \lstinline`\mvh` & $\mvr$ & \lstinline`\mvr` &  &  & $\mvtheta$ & \lstinline`\mvtheta` & $\mvtau$ & \lstinline`\mvtau` & $\mvvarrho$ & \lstinline`\mvvarrho`\\
+$\mvi$ & \lstinline`\mvi` & $\mvs$ & \lstinline`\mvs` &  &  & $\mviota$ & \lstinline`\mviota` & $\mvupsilon$ & \lstinline`\mvupsilon` & $\mvvartheta$ & \lstinline`\mvvartheta`\\
+$\mvj$ & \lstinline`\mvj` & $\mvt$ & \lstinline`\mvt` &  &  & $\mvkappa$ & \lstinline`\mvkappa` & $\mvphi$ & \lstinline`\mvphi` & \\
 \end{tabular}
 
 \subsection{Matrix/Tensor Notations}
@@ -65,16 +66,17 @@ $\mmgt$ & \lstinline`\mmgt` & $\mmnt$ & \lstinline`\mmnt` & $\mmut$ & \lstinline
 
 
 \subsection{Special Vector and Matrix Notations}
-\begin{tabular}{*{8}{l}}
-$\mvzero$ & \lstinline`\mvzero` & $\mvone$ & \lstinline`\mvone` & $\mmzero$ & \lstinline`\mmzero` & $\mmone$ & \lstinline`\mmone` \\
+\begin{tabular}{*{12}{l}}
+$\mvzero$ & \lstinline`\mvzero` & $\mvone$ & \lstinline`\mvone` & $\mmzero$ & \lstinline`\mmzero` & $\mmone$ & \lstinline`\mmone` & $\mtzero$ & \lstinline`\mtzero` & $\mtone$ & \lstinline`\mtone` \\
 \end{tabular}
 
 
 \section{Useful Functions and Operators}
 \begin{tabular}{*{12}{l}}
-$\diff$ & \lstinline`\diff` & $\diag$ & \lstinline`\diag` & $\lcm$ & \lstinline`\lcm` & $\var$ & \lstinline`\var` & $\argmin$ & \lstinline`\argmin` & $\card$ & \lstinline`\card`\\
-$\Diff$ & \lstinline`\Diff` & $\eig$ & \lstinline`\eig` & $\rand$ & \lstinline`\rand` & $\corr$ & \lstinline`\corr` & $\argmax$ & \lstinline`\argmax` & $\dist$ & \lstinline`\dist`\\
-$\Expect$ & \lstinline`\Expect` & $\tr$ & \lstinline`\tr` & $\mean$ & \lstinline`\mean` & $\conv$ & \lstinline`\conv` & $\argopt$ & \lstinline`\argopt` & \\
+$\diff$ & \lstinline`\diff` & $\eig$ & \lstinline`\eig` & $\mean$ & \lstinline`\mean` & $\card$ & \lstinline`\card` & $\dist$ & \lstinline`\dist` & \\
+$\Diff$ & \lstinline`\Diff` & $\tr$ & \lstinline`\tr` & $\var$ & \lstinline`\var` & $\argmin$ & \lstinline`\argmin` & $\rot$ & \lstinline`\rot` & \\
+$\Expect$ & \lstinline`\Expect` & $\lcm$ & \lstinline`\lcm` & $\corr$ & \lstinline`\corr` & $\argmax$ & \lstinline`\argmax` & $\curl$ & \lstinline`\curl` & \\
+$\diag$ & \lstinline`\diag` & $\rand$ & \lstinline`\rand` & $\conv$ & \lstinline`\conv` & $\argopt$ & \lstinline`\argopt` & $\divergence$ & \lstinline`\divergence` & \\
 \end{tabular}
 
 

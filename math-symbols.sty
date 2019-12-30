@@ -28,6 +28,7 @@
 \newcommand\mi{{\mathrm i}}                                % constant i
 \newcommand\mj{{\mathrm j}}                                % constant j
 \newcommand\me{{\mathrm e}}                                % constant e
+\newcommand\mdeg{{^\circ}}                                 % symbol degree
 \newcommand\mnatr{{\mathbb N}}                             % natural num set N
 \newcommand\mintg{{\mathbb Z}}                             % integer set Z
 \newcommand\mrato{{\mathbb Q}}                             % rational set Q
@@ -92,6 +93,12 @@
 \newcommand\mvchi{{\bm \chi}}                              % vector chi
 \newcommand\mvpsi{{\bm \psi}}                              % vector psi
 \newcommand\mvomega{{\bm \omega}}                          % vector omega
+\newcommand\mvvarepsilon{{\bm \varepsilon}}                % vector varepsilon
+\newcommand\mvvarkappa{{\bm \varkappa}}                    % vector varkappa
+\newcommand\mvvarphi{{\bm \varphi}}                        % vector varphi
+\newcommand\mvvarpi{{\bm \varpi}}                          % vector varpi
+\newcommand\mvvarrho{{\bm \varrho}}                        % vector varrho
+\newcommand\mvvartheta{{\bm \vartheta}}                    % vector vartheta
 %------------------------------------------------------------------------------%
 %-[M]ath-[M]atrix-Defination---------------------------------------------------%
 %------------------------------------------------------------------------------%
@@ -217,8 +224,10 @@
 \newcommand\mvone{{\bm 1}}                                 % vector 1
 \newcommand\mmzero{{\mathbf 0}}                            % matrix 0
 \newcommand\mmone{{\mathbf 1}}                             % matrix 1
+\newcommand\mtzero{{\mathbf 0}}                            % tensor 0
+\newcommand\mtone{{\mathbf 1}}                             % tensor 1
 %------------------------------------------------------------------------------%
-%-Useful-Functions-and-Operators-----------------------------------------------%
+%-Useful-Operators-------------------------------------------------------------%
 %------------------------------------------------------------------------------%
 \DeclareMathOperator\diff{d\!}                             % operator diff
 \DeclareMathOperator\Diff{D}                               % operator Diff
@@ -237,6 +246,12 @@
 \DeclareMathOperator*{\argmax}{argmax}                     % operator argmax
 \DeclareMathOperator*{\argopt}{argopt}                     % operator argopt
 \DeclareMathOperator*{\dist}{dist}                         % operator dist
+\DeclareMathOperator\rot{rot}                              % operator rot
+\DeclareMathOperator\curl{curl}                            % operator curl
+\DeclareMathOperator\divergence{div}                       % operator div
+%------------------------------------------------------------------------------%
+%-Useful-Functions-------------------------------------------------------------%
+%------------------------------------------------------------------------------%
 \newcommand\abs[1]{{\lvert {#1} \rvert}}                   % operator abs
 \newcommand\norm[1]{{\| {#1} \|}}                          % operator norm
 \newcommand\normlp[2]{{\norm{#1}}_{#2}}                    % operator Lp-norm
