@@ -24,15 +24,13 @@
 
 ```bibtex
 @software{MathSymbolsinLaTeXbypolossk,
-    title       = {Math-Symbols-in-{{\LaTeX}}},
+    title       = {Math Symbols in {{\LaTeX}}},
     author      = {Shangkun Shen},
     year        = {2017},
     month       = {10},
     publisher   = {Zenodo},
-    version     = {v2.2},
-    journal     = {GitHub repository},
-    doi         = {10.5281/zenodo.4120376}
-    url         = {https://doi.org/10.5281/zenodo.4120376}
+    doi         = {10.5281/zenodo.4120375},
+    url         = {https://doi.org/10.5281/zenodo.4120375}
 }
 ```
 
