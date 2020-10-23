@@ -3,7 +3,8 @@
 ![Platfrom](https://img.shields.io/badge/Platfrom-TeXLive2017-3D6117.svg)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 ![Status](https://img.shields.io/badge/status-complete-brightgreen.svg)
-![Version](https://img.shields.io/badge/version-v2.1.0.0402-674EA7.svg)
+![Version](https://img.shields.io/badge/version-v2.2.1.1023-674EA7.svg)
+[![DOI](https://zenodo.org/badge/108990460.svg)](https://zenodo.org/badge/latestdoi/108990460)
 
 ## Usage
 
@@ -22,11 +23,16 @@
 ## BibTeX
 
 ```bibtex
-@misc{MathSymbolsinLaTeXbypolossk,
-    title={Math-Symbols-in-{{\LaTeX}}},
-    author={Shangkun Shen},
-    year={2017},
-    month={10}
+@software{MathSymbolsinLaTeXbypolossk,
+    title       = {Math-Symbols-in-{{\LaTeX}}},
+    author      = {Shangkun Shen},
+    year        = {2017},
+    month       = {10},
+    publisher   = {Zenodo},
+    version     = {v2.2},
+    journal     = {GitHub repository},
+    doi         = {10.5281/zenodo.4120376}
+    url         = {https://doi.org/10.5281/zenodo.4120376}
 }
 ```
 
