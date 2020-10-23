@@ -1,8 +1,8 @@
 % math-symbols.sty
-% by polossk, version 2.1.0.0402
-% last update 2019-04-02
+% by polossk, version 2.2.1.1023
+% last update 2020-10-23
 % github.com/polossk/Math-Symbols-in-LaTeX
-\ProvidesPackage{math-symbols}[2019/04/02 v2.1.0.0402 Math-Symbols-in-LaTeX]
+\ProvidesPackage{math-symbols}[2020/10/23 v2.2.1.1023 Math-Symbols-in-LaTeX]
 %------------------------------------------------------------------------------%
 %-Requare-Packages-------------------------------------------------------------%
 %------------------------------------------------------------------------------%
@@ -12,6 +12,10 @@
 \RequirePackage{amsfonts}
 \RequirePackage{mathrsfs}
 \RequirePackage{mathtools}
+%------------------------------------------------------------------------------%
+%-Auto-Line-Break-Config-------------------------------------------------------%
+%------------------------------------------------------------------------------%
+\allowdisplaybreaks[4]
 %------------------------------------------------------------------------------%
 %-Math-Fonts-------------------------------------------------------------------%
 %------------------------------------------------------------------------------%
@@ -182,49 +186,49 @@
 %------------------------------------------------------------------------------%
 %-[M]ath-[V]ector-Defination-[T]ransposed--------------------------------------%
 %------------------------------------------------------------------------------%
-\newcommand\mmat{{{\mathbf A}^T}}                          % matrix A^T
-\newcommand\mmbt{{{\mathbf B}^T}}                          % matrix B^T
-\newcommand\mmct{{{\mathbf C}^T}}                          % matrix C^T
-\newcommand\mmdt{{{\mathbf D}^T}}                          % matrix D^T
-\newcommand\mmet{{{\mathbf E}^T}}                          % matrix E^T
-\newcommand\mmft{{{\mathbf F}^T}}                          % matrix F^T
-\newcommand\mmgt{{{\mathbf G}^T}}                          % matrix G^T
-\newcommand\mmht{{{\mathbf H}^T}}                          % matrix H^T
-\newcommand\mmit{{{\mathbf I}^T}}                          % matrix I^T
-\newcommand\mmjt{{{\mathbf J}^T}}                          % matrix J^T
-\newcommand\mmkt{{{\mathbf K}^T}}                          % matrix K^T
-\newcommand\mmlt{{{\mathbf L}^T}}                          % matrix L^T
-\newcommand\mmmt{{{\mathbf M}^T}}                          % matrix M^T
-\newcommand\mmnt{{{\mathbf N}^T}}                          % matrix N^T
-\newcommand\mmot{{{\mathbf O}^T}}                          % matrix O^T
-\newcommand\mmpt{{{\mathbf P}^T}}                          % matrix P^T
-\newcommand\mmqt{{{\mathbf Q}^T}}                          % matrix Q^T
-\newcommand\mmrt{{{\mathbf R}^T}}                          % matrix R^T
-\newcommand\mmst{{{\mathbf S}^T}}                          % matrix S^T
-\newcommand\mmtt{{{\mathbf T}^T}}                          % matrix T^T
-\newcommand\mmut{{{\mathbf U}^T}}                          % matrix U^T
-\newcommand\mmvt{{{\mathbf V}^T}}                          % matrix V^T
-\newcommand\mmwt{{{\mathbf W}^T}}                          % matrix W^T
-\newcommand\mmxt{{{\mathbf X}^T}}                          % matrix X^T
-\newcommand\mmyt{{{\mathbf Y}^T}}                          % matrix Y^T
-\newcommand\mmzt{{{\mathbf Z}^T}}                          % matrix Z^T
-\newcommand\mmgammat{{{\bm \Gamma}^T}}                     % matrix Gamma^T
-\newcommand\mmdeltat{{{\bm \Delta}^T}}                     % matrix Delta^T
-\newcommand\mmthetat{{{\bm \Theta}^T}}                     % matrix Theta^T
-\newcommand\mmlambdat{{{\bm \Lambda}^T}}                   % matrix Lambda^T
-\newcommand\mmxit{{{\bm \Xi}^T}}                           % matrix Xi^T
-\newcommand\mmpit{{{\bm \Pi}^T}}                           % matrix Pi^T
-\newcommand\mmsigmat{{{\bm \Sigma}^T}}                     % matrix Sigma^T
-\newcommand\mmupsilont{{{\bm \Upsilon}^T}}                 % matrix Upsilon^T
-\newcommand\mmphit{{{\bm \Phi}^T}}                         % matrix Phi^T
-\newcommand\mmpsit{{{\bm \Psi}^T}}                         % matrix Psi^T
-\newcommand\mmomegat{{{\bm \Omega}^T}}                     % matrix Omega^T
+\newcommand\mmat{{{\mathbf A}^{\text T}}}                  % matrix A^T
+\newcommand\mmbt{{{\mathbf B}^{\text T}}}                  % matrix B^T
+\newcommand\mmct{{{\mathbf C}^{\text T}}}                  % matrix C^T
+\newcommand\mmdt{{{\mathbf D}^{\text T}}}                  % matrix D^T
+\newcommand\mmet{{{\mathbf E}^{\text T}}}                  % matrix E^T
+\newcommand\mmft{{{\mathbf F}^{\text T}}}                  % matrix F^T
+\newcommand\mmgt{{{\mathbf G}^{\text T}}}                  % matrix G^T
+\newcommand\mmht{{{\mathbf H}^{\text T}}}                  % matrix H^T
+\newcommand\mmit{{{\mathbf I}^{\text T}}}                  % matrix I^T
+\newcommand\mmjt{{{\mathbf J}^{\text T}}}                  % matrix J^T
+\newcommand\mmkt{{{\mathbf K}^{\text T}}}                  % matrix K^T
+\newcommand\mmlt{{{\mathbf L}^{\text T}}}                  % matrix L^T
+\newcommand\mmmt{{{\mathbf M}^{\text T}}}                  % matrix M^T
+\newcommand\mmnt{{{\mathbf N}^{\text T}}}                  % matrix N^T
+\newcommand\mmot{{{\mathbf O}^{\text T}}}                  % matrix O^T
+\newcommand\mmpt{{{\mathbf P}^{\text T}}}                  % matrix P^T
+\newcommand\mmqt{{{\mathbf Q}^{\text T}}}                  % matrix Q^T
+\newcommand\mmrt{{{\mathbf R}^{\text T}}}                  % matrix R^T
+\newcommand\mmst{{{\mathbf S}^{\text T}}}                  % matrix S^T
+\newcommand\mmtt{{{\mathbf T}^{\text T}}}                  % matrix T^T
+\newcommand\mmut{{{\mathbf U}^{\text T}}}                  % matrix U^T
+\newcommand\mmvt{{{\mathbf V}^{\text T}}}                  % matrix V^T
+\newcommand\mmwt{{{\mathbf W}^{\text T}}}                  % matrix W^T
+\newcommand\mmxt{{{\mathbf X}^{\text T}}}                  % matrix X^T
+\newcommand\mmyt{{{\mathbf Y}^{\text T}}}                  % matrix Y^T
+\newcommand\mmzt{{{\mathbf Z}^{\text T}}}                  % matrix Z^T
+\newcommand\mmgammat{{{\bm \Gamma}^{\text T}}}             % matrix Gamma^T
+\newcommand\mmdeltat{{{\bm \Delta}^{\text T}}}             % matrix Delta^T
+\newcommand\mmthetat{{{\bm \Theta}^{\text T}}}             % matrix Theta^T
+\newcommand\mmlambdat{{{\bm \Lambda}^{\text T}}}           % matrix Lambda^T
+\newcommand\mmxit{{{\bm \Xi}^{\text T}}}                   % matrix Xi^T
+\newcommand\mmpit{{{\bm \Pi}^{\text T}}}                   % matrix Pi^T
+\newcommand\mmsigmat{{{\bm \Sigma}^{\text T}}}             % matrix Sigma^T
+\newcommand\mmupsilont{{{\bm \Upsilon}^{\text T}}}         % matrix Upsilon^T
+\newcommand\mmphit{{{\bm \Phi}^{\text T}}}                 % matrix Phi^T
+\newcommand\mmpsit{{{\bm \Psi}^{\text T}}}                 % matrix Psi^T
+\newcommand\mmomegat{{{\bm \Omega}^{\text T}}}             % matrix Omega^T
 %------------------------------------------------------------------------------%
-\newcommand\mvzero{{\bm 0}}                                % vector 0
-\newcommand\mvone{{\bm 1}}                                 % vector 1
+\newcommand\mvzero{{\mathbf 0}}                            % vector 0
 \newcommand\mmzero{{\mathbf 0}}                            % matrix 0
-\newcommand\mmone{{\mathbf 1}}                             % matrix 1
 \newcommand\mtzero{{\mathbf 0}}                            % tensor 0
+\newcommand\mvone{{\mathbf 1}}                             % vector 1
+\newcommand\mmone{{\mathbf 1}}                             % matrix 1
 \newcommand\mtone{{\mathbf 1}}                             % tensor 1
 %------------------------------------------------------------------------------%
 %-Useful-Operators-------------------------------------------------------------%
@@ -256,11 +260,9 @@
 \newcommand\norm[1]{{\| {#1} \|}}                          % operator norm
 \newcommand\normlp[2]{{\norm{#1}}_{#2}}                    % operator Lp-norm
 %------------------------------------------------------------------------------%
-%-Auto-Line-Break-Config-------------------------------------------------------%
-%------------------------------------------------------------------------------%
-\allowdisplaybreaks[4]
-%------------------------------------------------------------------------------%
 %-Useful-Aliases-and-Generators------------------------------------------------%
+%------------------------------------------------------------------------------%
+%---Derivative-----------------------------------------------------------------%
 %------------------------------------------------------------------------------%
 \newcommand\fracdiff[2]{{\frac{\diff {#1}}{\diff {#2}}}}
 \newcommand\fracdiffs[1]{{\fracdiff{}{#1}}}
@@ -270,19 +272,26 @@
 \newcommand\fracpartials[1]{{\fracpartial{}{#1}}}
 \newcommand\dfracpartial[2]{{\dfrac{\partial {#1}}{\partial {#2}}}}
 \newcommand\dfracpartials[1]{{\dfracpartial{}{#1}}}
-
-
+%------------------------------------------------------------------------------%
+%---Function-Vaules-at-Exact-Point---------------------------------------------%
+%------------------------------------------------------------------------------%
 \newcommand\mfwhen[2]{{\left.{#1} \right|}_{#2}}
-
+%------------------------------------------------------------------------------%
+%---Auto-Sized-Brackets--------------------------------------------------------%
+%------------------------------------------------------------------------------%
 \newcommand\mclosure[1]{{\left( {#1} \right)}}
 \newcommand\mclosuresquare[1]{{\left[ {#1} \right]}}
 \newcommand\mclosurebrace[1]{{\left\{ {#1} \right\}}}
-
+%------------------------------------------------------------------------------%
+%---Vector(Sequence)-Generator-------------------------------------------------%
+%------------------------------------------------------------------------------%
 \newcommand\mvct[2]{{ ({#1}_1, {#1}_2, \ldots, {#1}_{#2}) }}
 \newcommand\mvctz[2]{{ ({#1}_0, {#1}_1, \ldots, {#1}_{#2}) }}
-\newcommand\mvctt[2]{{ \mvct{#1}{#2}^T }}
-\newcommand\mvctzt[2]{{ \mvctz{#1}{#2}^T }}
-
+\newcommand\mvctt[2]{{ \mvct{#1}{#2}^{\text T} }}
+\newcommand\mvctzt[2]{{ \mvctz{#1}{#2}^{\text T} }}
+%------------------------------------------------------------------------------%
+%---A-Group-of-Equations-------------------------------------------------------%
+%------------------------------------------------------------------------------%
 \newcommand\mequlist[1]{{\left\{ \begin{aligned} #1 \end{aligned} \right.}}
 \newenvironment{equlist}{\left\{ \begin{aligned} }{ \end{aligned} \right.}
 %------------------------------------------------------------------------------%

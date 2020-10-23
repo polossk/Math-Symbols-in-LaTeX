@@ -1,32 +1,47 @@
 \documentclass{article}
 \input{article-setting}
 %------------------------------------------------------------------------------%
-\newcommand\artversion{2.2.0.1230}
+\newcommand\artversion{2.2.1.1023}
 \title{Math-Symbols-in-\LaTeX{}-Manual}
 \author{polossk}
 \date{Version: v\artversion, Last Update: \today}
 %------------------------------------------------------------------------------%
 \begin{document}
 %------------------------------------------------------------------------------%
-% \pagewiselinenumbers
 \maketitle
 
-Insert \lstinline`\usepackage{math-symbols}` in your document's preamble.
+Add \lstinline`\usepackage{math-symbols}` in your document's preamble.
 
-\tableofcontents
+And you will no longer need use other math package in most instances.
+
+% \tableofcontents
 \thispagestyle{fancy}
 \renewcommand{\baselinestretch}{1.25}
 %------------------------------------------------------------------------------%
+
+
+%------------------------------------------------------------------------------%
 \section{Constants and Useful Symbols}
+%------------------------------------------------------------------------------%
 \begin{tabular}{*{10}{l}}
 $\mi$ & \lstinline`\mi` & $\mnatr$ & \lstinline`\mnatr` & $\mcmpx$ & \lstinline`\mcmpx` & $\mscab$ & \lstinline`\mscab` & $\mslbg[{[a, b]}]{m}$ & \lstinline`\mslbg[{[a, b]}]{m}`\\
 $\mj$ & \lstinline`\mj` & $\mintg$ & \lstinline`\mintg` & $\mhilb$ & \lstinline`\mhilb` & $\mscon{(I)}$ & \lstinline`\mscon{(I)}` & $\mssbl[{[a, b]}]{m}$ & \lstinline`\mssbl[{[a, b]}]{m}`\\
 $\me$ & \lstinline`\me` & $\mrato$ & \lstinline`\mrato` & $\mcond$ & \lstinline`\mcond` & $\mslbg{2}$ & \lstinline`\mslbg{2}` & \\
 $1\mdeg$ & \lstinline`1\mdeg` & $\mreal$ & \lstinline`\mreal` & $\mconst$ & \lstinline`\mconst` & $\mssbl{2}$ & \lstinline`\mssbl{2}` & \\
 \end{tabular}
+%------------------------------------------------------------------------------%
 
+
+%------------------------------------------------------------------------------%
 \section{Vector and Matrix Defination}
+%------------------------------------------------------------------------------%
+
+
+%------------------------------------------------------------------------------%
 \subsection{Vector Notations}
+%------------------------------------------------------------------------------%
+Use \lstinline`\mv<name>` as the abbr of ``\underline{M}ath \underline{V}ector''.
+
 \begin{tabular}{*{12}{l}}
 $\mva$ & \lstinline`\mva` & $\mvk$ & \lstinline`\mvk` & $\mvu$ & \lstinline`\mvu` & $\mvalpha$ & \lstinline`\mvalpha` & $\mvlambda$ & \lstinline`\mvlambda` & $\mvchi$ & \lstinline`\mvchi`\\
 $\mvb$ & \lstinline`\mvb` & $\mvl$ & \lstinline`\mvl` & $\mvv$ & \lstinline`\mvv` & $\mvbeta$ & \lstinline`\mvbeta` & $\mvmu$ & \lstinline`\mvmu` & $\mvpsi$ & \lstinline`\mvpsi`\\
@@ -39,10 +54,13 @@ $\mvh$ & \lstinline`\mvh` & $\mvr$ & \lstinline`\mvr` &  &  & $\mvtheta$ & \lsti
 $\mvi$ & \lstinline`\mvi` & $\mvs$ & \lstinline`\mvs` &  &  & $\mviota$ & \lstinline`\mviota` & $\mvupsilon$ & \lstinline`\mvupsilon` & $\mvvartheta$ & \lstinline`\mvvartheta`\\
 $\mvj$ & \lstinline`\mvj` & $\mvt$ & \lstinline`\mvt` &  &  & $\mvkappa$ & \lstinline`\mvkappa` & $\mvphi$ & \lstinline`\mvphi` & \\
 \end{tabular}
+%------------------------------------------------------------------------------%
 
+
+%------------------------------------------------------------------------------%
 \subsection{Matrix/Tensor Notations}
-
-Use \lstinline`\mm<name>` or \lstinline`\mt<name>` as the abbr of \underline{M}atrix/\underline{T}ensor.
+%------------------------------------------------------------------------------%
+Use \lstinline`\mm<name>` or \lstinline`\mt<name>` as the abbr of ``\underline{M}ath \underline{M}atrix/\underline{T}ensor''.
 
 \begin{tabular}{*{14}{l}}
 $\mma$ & \lstinline`\mma` & $\mmg$ & \lstinline`\mmg` & $\mmm$ & \lstinline`\mmm` & $\mms$ & \lstinline`\mms` & $\mmy$ & \lstinline`\mmy` & $\mmgamma$ & \lstinline`\mmgamma` & $\mmsigma$ & \lstinline`\mmsigma`\\
@@ -52,8 +70,14 @@ $\mmd$ & \lstinline`\mmd` & $\mmj$ & \lstinline`\mmj` & $\mmp$ & \lstinline`\mmp
 $\mme$ & \lstinline`\mme` & $\mmk$ & \lstinline`\mmk` & $\mmq$ & \lstinline`\mmq` & $\mmw$ & \lstinline`\mmw` &  &  & $\mmxi$ & \lstinline`\mmxi` & $\mmomega$ & \lstinline`\mmomega`\\
 $\mmf$ & \lstinline`\mmf` & $\mml$ & \lstinline`\mml` & $\mmr$ & \lstinline`\mmr` & $\mmx$ & \lstinline`\mmx` &  &  & $\mmpi$ & \lstinline`\mmpi` & \\
 \end{tabular}
+%------------------------------------------------------------------------------%
 
+
+%------------------------------------------------------------------------------%
 \subsection{Transposed Matrix Notations}
+%------------------------------------------------------------------------------%
+Use \lstinline`\mm<name>t` as the abbr of ``\underline{M}ath \underline{M}atrix \underline{T}ransposed''.
+
 \begin{tabular}{*{12}{l}}
 $\mmat$ & \lstinline`\mmat` & $\mmht$ & \lstinline`\mmht` & $\mmot$ & \lstinline`\mmot` & $\mmvt$ & \lstinline`\mmvt` & $\mmgammat$ & \lstinline`\mmgammat` & $\mmupsilont$ & \lstinline`\mmupsilont`\\
 $\mmbt$ & \lstinline`\mmbt` & $\mmit$ & \lstinline`\mmit` & $\mmpt$ & \lstinline`\mmpt` & $\mmwt$ & \lstinline`\mmwt` & $\mmdeltat$ & \lstinline`\mmdeltat` & $\mmphit$ & \lstinline`\mmphit`\\
@@ -63,45 +87,69 @@ $\mmet$ & \lstinline`\mmet` & $\mmlt$ & \lstinline`\mmlt` & $\mmst$ & \lstinline
 $\mmft$ & \lstinline`\mmft` & $\mmmt$ & \lstinline`\mmmt` & $\mmtt$ & \lstinline`\mmtt` &  &  & $\mmpit$ & \lstinline`\mmpit` & \\
 $\mmgt$ & \lstinline`\mmgt` & $\mmnt$ & \lstinline`\mmnt` & $\mmut$ & \lstinline`\mmut` &  &  & $\mmsigmat$ & \lstinline`\mmsigmat` & \\
 \end{tabular}
+%------------------------------------------------------------------------------%
 
 
+%------------------------------------------------------------------------------%
 \subsection{Special Vector and Matrix Notations}
-\begin{tabular}{*{12}{l}}
-$\mvzero$ & \lstinline`\mvzero` & $\mvone$ & \lstinline`\mvone` & $\mmzero$ & \lstinline`\mmzero` & $\mmone$ & \lstinline`\mmone` & $\mtzero$ & \lstinline`\mtzero` & $\mtone$ & \lstinline`\mtone` \\
+%------------------------------------------------------------------------------%
+\begin{tabular}{*{4}{l}}
+$\mvzero$ & \lstinline`\mvzero` & \lstinline`\mmzero` & \lstinline`\mtzero` \\
+$\mvone$ & \lstinline`\mvone` & \lstinline`\mmone` & \lstinline`\mtone` \\
 \end{tabular}
+%------------------------------------------------------------------------------%
 
 
+
+%------------------------------------------------------------------------------%
 \section{Useful Functions and Operators}
+%------------------------------------------------------------------------------%
 \begin{tabular}{*{12}{l}}
 $\diff$ & \lstinline`\diff` & $\eig$ & \lstinline`\eig` & $\mean$ & \lstinline`\mean` & $\card$ & \lstinline`\card` & $\dist$ & \lstinline`\dist` & \\
 $\Diff$ & \lstinline`\Diff` & $\tr$ & \lstinline`\tr` & $\var$ & \lstinline`\var` & $\argmin$ & \lstinline`\argmin` & $\rot$ & \lstinline`\rot` & \\
 $\Expect$ & \lstinline`\Expect` & $\lcm$ & \lstinline`\lcm` & $\corr$ & \lstinline`\corr` & $\argmax$ & \lstinline`\argmax` & $\curl$ & \lstinline`\curl` & \\
 $\diag$ & \lstinline`\diag` & $\rand$ & \lstinline`\rand` & $\conv$ & \lstinline`\conv` & $\argopt$ & \lstinline`\argopt` & $\divergence$ & \lstinline`\divergence` & \\
 \end{tabular}
+%------------------------------------------------------------------------------%
 
-
-
-\section{Useful Aliases and Generators}
-\begin{itemize}
-\item \lstinline`\fracdiff{}{}`: frac \& diff operator, also provide \lstinline`\dfracdiff{}{}` mode. For example, \lstinline`\fracdiff{u}{x}` gets $\fracdiff{u}{x}$, \lstinline`\dfracdiff{^2u}{x^2}` gets $\dfracdiff{^2u}{x^2}$
-
-\item \lstinline`\fracdiffs{}`: special frac \& diff operator. For example, \lstinline`\fracdiffs{x}` gets $\fracdiffs{x}$, \lstinline`\dfracdiffs{y}` gets $\dfracdiffs{y}$
-
-\item \lstinline`\fracpartial{}{}`: frac \& partial operator, also provide \lstinline`\dfracpartial{}{}` mode. For example, \lstinline`\fracpartial{u}{x}` gets $\fracpartial{u}{x}$, \lstinline`\dfracpartial{^2u}{x^2}` gets $\dfracpartial{^2u}{x^2}$
-
-\item \lstinline`\fracpartials{}`: special frac \& partial operator. For example, \lstinline`\fracpartials{x}` gets $\fracpartials{x}$, \lstinline`\dfracpartials{y}` gets $\dfracpartials{y}$
-
-\item \lstinline`\mclosure{}`, \lstinline`\mclosuresquare{}`, \lstinline`\mclosurebrace{}`: auto height brackets, eg $\mclosurebrace{ \mclosuresquare{ \mclosure{a^2 + b^2}^2 }^2 }$
-
-\item \lstinline`\mfwhen{}{}`: create a symbol \lstinline`|`, eg \lstinline`\mfwhen{\fracpartial{u}{t}}{x=5}` gets $\mfwhen{\fracpartial{u}{t}}{x=5}$
-
-\item \lstinline`\mvct{}{}`, \lstinline`\mvctz{}{}`: row vector creator, eg \lstinline`\mvct{a}{n}` gets $\mvct{a}{n}$, \lstinline`\mvctz{a}{n}` gets $\mvctz{a}{n}$
-
-\item \lstinline`\mvctt{}{}`, \lstinline`\mvctzt{}{}`: column vector creator, eg \lstinline`\mvctt{a}{n}` gets $\mvctt{a}{n}$, \lstinline`\mvctzt{a}{n}` gets $\mvctzt{a}{n}$
-
-\item \lstinline`\mequlist{}`: provided a list of equations, eg \lstinline`\mequlist{x + y &= 10 \\ 4x + 2y &= 30}` gets $\mequlist{x + y &= 10 \\ 4x + 2y &= 30}$, also provide environment \lstinline`equlist`, which is similar with the \lstinline`cases` environment
-\end{itemize}
 
 %------------------------------------------------------------------------------%
-% \end{multicols}
+\section{Useful Aliases and Generators}
+%------------------------------------------------------------------------------%
+\begin{itemize}
+\item \textbf{Derivatives.} Command: \lstinline`\[d]frac(diff|partial)(s|{var1}){var2}`. \lstinline`var1` and \lstinline`var2` is numerator and denominator, respectively. \lstinline`[d]` is just like the \lstinline`\dfrac` providing a display mode. \lstinline`(diff|partial)` provides derivative or partial derivative. \lstinline`(s|{var1})` means that the numerator is skippable. For example,
+
+\renewcommand{\arraystretch}{2}
+\begin{tabular}{*{4}{l}}
+\toprule
+Text & \TeX & Text & \TeX \\
+\midrule
+$\fracdiff{u}{x}$ & \lstinline`\fracdiff{u}{x}` & $\dfracdiff{u}{x}$ & \lstinline`\dfracdiff{u}{x}`  \\
+$\fracdiff{^2u}{x^2}$ & \lstinline`\fracdiff{^2u}{x^2}` & $\dfracdiff{^2u}{x^2}$ & \lstinline`\dfracdiff{^2u}{x^2}`  \\
+$\fracdiffs{x}$ & \lstinline`\fracdiffs{x}` & $\dfracdiffs{x}$ & \lstinline`\dfracdiffs{x}`  \\
+$\fracpartial{u}{x}$ & \lstinline`\fracpartial{u}{x}` & $\dfracpartial{u}{x}$ & \lstinline`\dfracpartial{u}{x}`  \\
+$\fracpartial{^2u}{x^2}$ & \lstinline`\fracpartial{^2u}{x^2}` & $\dfracpartial{^2u}{x^2}$ & \lstinline`\dfracpartial{^2u}{x^2}`  \\
+$\fracpartials{x}$ & \lstinline`\fracpartials{x}` & $\dfracpartials{x}$ & \lstinline`\dfracpartials{x}` \\
+\bottomrule
+\end{tabular}
+\renewcommand{\arraystretch}{1.25}
+
+\item \textbf{Function vaules at exact point.} Command: \lstinline`\mfwhen{var1}{var2}`. \lstinline`var1` and \lstinline`var2` is function and point position, respectively. For example, \lstinline`\mfwhen{\fracpartial{u}{t}}{x=5}` gets $\mfwhen{\fracpartial{u}{t}}{x=5}$.
+
+\item \textbf{Auto sized brackets.} Command: \lstinline`\mclosure{}` for \lstinline`()`, \lstinline`\mclosuresquare{}` for \lstinline`[]`, \lstinline`\mclosurebrace{}` for \lstinline`{}`. For example, $\mclosurebrace{ \mclosuresquare{ \mclosure{a^2 + b^2}^2 }^3 }$.
+
+\item \textbf{Vector(Sequence) generator.} Command \lstinline`\mvct[z][t]{var1}{var2}`. \lstinline`var1` and \lstinline`var2` is variable name and the last index, respectively. The index is begin from 1 in default. \lstinline`[z]` makes index begins from 0. \lstinline`[t]` makes this vector transposed into a column vector. For example, 
+
+\begin{tabular}{*{4}{l}}
+\toprule
+Text & \TeX & Text & \TeX \\
+\midrule
+$\mvct{a}{n}$ & \lstinline`\mvct{a}{n}` & $\mvctz{a}{n}$ & \lstinline`\mvctz{a}{n}` \\
+$\mvctt{a}{n}$ & \lstinline`\mvctt{a}{n}` & $\mvctzt{a}{n}$ & \lstinline`\mvctzt{a}{n}` \\
+\bottomrule
+\end{tabular}
+
+\item \textbf{A list of equations group by a brace.} Command \lstinline`\mequlist{...}`. Also provide environment \lstinline`equlist`, which is similar with the \lstinline`cases` environment. For example, \lstinline`\mequlist{x + y &= 10 \\ 4x + 2y &= 30}` gets $\mequlist{x + y &= 10 \\ 4x + 2y &= 30}$.
+\end{itemize}
+%------------------------------------------------------------------------------%
 \end{document}
