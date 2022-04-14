@@ -1,7 +1,7 @@
 \documentclass{article}
 \input{article-setting}
 %------------------------------------------------------------------------------%
-\newcommand\artversion{2.2.1.1023}
+\newcommand\artversion{2.2.2.0414}
 \title{Math-Symbols-in-\LaTeX{}-Manual}
 \author{polossk}
 \date{Version: v\artversion, Last Update: \today}
@@ -24,10 +24,10 @@ And you will no longer need use other math package in most instances.
 \section{Constants and Useful Symbols}
 %------------------------------------------------------------------------------%
 \begin{tabular}{*{10}{l}}
-$\mi$ & \lstinline`\mi` & $\mnatr$ & \lstinline`\mnatr` & $\mcmpx$ & \lstinline`\mcmpx` & $\mscab$ & \lstinline`\mscab` & $\mslbg[{[a, b]}]{m}$ & \lstinline`\mslbg[{[a, b]}]{m}`\\
-$\mj$ & \lstinline`\mj` & $\mintg$ & \lstinline`\mintg` & $\mhilb$ & \lstinline`\mhilb` & $\mscon{(I)}$ & \lstinline`\mscon{(I)}` & $\mssbl[{[a, b]}]{m}$ & \lstinline`\mssbl[{[a, b]}]{m}`\\
-$\me$ & \lstinline`\me` & $\mrato$ & \lstinline`\mrato` & $\mcond$ & \lstinline`\mcond` & $\mslbg{2}$ & \lstinline`\mslbg{2}` & \\
-$1\mdeg$ & \lstinline`1\mdeg` & $\mreal$ & \lstinline`\mreal` & $\mconst$ & \lstinline`\mconst` & $\mssbl{2}$ & \lstinline`\mssbl{2}` & \\
+    $\mi$    & \lstinline`\mi`  & $\mnatr$ & \lstinline`\mnatr`  & $\mcmpx$  & \lstinline`\mcmpx`  & $\mscab$      & \lstinline`\mscab`  & $\mslbg[{[a, b]}]{m}$ & \lstinline`\mslbg[{[a, b]}]{m}`  \\
+    $\mj$    & \lstinline`\mj`  & $\mintg$ & \lstinline`\mintg`  & $\mhilb$  & \lstinline`\mhilb`  & $\mscon{(I)}$ & \lstinline`\mscon{(I)}` & $\mssbl[{[a, b]}]{m}$ & \lstinline`\mssbl[{[a, b]}]{m}` \\
+    $\me$    & \lstinline`\me` & $\mrato$ & \lstinline`\mrato` & $\mcond$  & \lstinline`\mcond` & $\mslbg{2}$   & \lstinline`\mslbg{2}` &                                                 \\
+    $1\mdeg$ & \lstinline`1\mdeg` & $\mreal$ & \lstinline`\mreal` & $\mconst$ & \lstinline`\mconst` & $\mssbl{2}$   & \lstinline`\mssbl{2}` &                                                 \\
 \end{tabular}
 %------------------------------------------------------------------------------%
 
@@ -43,16 +43,16 @@ $1\mdeg$ & \lstinline`1\mdeg` & $\mreal$ & \lstinline`\mreal` & $\mconst$ & \lst
 Use \lstinline`\mv<name>` as the abbr of ``\underline{M}ath \underline{V}ector''.
 
 \begin{tabular}{*{12}{l}}
-$\mva$ & \lstinline`\mva` & $\mvk$ & \lstinline`\mvk` & $\mvu$ & \lstinline`\mvu` & $\mvalpha$ & \lstinline`\mvalpha` & $\mvlambda$ & \lstinline`\mvlambda` & $\mvchi$ & \lstinline`\mvchi`\\
-$\mvb$ & \lstinline`\mvb` & $\mvl$ & \lstinline`\mvl` & $\mvv$ & \lstinline`\mvv` & $\mvbeta$ & \lstinline`\mvbeta` & $\mvmu$ & \lstinline`\mvmu` & $\mvpsi$ & \lstinline`\mvpsi`\\
-$\mvc$ & \lstinline`\mvc` & $\mvm$ & \lstinline`\mvm` & $\mvw$ & \lstinline`\mvw` & $\mvgamma$ & \lstinline`\mvgamma` & $\mvnu$ & \lstinline`\mvnu` & $\mvomega$ & \lstinline`\mvomega`\\
-$\mvd$ & \lstinline`\mvd` & $\mvn$ & \lstinline`\mvn` & $\mvx$ & \lstinline`\mvx` & $\mvdelta$ & \lstinline`\mvdelta` & $\mvxi$ & \lstinline`\mvxi` & $\mvvarepsilon$ & \lstinline`\mvvarepsilon`\\
-$\mve$ & \lstinline`\mve` & $\mvo$ & \lstinline`\mvo` & $\mvy$ & \lstinline`\mvy` & $\mvepsilon$ & \lstinline`\mvepsilon` & $\mvpi$ & \lstinline`\mvpi` & $\mvvarkappa$ & \lstinline`\mvvarkappa`\\
-$\mvf$ & \lstinline`\mvf` & $\mvp$ & \lstinline`\mvp` & $\mvz$ & \lstinline`\mvz` & $\mvzeta$ & \lstinline`\mvzeta` & $\mvrho$ & \lstinline`\mvrho` & $\mvvarphi$ & \lstinline`\mvvarphi`\\
-$\mvg$ & \lstinline`\mvg` & $\mvq$ & \lstinline`\mvq` &  &  & $\mveta$ & \lstinline`\mveta` & $\mvsigma$ & \lstinline`\mvsigma` & $\mvvarpi$ & \lstinline`\mvvarpi`\\
-$\mvh$ & \lstinline`\mvh` & $\mvr$ & \lstinline`\mvr` &  &  & $\mvtheta$ & \lstinline`\mvtheta` & $\mvtau$ & \lstinline`\mvtau` & $\mvvarrho$ & \lstinline`\mvvarrho`\\
-$\mvi$ & \lstinline`\mvi` & $\mvs$ & \lstinline`\mvs` &  &  & $\mviota$ & \lstinline`\mviota` & $\mvupsilon$ & \lstinline`\mvupsilon` & $\mvvartheta$ & \lstinline`\mvvartheta`\\
-$\mvj$ & \lstinline`\mvj` & $\mvt$ & \lstinline`\mvt` &  &  & $\mvkappa$ & \lstinline`\mvkappa` & $\mvphi$ & \lstinline`\mvphi` & \\
+    $\mva$ & \lstinline`\mva` & $\mvk$ & \lstinline`\mvk` & $\mvu$ & \lstinline`\mvu` & $\mvalpha$   & \lstinline`\mvalpha` & $\mvlambda$  & \lstinline`\mvlambda` & $\mvchi$        & \lstinline`\mvchi` \\
+    $\mvb$ & \lstinline`\mvb` & $\mvl$ & \lstinline`\mvl` & $\mvv$ & \lstinline`\mvv` & $\mvbeta$    & \lstinline`\mvbeta` & $\mvmu$      & \lstinline`\mvmu` & $\mvpsi$        & \lstinline`\mvpsi` \\
+    $\mvc$ & \lstinline`\mvc` & $\mvm$ & \lstinline`\mvm` & $\mvw$ & \lstinline`\mvw` & $\mvgamma$   & \lstinline`\mvgamma` & $\mvnu$      & \lstinline`\mvnu` & $\mvomega$      & \lstinline`\mvomega` \\
+    $\mvd$ & \lstinline`\mvd` & $\mvn$ & \lstinline`\mvn` & $\mvx$ & \lstinline`\mvx` & $\mvdelta$   & \lstinline`\mvdelta` & $\mvxi$      & \lstinline`\mvxi` & $\mvvarepsilon$ & \lstinline`\mvvarepsilon` \\
+    $\mve$ & \lstinline`\mve` & $\mvo$ & \lstinline`\mvo` & $\mvy$ & \lstinline`\mvy` & $\mvepsilon$ & \lstinline`\mvepsilon` & $\mvpi$      & \lstinline`\mvpi` & $\mvvarkappa$   & \lstinline`\mvvarkappa` \\
+    $\mvf$ & \lstinline`\mvf` & $\mvp$ & \lstinline`\mvp` & $\mvz$ & \lstinline`\mvz` & $\mvzeta$    & \lstinline`\mvzeta` & $\mvrho$     & \lstinline`\mvrho` & $\mvvarphi$     & \lstinline`\mvvarphi` \\
+    $\mvg$ & \lstinline`\mvg` & $\mvq$ & \lstinline`\mvq` &        &                         & $\mveta$     & \lstinline`\mveta` & $\mvsigma$   & \lstinline`\mvsigma` & $\mvvarpi$      & \lstinline`\mvvarpi` \\
+    $\mvh$ & \lstinline`\mvh` & $\mvr$ & \lstinline`\mvr` &        &                         & $\mvtheta$   & \lstinline`\mvtheta` & $\mvtau$     & \lstinline`\mvtau` & $\mvvarrho$     & \lstinline`\mvvarrho` \\
+    $\mvi$ & \lstinline`\mvi` & $\mvs$ & \lstinline`\mvs` &        &                         & $\mviota$    & \lstinline`\mviota` & $\mvupsilon$ & \lstinline`\mvupsilon` & $\mvvartheta$   & \lstinline`\mvvartheta` \\
+    $\mvj$ & \lstinline`\mvj` & $\mvt$ & \lstinline`\mvt` &        &                         & $\mvkappa$   & \lstinline`\mvkappa` & $\mvphi$     & \lstinline`\mvphi` &                                           \\
 \end{tabular}
 %------------------------------------------------------------------------------%
 
@@ -63,12 +63,12 @@ $\mvj$ & \lstinline`\mvj` & $\mvt$ & \lstinline`\mvt` &  &  & $\mvkappa$ & \lsti
 Use \lstinline`\mm<name>` or \lstinline`\mt<name>` as the abbr of ``\underline{M}ath \underline{M}atrix/\underline{T}ensor''.
 
 \begin{tabular}{*{14}{l}}
-$\mma$ & \lstinline`\mma` & $\mmg$ & \lstinline`\mmg` & $\mmm$ & \lstinline`\mmm` & $\mms$ & \lstinline`\mms` & $\mmy$ & \lstinline`\mmy` & $\mmgamma$ & \lstinline`\mmgamma` & $\mmsigma$ & \lstinline`\mmsigma`\\
-$\mmb$ & \lstinline`\mmb` & $\mmh$ & \lstinline`\mmh` & $\mmn$ & \lstinline`\mmn` & $\mmt$ & \lstinline`\mmt` & $\mmz$ & \lstinline`\mmz` & $\mmdelta$ & \lstinline`\mmdelta` & $\mmupsilon$ & \lstinline`\mmupsilon`\\
-$\mmc$ & \lstinline`\mmc` & $\mmi$ & \lstinline`\mmi` & $\mmo$ & \lstinline`\mmo` & $\mmu$ & \lstinline`\mmu` &  &  & $\mmtheta$ & \lstinline`\mmtheta` & $\mmphi$ & \lstinline`\mmphi`\\
-$\mmd$ & \lstinline`\mmd` & $\mmj$ & \lstinline`\mmj` & $\mmp$ & \lstinline`\mmp` & $\mmv$ & \lstinline`\mmv` &  &  & $\mmlambda$ & \lstinline`\mmlambda` & $\mmpsi$ & \lstinline`\mmpsi`\\
-$\mme$ & \lstinline`\mme` & $\mmk$ & \lstinline`\mmk` & $\mmq$ & \lstinline`\mmq` & $\mmw$ & \lstinline`\mmw` &  &  & $\mmxi$ & \lstinline`\mmxi` & $\mmomega$ & \lstinline`\mmomega`\\
-$\mmf$ & \lstinline`\mmf` & $\mml$ & \lstinline`\mml` & $\mmr$ & \lstinline`\mmr` & $\mmx$ & \lstinline`\mmx` &  &  & $\mmpi$ & \lstinline`\mmpi` & \\
+    $\mma$ & \lstinline`\mma`  & $\mmg$ & \lstinline`\mmg`  & $\mmm$ & \lstinline`\mmm`  & $\mms$ & \lstinline`\mms`  & $\mmy$ & \lstinline`\mmy` & $\mmgamma$  & \lstinline`\mmgamma`  & $\mmsigma$   & \lstinline`\mmsigma`  \\
+    $\mmb$ & \lstinline`\mmb`  & $\mmh$ & \lstinline`\mmh`  & $\mmn$ & \lstinline`\mmn`  & $\mmt$ & \lstinline`\mmt`  & $\mmz$ & \lstinline`\mmz` & $\mmdelta$  & \lstinline`\mmdelta`  & $\mmupsilon$ & \lstinline`\mmupsilon`  \\
+    $\mmc$ & \lstinline`\mmc`  & $\mmi$ & \lstinline`\mmi`  & $\mmo$ & \lstinline`\mmo`  & $\mmu$ & \lstinline`\mmu`  &        &                         & $\mmtheta$  & \lstinline`\mmtheta`  & $\mmphi$     & \lstinline`\mmphi`  \\
+    $\mmd$ & \lstinline`\mmd`  & $\mmj$ & \lstinline`\mmj`  & $\mmp$ & \lstinline`\mmp` & $\mmv$ & \lstinline`\mmv` &        &                         & $\mmlambda$ & \lstinline`\mmlambda` & $\mmpsi$     & \lstinline`\mmpsi` \\
+    $\mme$ & \lstinline`\mme` & $\mmk$ & \lstinline`\mmk` & $\mmq$ & \lstinline`\mmq` & $\mmw$ & \lstinline`\mmw` &        &                         & $\mmxi$     & \lstinline`\mmxi` & $\mmomega$   & \lstinline`\mmomega` \\
+    $\mmf$ & \lstinline`\mmf` & $\mml$ & \lstinline`\mml` & $\mmr$ & \lstinline`\mmr` & $\mmx$ & \lstinline`\mmx` &        &                         & $\mmpi$     & \lstinline`\mmpi` &                                         \\
 \end{tabular}
 %------------------------------------------------------------------------------%
 
@@ -79,13 +79,13 @@ $\mmf$ & \lstinline`\mmf` & $\mml$ & \lstinline`\mml` & $\mmr$ & \lstinline`\mmr
 Use \lstinline`\mm<name>t` as the abbr of ``\underline{M}ath \underline{M}atrix \underline{T}ransposed''.
 
 \begin{tabular}{*{12}{l}}
-$\mmat$ & \lstinline`\mmat` & $\mmht$ & \lstinline`\mmht` & $\mmot$ & \lstinline`\mmot` & $\mmvt$ & \lstinline`\mmvt` & $\mmgammat$ & \lstinline`\mmgammat` & $\mmupsilont$ & \lstinline`\mmupsilont`\\
-$\mmbt$ & \lstinline`\mmbt` & $\mmit$ & \lstinline`\mmit` & $\mmpt$ & \lstinline`\mmpt` & $\mmwt$ & \lstinline`\mmwt` & $\mmdeltat$ & \lstinline`\mmdeltat` & $\mmphit$ & \lstinline`\mmphit`\\
-$\mmct$ & \lstinline`\mmct` & $\mmjt$ & \lstinline`\mmjt` & $\mmqt$ & \lstinline`\mmqt` & $\mmxt$ & \lstinline`\mmxt` & $\mmthetat$ & \lstinline`\mmthetat` & $\mmpsit$ & \lstinline`\mmpsit`\\
-$\mmdt$ & \lstinline`\mmdt` & $\mmkt$ & \lstinline`\mmkt` & $\mmrt$ & \lstinline`\mmrt` & $\mmyt$ & \lstinline`\mmyt` & $\mmlambdat$ & \lstinline`\mmlambdat` & $\mmomegat$ & \lstinline`\mmomegat`\\
-$\mmet$ & \lstinline`\mmet` & $\mmlt$ & \lstinline`\mmlt` & $\mmst$ & \lstinline`\mmst` & $\mmzt$ & \lstinline`\mmzt` & $\mmxit$ & \lstinline`\mmxit` & \\
-$\mmft$ & \lstinline`\mmft` & $\mmmt$ & \lstinline`\mmmt` & $\mmtt$ & \lstinline`\mmtt` &  &  & $\mmpit$ & \lstinline`\mmpit` & \\
-$\mmgt$ & \lstinline`\mmgt` & $\mmnt$ & \lstinline`\mmnt` & $\mmut$ & \lstinline`\mmut` &  &  & $\mmsigmat$ & \lstinline`\mmsigmat` & \\
+    $\mmat$ & \lstinline`\mmat` & $\mmht$ & \lstinline`\mmht` & $\mmot$ & \lstinline`\mmot` & $\mmvt$ & \lstinline`\mmvt` & $\mmgammat$  & \lstinline`\mmgammat` & $\mmupsilont$ & \lstinline`\mmupsilont` \\
+    $\mmbt$ & \lstinline`\mmbt` & $\mmit$ & \lstinline`\mmit` & $\mmpt$ & \lstinline`\mmpt` & $\mmwt$ & \lstinline`\mmwt` & $\mmdeltat$  & \lstinline`\mmdeltat` & $\mmphit$     & \lstinline`\mmphit` \\
+    $\mmct$ & \lstinline`\mmct` & $\mmjt$ & \lstinline`\mmjt` & $\mmqt$ & \lstinline`\mmqt` & $\mmxt$ & \lstinline`\mmxt` & $\mmthetat$  & \lstinline`\mmthetat` & $\mmpsit$     & \lstinline`\mmpsit` \\
+    $\mmdt$ & \lstinline`\mmdt` & $\mmkt$ & \lstinline`\mmkt` & $\mmrt$ & \lstinline`\mmrt` & $\mmyt$ & \lstinline`\mmyt` & $\mmlambdat$ & \lstinline`\mmlambdat` & $\mmomegat$   & \lstinline`\mmomegat` \\
+    $\mmet$ & \lstinline`\mmet` & $\mmlt$ & \lstinline`\mmlt` & $\mmst$ & \lstinline`\mmst` & $\mmzt$ & \lstinline`\mmzt` & $\mmxit$     & \lstinline`\mmxit` &                                          \\
+    $\mmft$ & \lstinline`\mmft` & $\mmmt$ & \lstinline`\mmmt` & $\mmtt$ & \lstinline`\mmtt` &         &                          & $\mmpit$     & \lstinline`\mmpit` &                                          \\
+    $\mmgt$ & \lstinline`\mmgt` & $\mmnt$ & \lstinline`\mmnt` & $\mmut$ & \lstinline`\mmut` &         &                          & $\mmsigmat$  & \lstinline`\mmsigmat` &                                          \\
 \end{tabular}
 %------------------------------------------------------------------------------%
 
@@ -94,8 +94,8 @@ $\mmgt$ & \lstinline`\mmgt` & $\mmnt$ & \lstinline`\mmnt` & $\mmut$ & \lstinline
 \subsection{Special Vector and Matrix Notations}
 %------------------------------------------------------------------------------%
 \begin{tabular}{*{4}{l}}
-$\mvzero$ & \lstinline`\mvzero` & \lstinline`\mmzero` & \lstinline`\mtzero` \\
-$\mvone$ & \lstinline`\mvone` & \lstinline`\mmone` & \lstinline`\mtone` \\
+    $\mvzero$ & \lstinline`\mvzero` & \lstinline`\mmzero` & \lstinline`\mtzero` \\
+    $\mvone$  & \lstinline`\mvone` & \lstinline`\mmone` & \lstinline`\mtone` \\
 \end{tabular}
 %------------------------------------------------------------------------------%
 
@@ -105,10 +105,10 @@ $\mvone$ & \lstinline`\mvone` & \lstinline`\mmone` & \lstinline`\mtone` \\
 \section{Useful Functions and Operators}
 %------------------------------------------------------------------------------%
 \begin{tabular}{*{12}{l}}
-$\diff$ & \lstinline`\diff` & $\eig$ & \lstinline`\eig` & $\mean$ & \lstinline`\mean` & $\card$ & \lstinline`\card` & $\dist$ & \lstinline`\dist` & \\
-$\Diff$ & \lstinline`\Diff` & $\tr$ & \lstinline`\tr` & $\var$ & \lstinline`\var` & $\argmin$ & \lstinline`\argmin` & $\rot$ & \lstinline`\rot` & \\
-$\Expect$ & \lstinline`\Expect` & $\lcm$ & \lstinline`\lcm` & $\corr$ & \lstinline`\corr` & $\argmax$ & \lstinline`\argmax` & $\curl$ & \lstinline`\curl` & \\
-$\diag$ & \lstinline`\diag` & $\rand$ & \lstinline`\rand` & $\conv$ & \lstinline`\conv` & $\argopt$ & \lstinline`\argopt` & $\divergence$ & \lstinline`\divergence` & \\
+    $\diff$   & \lstinline`\diff` & $\eig$  & \lstinline`\eig` & $\mean$ & \lstinline`\mean` & $\card$   & \lstinline`\card` & $\dist$       & \lstinline`\dist` & \\
+    $\Diff$   & \lstinline`\Diff` & $\tr$   & \lstinline`\tr` & $\var$  & \lstinline`\var` & $\argmin$ & \lstinline`\argmin` & $\rot$        & \lstinline`\rot` & \\
+    $\Expect$ & \lstinline`\Expect` & $\lcm$  & \lstinline`\lcm` & $\corr$ & \lstinline`\corr` & $\argmax$ & \lstinline`\argmax` & $\curl$       & \lstinline`\curl` & \\
+    $\diag$   & \lstinline`\diag` & $\rand$ & \lstinline`\rand` & $\conv$ & \lstinline`\conv` & $\argopt$ & \lstinline`\argopt` & $\divergence$ & \lstinline`\divergence` & \\
 \end{tabular}
 %------------------------------------------------------------------------------%
 
@@ -117,39 +117,39 @@ $\diag$ & \lstinline`\diag` & $\rand$ & \lstinline`\rand` & $\conv$ & \lstinline
 \section{Useful Aliases and Generators}
 %------------------------------------------------------------------------------%
 \begin{itemize}
-\item \textbf{Derivatives.} Command: \lstinline`\[d]frac(diff|partial)(s|{var1}){var2}`. \lstinline`var1` and \lstinline`var2` is numerator and denominator, respectively. \lstinline`[d]` is just like the \lstinline`\dfrac` providing a display mode. \lstinline`(diff|partial)` provides derivative or partial derivative. \lstinline`(s|{var1})` means that the numerator is skippable. For example,
+    \item \textbf{Derivatives.} Command: \lstinline`\[d]frac(diff|partial)(s|{var1}){var2}`. \lstinline`var1` and \lstinline`var2` is numerator and denominator, respectively. \lstinline`[d]` is just like the \lstinline`\dfrac` providing a display mode. \lstinline`(diff|partial)` provides derivative or partial derivative. \lstinline`(s|{var1})` means that the numerator is skippable. For example,
 
-\renewcommand{\arraystretch}{2}
-\begin{tabular}{*{4}{l}}
-\toprule
-Text & \TeX & Text & \TeX \\
-\midrule
-$\fracdiff{u}{x}$ & \lstinline`\fracdiff{u}{x}` & $\dfracdiff{u}{x}$ & \lstinline`\dfracdiff{u}{x}`  \\
-$\fracdiff{^2u}{x^2}$ & \lstinline`\fracdiff{^2u}{x^2}` & $\dfracdiff{^2u}{x^2}$ & \lstinline`\dfracdiff{^2u}{x^2}`  \\
-$\fracdiffs{x}$ & \lstinline`\fracdiffs{x}` & $\dfracdiffs{x}$ & \lstinline`\dfracdiffs{x}`  \\
-$\fracpartial{u}{x}$ & \lstinline`\fracpartial{u}{x}` & $\dfracpartial{u}{x}$ & \lstinline`\dfracpartial{u}{x}`  \\
-$\fracpartial{^2u}{x^2}$ & \lstinline`\fracpartial{^2u}{x^2}` & $\dfracpartial{^2u}{x^2}$ & \lstinline`\dfracpartial{^2u}{x^2}`  \\
-$\fracpartials{x}$ & \lstinline`\fracpartials{x}` & $\dfracpartials{x}$ & \lstinline`\dfracpartials{x}` \\
-\bottomrule
-\end{tabular}
-\renewcommand{\arraystretch}{1.25}
+          \renewcommand{\arraystretch}{2}
+          \begin{tabular}{*{4}{l}}
+              \toprule
+              Text                     & \TeX                     & Text                      & \TeX                     \\
+              \midrule
+              $\fracdiff{u}{x}$        & \lstinline`\fracdiff{u}{x}` & $\dfracdiff{u}{x}$        & \lstinline`\dfracdiff{u}{x}` \\
+              $\fracdiff{^2u}{x^2}$    & \lstinline`\fracdiff{^2u}{x^2}` & $\dfracdiff{^2u}{x^2}$    & \lstinline`\dfracdiff{^2u}{x^2}` \\
+              $\fracdiffs{x}$          & \lstinline`\fracdiffs{x}` & $\dfracdiffs{x}$          & \lstinline`\dfracdiffs{x}` \\
+              $\fracpartial{u}{x}$     & \lstinline`\fracpartial{u}{x}` & $\dfracpartial{u}{x}$     & \lstinline`\dfracpartial{u}{x}` \\
+              $\fracpartial{^2u}{x^2}$ & \lstinline`\fracpartial{^2u}{x^2}` & $\dfracpartial{^2u}{x^2}$ & \lstinline`\dfracpartial{^2u}{x^2}` \\
+              $\fracpartials{x}$       & \lstinline`\fracpartials{x}` & $\dfracpartials{x}$       & \lstinline`\dfracpartials{x}` \\
+              \bottomrule
+          \end{tabular}
+          \renewcommand{\arraystretch}{1.25}
 
-\item \textbf{Function vaules at exact point.} Command: \lstinline`\mfwhen{var1}{var2}`. \lstinline`var1` and \lstinline`var2` is function and point position, respectively. For example, \lstinline`\mfwhen{\fracpartial{u}{t}}{x=5}` gets $\mfwhen{\fracpartial{u}{t}}{x=5}$.
+    \item \textbf{Function vaules at exact point.} Command: \lstinline`\mfwhen{var1}{var2}`. \lstinline`var1` and \lstinline`var2` is function and point position, respectively. For example, \lstinline`\mfwhen{\fracpartial{u}{t}}{x=5}` gets $\mfwhen{\fracpartial{u}{t}}{x=5}$.
 
-\item \textbf{Auto sized brackets.} Command: \lstinline`\mclosure{}` for \lstinline`()`, \lstinline`\mclosuresquare{}` for \lstinline`[]`, \lstinline`\mclosurebrace{}` for \lstinline`{}`. For example, $\mclosurebrace{ \mclosuresquare{ \mclosure{a^2 + b^2}^2 }^3 }$.
+    \item \textbf{Auto sized brackets.} Command: \lstinline`\mclosure{}` for \lstinline`()`, \lstinline`\mclosuresquare{}` for \lstinline`[]`, \lstinline`\mclosurebrace{}` for \lstinline`{}`. For example, $\mclosurebrace{ \mclosuresquare{ \mclosure{a^2 + b^2}^2 }^3 }$.
 
-\item \textbf{Vector(Sequence) generator.} Command \lstinline`\mvct[z][t]{var1}{var2}`. \lstinline`var1` and \lstinline`var2` is variable name and the last index, respectively. The index is begin from 1 in default. \lstinline`[z]` makes index begins from 0. \lstinline`[t]` makes this vector transposed into a column vector. For example, 
+    \item \textbf{Vector(Sequence) generator.} Command \lstinline`\mvct[z][t]{var1}{var2}`. \lstinline`var1` and \lstinline`var2` is variable name and the last index, respectively. The index is begin from 1 in default. \lstinline`[z]` makes index begins from 0. \lstinline`[t]` makes this vector transposed into a column vector. For example,
 
-\begin{tabular}{*{4}{l}}
-\toprule
-Text & \TeX & Text & \TeX \\
-\midrule
-$\mvct{a}{n}$ & \lstinline`\mvct{a}{n}` & $\mvctz{a}{n}$ & \lstinline`\mvctz{a}{n}` \\
-$\mvctt{a}{n}$ & \lstinline`\mvctt{a}{n}` & $\mvctzt{a}{n}$ & \lstinline`\mvctzt{a}{n}` \\
-\bottomrule
-\end{tabular}
+          \begin{tabular}{*{4}{l}}
+              \toprule
+              Text           & \TeX                     & Text            & \TeX                     \\
+              \midrule
+              $\mvct{a}{n}$  & \lstinline`\mvct{a}{n}` & $\mvctz{a}{n}$  & \lstinline`\mvctz{a}{n}` \\
+              $\mvctt{a}{n}$ & \lstinline`\mvctt{a}{n}` & $\mvctzt{a}{n}$ & \lstinline`\mvctzt{a}{n}` \\
+              \bottomrule
+          \end{tabular}
 
-\item \textbf{A list of equations group by a brace.} Command \lstinline`\mequlist{...}`. Also provide environment \lstinline`equlist`, which is similar with the \lstinline`cases` environment. For example, \lstinline`\mequlist{x + y &= 10 \\ 4x + 2y &= 30}` gets $\mequlist{x + y &= 10 \\ 4x + 2y &= 30}$.
+    \item \textbf{A list of equations group by a brace.} Command \lstinline`\mequlist{...}`. Also provide environment \lstinline`equlist`, which is similar with the \lstinline`cases` environment. For example, \lstinline`\mequlist{x + y &= 10 \\ 4x + 2y &= 30}` gets $\mequlist{x + y &= 10 \\ 4x + 2y &= 30}$.
 \end{itemize}
 %------------------------------------------------------------------------------%
 \end{document}

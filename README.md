@@ -1,9 +1,9 @@
 # Math-Symbols-in-LaTeX
 
-![Platfrom](https://img.shields.io/badge/Platfrom-TeXLive2017-3D6117.svg)
+![Platfrom](https://img.shields.io/badge/Platfrom-TeXLive2021-3D6117.svg)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 ![Status](https://img.shields.io/badge/status-complete-brightgreen.svg)
-![Version](https://img.shields.io/badge/version-v2.2.1.1023-674EA7.svg)
+![Version](https://img.shields.io/badge/version-v2.2.2.0414-674EA7.svg)
 [![DOI](https://zenodo.org/badge/108990460.svg)](https://zenodo.org/badge/latestdoi/108990460)
 
 ## Usage
@@ -11,6 +11,29 @@
 1. 将 `math-symbols.sty` 拷贝至工作目录
 2. 在 tex 文档中添加 `\usepackage{math-symbols}` 即可
 3. 所有符号请参阅 [`math-symbols-readme.pdf`](readme.pdf)
+
+## 配合 VSCode LaTeX Workshop 使用
+
+1. 在 VSCode 中安装 LaTeX Workshop 插件
+2. 在设置中搜索 `latex-workshop.hover.preview.mathjax.extensions` 选项，依次添加如下插件
+```json
+{
+    "latex-workshop.hover.preview.mathjax.extensions": [
+        "boldsymbol",
+        "mathtools",
+        "cases",
+        "gensymb",
+        "textmacros"
+    ]
+}
+```
+3. 在设置中搜索 `latex-workshop.hover.preview.newcommand.newcommandFile` 选项，填入 `custom-math-symbols.tex`
+```json
+{
+    "latex-workshop.hover.preview.newcommand.newcommandFile": "custom-math-symbols.tex"
+}
+```
+4. 将 `custom-math-symbols.tex` 文件和 `math-symbols.sty` 拷贝至工作目录，参考上一节的 2、3 步骤
 
 ## Notes
 
@@ -39,6 +62,29 @@
 1. Copy `math-symbols.sty` in your working directory
 2. Add `\usepackage{math-symbols}` in your tex document
 3. Check [`math-symbols-readme.pdf`](readme.pdf) for details.
+
+## Work with VSCode LaTeX Workshop
+
+1. Install LaTeX Workshop Extension in VSCode
+2. Find option `latex-workshop.hover.preview.mathjax.extensions` in setting, then select the following extensions of mathjax
+```json
+{
+    "latex-workshop.hover.preview.mathjax.extensions": [
+        "boldsymbol",
+        "mathtools",
+        "cases",
+        "gensymb",
+        "textmacros"
+    ]
+}
+```
+3. Find option `latex-workshop.hover.preview.newcommand.newcommandFile` in setting, then set to `custom-math-symbols.tex`
+```json
+{
+    "latex-workshop.hover.preview.newcommand.newcommandFile": "custom-math-symbols.tex"
+}
+```
+4. Copy `custom-math-symbols.tex` together with `math-symbols.sty` to your working directory, then follow the instructions 2, 3 of above section
 
 ### Appendix
 

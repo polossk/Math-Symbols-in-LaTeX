@@ -5,43 +5,33 @@
 %------------------------------------------------------------------------------%
 
 
-%----------------------------------必要库支持----------------------------------%
-\usepackage{xcolor}
-\usepackage{tikz}
-\usepackage{layouts}
-\usepackage{clrscode}
-%------------------------------------------------------------------------------%
-
-
 %--------------------------------添加书签超链接--------------------------------%
 \usepackage[unicode=true,colorlinks=false,pdfborder={0 0 0}]{hyperref}
-    % 在此处修改打开文件操作
-    \hypersetup{
-        bookmarks=true,         % show bookmarks bar?
-        bookmarksopen=true,     % expanded all bookmark?
-        pdftoolbar=true,        % show Acrobat’s toolbar?
-        pdfmenubar=true,        % show Acrobat’s menu?
-        pdffitwindow=true,      % window fit to page when opened
-        pdfstartview={FitH},    % fits the width of the page to the window
-        pdfnewwindow=true,      % links in new PDF window
-    }
-    % 在此处添加文章基础信息
-    \hypersetup{
-        pdftitle={Math Symbols in LaTeX Manual},
-        pdfauthor={polossk},
-        pdfsubject={LaTeX Manual},
-        pdfcreator={XeLaTeX},
-        pdfproducer={XeLaTeX},
-        pdfkeywords={LaTeX, Math Symbols},
-    }
+% 在此处修改打开文件操作
+\hypersetup{
+    bookmarks=true,         % show bookmarks bar?
+    bookmarksopen=true,     % expanded all bookmark?
+    pdftoolbar=true,        % show Acrobat’s toolbar?
+    pdfmenubar=true,        % show Acrobat’s menu?
+    pdffitwindow=true,      % window fit to page when opened
+    pdfstartview={FitH},    % fits the width of the page to the window
+    pdfnewwindow=true,      % links in new PDF window
+}
+% 在此处添加文章基础信息
+\hypersetup{
+    pdftitle={Math Symbols in LaTeX Manual},
+    pdfauthor={polossk},
+    pdfsubject={LaTeX Manual},
+    pdfcreator={XeLaTeX},
+    pdfproducer={XeLaTeX},
+    pdfkeywords={LaTeX, Math Symbols},
+}
 %------------------------------------------------------------------------------%
 
 
 %------------------------------添加插图与表格控制------------------------------%
-\usepackage{graphicx}
 \usepackage[font=small,labelsep=quad]{caption}
 \usepackage{booktabs}
-\usepackage{tabularx}
 \usepackage{setspace}
 %------------------------------------------------------------------------------%
 
@@ -74,6 +64,7 @@
 
 
 %---------------------------------添加代码控制---------------------------------%
+\usepackage{xcolor}
 \colorlet{lightgray}{gray!40}
 \colorlet{darkred}{red!70!black}
 \usepackage{listings}

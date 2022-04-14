@@ -1,24 +1,14 @@
-% math-symbols.sty
+% custom-math-symbols.sty
 % by polossk, version 2.2.2.0414
 % last update 2022-04-14
 % github.com/polossk/Math-Symbols-in-LaTeX
-\ProvidesPackage{math-symbols}[2022/04/14 v2.2.1.0414 Math-Symbols-in-LaTeX]
 %------------------------------------------------------------------------------%
-%-Requare-Packages-------------------------------------------------------------%
-%------------------------------------------------------------------------------%
-\RequirePackage{bm}
-\RequirePackage{amsmath}
-\RequirePackage{amssymb}
-\RequirePackage{amsfonts}
-\RequirePackage{mathrsfs}
-\RequirePackage{mathtools}
-%------------------------------------------------------------------------------%
-%-Auto-Line-Break-Config-------------------------------------------------------%
-%------------------------------------------------------------------------------%
-\allowdisplaybreaks[4]
+% Specifically for VSCode LaTeX Workshop Extension
+% In order to enable hover preview
 %------------------------------------------------------------------------------%
 %-Math-Fonts-------------------------------------------------------------------%
 %------------------------------------------------------------------------------%
+\def\bm#1{\boldsymbol{#1}}
 \def\mathbi#1{\textbf{\em #1}}
 % \mathcal{A}:  Caligraphic letters
 % \mathbb{A}:   Mathbb letters
