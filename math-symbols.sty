@@ -1,8 +1,8 @@
 % math-symbols.sty
-% by polossk, version 2.2.2.0414
-% last update 2022-04-14
+% by polossk, version 2.2.3.1026
+% last update 2022-10-26
 % github.com/polossk/Math-Symbols-in-LaTeX
-\ProvidesPackage{math-symbols}[2022/04/14 v2.2.1.0414 Math-Symbols-in-LaTeX]
+\ProvidesPackage{math-symbols}[2022/10/26 v2.2.3.1026 Math-Symbols-in-LaTeX]
 %------------------------------------------------------------------------------%
 %-Requare-Packages-------------------------------------------------------------%
 %------------------------------------------------------------------------------%
@@ -12,6 +12,9 @@
 \RequirePackage{amsfonts}
 \RequirePackage{mathrsfs}
 \RequirePackage{mathtools}
+\RequirePackage{mathbbol}
+\DeclareSymbolFontAlphabet{\mathbb}{AMSb}
+\DeclareSymbolFontAlphabet{\mathbbl}{bbold}
 %------------------------------------------------------------------------------%
 %-Auto-Line-Break-Config-------------------------------------------------------%
 %------------------------------------------------------------------------------%
@@ -146,45 +149,45 @@
 %------------------------------------------------------------------------------%
 %-[M]ath-[T]ensor-Defination---------------------------------------------------%
 %------------------------------------------------------------------------------%
-\newcommand\mta{{\mathbf A}}                               % tensor A
-\newcommand\mtb{{\mathbf B}}                               % tensor B
-\newcommand\mtc{{\mathbf C}}                               % tensor C
-\newcommand\mtd{{\mathbf D}}                               % tensor D
-\newcommand\mte{{\mathbf E}}                               % tensor E
-\newcommand\mtf{{\mathbf F}}                               % tensor F
-\newcommand\mtg{{\mathbf G}}                               % tensor G
-\newcommand\mth{{\mathbf H}}                               % tensor H
-\newcommand\mti{{\mathbf I}}                               % tensor I
-\newcommand\mtj{{\mathbf J}}                               % tensor J
-\newcommand\mtk{{\mathbf K}}                               % tensor K
-\newcommand\mtl{{\mathbf L}}                               % tensor L
-\newcommand\mtm{{\mathbf M}}                               % tensor M
-\newcommand\mtn{{\mathbf N}}                               % tensor N
-\newcommand\mto{{\mathbf O}}                               % tensor O
-\newcommand\mtp{{\mathbf P}}                               % tensor P
-\newcommand\mtq{{\mathbf Q}}                               % tensor Q
-\newcommand\mtr{{\mathbf R}}                               % tensor R
-\newcommand\mts{{\mathbf S}}                               % tensor S
-\newcommand\mtt{{\mathbf T}}                               % tensor T
-\newcommand\mtu{{\mathbf U}}                               % tensor U
-\newcommand\mtv{{\mathbf V}}                               % tensor V
-\newcommand\mtw{{\mathbf W}}                               % tensor W
-\newcommand\mtx{{\mathbf X}}                               % tensor X
-\newcommand\mty{{\mathbf Y}}                               % tensor Y
-\newcommand\mtz{{\mathbf Z}}                               % tensor Z
-\newcommand\mtgamma{{\bm \Gamma}}                          % tensor Gamma
-\newcommand\mtdelta{{\bm \Delta}}                          % tensor Delta
-\newcommand\mttheta{{\bm \Theta}}                          % tensor Theta
-\newcommand\mtlambda{{\bm \Lambda}}                        % tensor Lambda
-\newcommand\mtxi{{\bm \Xi}}                                % tensor Xi
-\newcommand\mtpi{{\bm \Pi}}                                % tensor Pi
-\newcommand\mtsigma{{\bm \Sigma}}                          % tensor Sigma
-\newcommand\mtupsilon{{\bm \Upsilon}}                      % tensor Upsilon
-\newcommand\mtphi{{\bm \Phi}}                              % tensor Phi
-\newcommand\mtpsi{{\bm \Psi}}                              % tensor Psi
-\newcommand\mtomega{{\bm \Omega}}                          % tensor Omega
+\newcommand\mta{{\mathbb A}}                               % tensor A
+\newcommand\mtb{{\mathbb B}}                               % tensor B
+\newcommand\mtc{{\mathbb C}}                               % tensor C
+\newcommand\mtd{{\mathbb D}}                               % tensor D
+\newcommand\mte{{\mathbb E}}                               % tensor E
+\newcommand\mtf{{\mathbb F}}                               % tensor F
+\newcommand\mtg{{\mathbb G}}                               % tensor G
+\newcommand\mth{{\mathbb H}}                               % tensor H
+\newcommand\mti{{\mathbb I}}                               % tensor I
+\newcommand\mtj{{\mathbb J}}                               % tensor J
+\newcommand\mtk{{\mathbb K}}                               % tensor K
+\newcommand\mtl{{\mathbb L}}                               % tensor L
+\newcommand\mtm{{\mathbb M}}                               % tensor M
+\newcommand\mtn{{\mathbb N}}                               % tensor N
+\newcommand\mto{{\mathbb O}}                               % tensor O
+\newcommand\mtp{{\mathbb P}}                               % tensor P
+\newcommand\mtq{{\mathbb Q}}                               % tensor Q
+\newcommand\mtr{{\mathbb R}}                               % tensor R
+\newcommand\mts{{\mathbb S}}                               % tensor S
+\newcommand\mtt{{\mathbb T}}                               % tensor T
+\newcommand\mtu{{\mathbb U}}                               % tensor U
+\newcommand\mtv{{\mathbb V}}                               % tensor V
+\newcommand\mtw{{\mathbb W}}                               % tensor W
+\newcommand\mtx{{\mathbb X}}                               % tensor X
+\newcommand\mty{{\mathbb Y}}                               % tensor Y
+\newcommand\mtz{{\mathbb Z}}                               % tensor Z
+\newcommand\mtgamma{{\mathbbl{\Gamma}}}                    % tensor Gamma
+\newcommand\mtdelta{{\mathbbl{\Delta}}}                    % tensor Delta
+\newcommand\mttheta{{\mathbbl{\Theta}}}                    % tensor Theta
+\newcommand\mtlambda{{\mathbbl{\Lambda}}}                  % tensor Lambda
+\newcommand\mtxi{{\mathbbl{\Xi}}}                          % tensor Xi
+\newcommand\mtpi{{\mathbbl{\Pi}}}                          % tensor Pi
+\newcommand\mtsigma{{\mathbbl{\Sigma}}}                    % tensor Sigma
+\newcommand\mtupsilon{{\mathbbl{\Upsilon}}}                % tensor Upsilon
+\newcommand\mtphi{{\mathbbl{\Phi}}}                        % tensor Phi
+\newcommand\mtpsi{{\mathbbl{\Psi}}}                        % tensor Psi
+\newcommand\mtomega{{\mathbbl{\Omega}}}                    % tensor Omega
 %------------------------------------------------------------------------------%
-%-[M]ath-[V]ector-Defination-[T]ransposed--------------------------------------%
+%-[M]ath-[M]atrix-Defination-[T]ransposed--------------------------------------%
 %------------------------------------------------------------------------------%
 \newcommand\mmat{{{\mathbf A}^{\mathrm T}}}                % matrix A^T
 \newcommand\mmbt{{{\mathbf B}^{\mathrm T}}}                % matrix B^T
@@ -226,13 +229,14 @@
 %------------------------------------------------------------------------------%
 \newcommand\mvzero{{\mathbf 0}}                            % vector 0
 \newcommand\mmzero{{\mathbf 0}}                            % matrix 0
-\newcommand\mtzero{{\mathbf 0}}                            % tensor 0
+\newcommand\mtzero{{\mathbbl{0}}}                          % tensor 0
 \newcommand\mvone{{\mathbf 1}}                             % vector 1
 \newcommand\mmone{{\mathbf 1}}                             % matrix 1
-\newcommand\mtone{{\mathbf 1}}                             % tensor 1
+\newcommand\mtone{{\mathbbl{1}}}                           % tensor 1
 %------------------------------------------------------------------------------%
 %-Useful-Operators-------------------------------------------------------------%
 %------------------------------------------------------------------------------%
+% \newcommand\diff{{\mathop{}\!\mathrm{d}}}                  % operator diff
 \DeclareMathOperator\diff{d\!}                             % operator diff
 \DeclareMathOperator\Diff{D}                               % operator Diff
 \DeclareMathOperator\Expect{E}                             % operator Expect
@@ -252,6 +256,7 @@
 \DeclareMathOperator*{\dist}{dist}                         % operator dist
 \DeclareMathOperator\rot{rot}                              % operator rot
 \DeclareMathOperator\curl{curl}                            % operator curl
+% \newcommand\divergence{{\mathop{\mathrm{div}}}}            % operator div
 \DeclareMathOperator\divergence{div}                       % operator div
 %------------------------------------------------------------------------------%
 %-Useful-Functions-------------------------------------------------------------%

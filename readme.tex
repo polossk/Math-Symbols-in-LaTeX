@@ -1,7 +1,7 @@
 \documentclass{article}
 \input{article-setting}
 %------------------------------------------------------------------------------%
-\newcommand\artversion{2.2.2.0414}
+\newcommand\artversion{2.2.3.1026}
 \title{Math-Symbols-in-\LaTeX{}-Manual}
 \author{polossk}
 \date{Version: v\artversion, Last Update: \today}
@@ -58,17 +58,33 @@ Use \lstinline`\mv<name>` as the abbr of ``\underline{M}ath \underline{V}ector''
 
 
 %------------------------------------------------------------------------------%
-\subsection{Matrix/Tensor Notations}
+\subsection{Matrix Notations}
 %------------------------------------------------------------------------------%
-Use \lstinline`\mm<name>` or \lstinline`\mt<name>` as the abbr of ``\underline{M}ath \underline{M}atrix/\underline{T}ensor''.
+Use \lstinline`\mm<name>` as the abbr of ``\underline{M}ath \underline{M}atrix''.
 
 \begin{tabular}{*{14}{l}}
     $\mma$ & \lstinline`\mma`  & $\mmg$ & \lstinline`\mmg`  & $\mmm$ & \lstinline`\mmm`  & $\mms$ & \lstinline`\mms`  & $\mmy$ & \lstinline`\mmy` & $\mmgamma$  & \lstinline`\mmgamma`  & $\mmsigma$   & \lstinline`\mmsigma`  \\
     $\mmb$ & \lstinline`\mmb`  & $\mmh$ & \lstinline`\mmh`  & $\mmn$ & \lstinline`\mmn`  & $\mmt$ & \lstinline`\mmt`  & $\mmz$ & \lstinline`\mmz` & $\mmdelta$  & \lstinline`\mmdelta`  & $\mmupsilon$ & \lstinline`\mmupsilon`  \\
     $\mmc$ & \lstinline`\mmc`  & $\mmi$ & \lstinline`\mmi`  & $\mmo$ & \lstinline`\mmo`  & $\mmu$ & \lstinline`\mmu`  &        &                         & $\mmtheta$  & \lstinline`\mmtheta`  & $\mmphi$     & \lstinline`\mmphi`  \\
-    $\mmd$ & \lstinline`\mmd`  & $\mmj$ & \lstinline`\mmj`  & $\mmp$ & \lstinline`\mmp` & $\mmv$ & \lstinline`\mmv` &        &                         & $\mmlambda$ & \lstinline`\mmlambda` & $\mmpsi$     & \lstinline`\mmpsi` \\
+    $\mmd$ & \lstinline`\mmd`  & $\mmj$ & \lstinline`\mmj`  & $\mmp$ & \lstinline`\mmp`  & $\mmv$ & \lstinline`\mmv` &        &                         & $\mmlambda$ & \lstinline`\mmlambda` & $\mmpsi$     & \lstinline`\mmpsi` \\
     $\mme$ & \lstinline`\mme` & $\mmk$ & \lstinline`\mmk` & $\mmq$ & \lstinline`\mmq` & $\mmw$ & \lstinline`\mmw` &        &                         & $\mmxi$     & \lstinline`\mmxi` & $\mmomega$   & \lstinline`\mmomega` \\
     $\mmf$ & \lstinline`\mmf` & $\mml$ & \lstinline`\mml` & $\mmr$ & \lstinline`\mmr` & $\mmx$ & \lstinline`\mmx` &        &                         & $\mmpi$     & \lstinline`\mmpi` &                                         \\
+\end{tabular}
+%------------------------------------------------------------------------------%
+
+
+%------------------------------------------------------------------------------%
+\subsection{Tensor Notations}
+%------------------------------------------------------------------------------%
+Use \lstinline`\mt<name>` as the abbr of ``\underline{M}ath \underline{T}ensor''.
+
+\begin{tabular}{*{14}{l}}
+    $\mta$ & \lstinline`\mta` & $\mtg$ & \lstinline`\mtg` & $\mtm$ & \lstinline`\mtm` & $\mts$ & \lstinline`\mts` & $\mty$ & \lstinline`\mty` & $\mtgamma$  & \lstinline`\mtgamma` & $\mtsigma$   & \lstinline`\mtsigma` \\
+    $\mtb$ & \lstinline`\mtb` & $\mth$ & \lstinline`\mth` & $\mtn$ & \lstinline`\mtn` & $\mtt$ & \lstinline`\mtt` & $\mtz$ & \lstinline`\mtz` & $\mtdelta$  & \lstinline`\mtdelta` & $\mtupsilon$ & \lstinline`\mtupsilon` \\
+    $\mtc$ & \lstinline`\mtc` & $\mti$ & \lstinline`\mti` & $\mto$ & \lstinline`\mto` & $\mtu$ & \lstinline`\mtu` &        &                          & $\mttheta$  & \lstinline`\mttheta` & $\mtphi$     & \lstinline`\mtphi` \\
+    $\mtd$ & \lstinline`\mtd` & $\mtj$ & \lstinline`\mtj` & $\mtp$ & \lstinline`\mtp` & $\mtv$ & \lstinline`\mtv` &        &                          & $\mtlambda$ & \lstinline`\mtlambda` & $\mtpsi$     & \lstinline`\mtpsi` \\
+    $\mte$ & \lstinline`\mte` & $\mtk$ & \lstinline`\mtk` & $\mtq$ & \lstinline`\mtq` & $\mtw$ & \lstinline`\mtw` &        &                          & $\mtxi$     & \lstinline`\mtxi` & $\mtomega$   & \lstinline`\mtomega` \\
+    $\mtf$ & \lstinline`\mtf` & $\mtl$ & \lstinline`\mtl` & $\mtr$ & \lstinline`\mtr` & $\mtx$ & \lstinline`\mtx` &        &                          & $\mtpi$     & \lstinline`\mtpi` &                                         \\
 \end{tabular}
 %------------------------------------------------------------------------------%
 
@@ -93,9 +109,9 @@ Use \lstinline`\mm<name>t` as the abbr of ``\underline{M}ath \underline{M}atrix 
 %------------------------------------------------------------------------------%
 \subsection{Special Vector and Matrix Notations}
 %------------------------------------------------------------------------------%
-\begin{tabular}{*{4}{l}}
-    $\mvzero$ & \lstinline`\mvzero` & \lstinline`\mmzero` & \lstinline`\mtzero` \\
-    $\mvone$  & \lstinline`\mvone` & \lstinline`\mmone` & \lstinline`\mtone` \\
+\begin{tabular}{*{6}{l}}
+    $\mvzero$ & \lstinline`\mvzero` & $\mmzero$ & \lstinline`\mmzero` & $\mtzero$ & \lstinline`\mtzero` \\
+    $\mvone$  & \lstinline`\mvone` & $\mmone$  & \lstinline`\mmone` & $\mtone$  & \lstinline`\mtone` \\
 \end{tabular}
 %------------------------------------------------------------------------------%
 

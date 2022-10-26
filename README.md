@@ -3,7 +3,7 @@
 ![Platfrom](https://img.shields.io/badge/Platfrom-TeXLive2021-3D6117.svg)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 ![Status](https://img.shields.io/badge/status-complete-brightgreen.svg)
-![Version](https://img.shields.io/badge/version-v2.2.2.0414-674EA7.svg)
+![Version](https://img.shields.io/badge/version-v2.2.3.1026-674EA7.svg)
 [![DOI](https://zenodo.org/badge/108990460.svg)](https://zenodo.org/badge/latestdoi/108990460)
 
 ## Usage
@@ -101,7 +101,7 @@ Use this code whatever you want, under the circumstances of acknowleged the mit 
 ## License
 
 The MIT License (MIT)
-Copyright (c) 2017 Shangkun Shen, http://polossk.com <polossk_dev@126.com>
+Copyright (c) 2017-2022 Shangkun Shen, http://polossk.com <polossk_dev@126.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the “Software”), to deal
